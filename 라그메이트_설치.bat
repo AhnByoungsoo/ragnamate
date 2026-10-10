@@ -29,11 +29,11 @@ if defined RO_NEED (
 )
 
 if exist "%RO_DIR%\.git" goto run
-echo Downloading RagnaMate... A GitHub sign-in window may open the first time.
+echo Downloading RagnaMate...
 git clone https://github.com/AhnByoungsoo/ragnamate.git "%RO_DIR%"
 if errorlevel 1 (
     echo.
-    echo Download failed. Check the internet connection and that your GitHub account may open this repository.
+    echo Download failed. Check the internet connection and try again.
     pause
     exit /b 1
 )
