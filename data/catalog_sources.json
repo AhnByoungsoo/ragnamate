@@ -1,0 +1,75 @@
+{
+ "checked_at": "2026-09-26",
+ "sources": [
+  {
+   "file": "kro-bufficons.lub",
+   "repository": "https://github.com/bgamez23/ROResourceCollection",
+   "tree_sha": "faf69ada46ee3cc4c1ef0a9c28ce9387f80050b9",
+   "sha256": "bc6a72bdaafc8e4e8213b7cd2e90e8001100e7139b7b760b82ef559b663170e8"
+  },
+  {
+   "file": "kro-buffinfo.lub",
+   "repository": "https://github.com/bgamez23/ROResourceCollection",
+   "tree_sha": "faf69ada46ee3cc4c1ef0a9c28ce9387f80050b9",
+   "sha256": "6c048cbbcb3e843eba6df2a37560f96be619e304c17d8918d142ad04f8062327"
+  },
+  {
+   "file": "kro-efst.lub",
+   "repository": "https://github.com/bgamez23/ROResourceCollection",
+   "tree_sha": "faf69ada46ee3cc4c1ef0a9c28ce9387f80050b9",
+   "sha256": "35df775dc607d217eb31b081d5d2dba31540b60c16c2be654787da1721691658"
+  },
+  {
+   "file": "kro-skillid.lub",
+   "repository": "https://github.com/bgamez23/ROResourceCollection",
+   "tree_sha": "faf69ada46ee3cc4c1ef0a9c28ce9387f80050b9",
+   "sha256": "ef521e54835a5a248310bc08f04ef3238ec98902aca78792946b8f1b494898c0"
+  },
+  {
+   "file": "kro-skillinfo.lub",
+   "repository": "https://github.com/bgamez23/ROResourceCollection",
+   "tree_sha": "faf69ada46ee3cc4c1ef0a9c28ce9387f80050b9",
+   "sha256": "4eec02aeafa9b4c833eeca8bdf93b26654ddf370dae2109547c70f5ee8d412f9"
+  },
+  {
+   "file": "latest-bufficons.lub",
+   "repository": "https://github.com/llchrisll/ROenglishRE",
+   "tree_sha": "85f216a230bf9180451fa29a37505baeb676c559",
+   "sha256": "37ff6dc40b6aa6cf6ddd330384c3eeef984f657b440f38f90d2a8df91a18fb97"
+  },
+  {
+   "file": "latest-buffinfo.lub",
+   "repository": "https://github.com/llchrisll/ROenglishRE",
+   "tree_sha": "85f216a230bf9180451fa29a37505baeb676c559",
+   "sha256": "3262eb76e3ee00f76eddf66241de97d2bc26ee73ed2624ef416f5a55f99c0bd8"
+  },
+  {
+   "file": "latest-efst.lub",
+   "repository": "https://github.com/llchrisll/ROenglishRE",
+   "tree_sha": "85f216a230bf9180451fa29a37505baeb676c559",
+   "sha256": "8e85a054af1cad28500a1d029194408b3b7a1fa9aa9d9f42ba7627a472b9a90c"
+  },
+  {
+   "file": "latest-skillid.lub",
+   "repository": "https://github.com/llchrisll/ROenglishRE",
+   "tree_sha": "85f216a230bf9180451fa29a37505baeb676c559",
+   "sha256": "ac1d9d1c81275d290428e2b53f981b1b79f7d33ab4e1b4672bcd2af442c58013"
+  },
+  {
+   "file": "latest-skillinfo.lub",
+   "repository": "https://github.com/llchrisll/ROenglishRE",
+   "tree_sha": "85f216a230bf9180451fa29a37505baeb676c559",
+   "sha256": "981eefd81502ca041cfa273bcf0cbf8515df6a080bcf4088d5dca32d7ea81128"
+  },
+  {
+   "file": "StatusInfo.js",
+   "url": "https://raw.githubusercontent.com/MrAntares/roBrowserLegacy/master/src/DB/Status/StatusInfo.js",
+   "sha256": "68788aee20c804eed90d19afb3caaee10f2833f33d3bbc2674cbe3049d10e47f"
+  },
+  {
+   "file": "StatusConst.js",
+   "url": "https://raw.githubusercontent.com/MrAntares/roBrowserLegacy/master/src/DB/Status/StatusConst.js",
+   "sha256": "89f9acf9268062f481f063149c863011eacf7ccc7d2d1f4de84f5dea641a130f"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+test_uptime_and_gap (test_analyzers.BuffTest.test_uptime_and_gap) ... ok
+test_dps_bases (test_analyzers.CombatTest.test_dps_bases) ... ok
+test_max_window (test_analyzers.CombatTest.test_max_window) ... ok
+test_totals (test_analyzers.CombatTest.test_totals) ... ok
+test_exp (test_analyzers.ExpZenyTest.test_exp) ... ok
+test_zeny (test_analyzers.ExpZenyTest.test_zeny) ... ok
+test_inventory_diff_loot (test_analyzers.LootProfitTest.test_inventory_diff_loot) ... ok
+test_no_snapshot (test_analyzers.LootProfitTest.test_no_snapshot) ... ok
+test_normalizer_length_mismatch (test_analyzers.PacketTest.test_normalizer_length_mismatch) ... ok
+test_registry_excludes_unverified_by_default (test_analyzers.PacketTest.test_registry_excludes_unverified_by_default) ... ok
+test_compare_warnings (test_analyzers.ReportCompareTest.test_compare_warnings) ... ok
+test_no_combat_is_honest (test_analyzers.ReportCompareTest.test_no_combat_is_honest) ... ok
+test_report_and_compare (test_analyzers.ReportCompareTest.test_report_and_compare) ... ok
+test_expected_delay (test_analyzers.SkillTest.test_expected_delay) ... ok
+test_skill_rows (test_analyzers.SkillTest.test_skill_rows) ... ok
+test_alias_fuzzy_ambiguous (test_live.ChatTest.test_alias_fuzzy_ambiguous) ... ok
+test_learn_and_parse (test_live.ChatTest.test_learn_and_parse) ... ok
+test_monitor_only_new_lines (test_live.ChatTest.test_monitor_only_new_lines) ... ok
+test_no_pattern_no_event (test_live.ChatTest.test_no_pattern_no_event) ... ok
+test_per_type_priority (test_live.DedupTest.test_per_type_priority) ... ok
+test_replay_supersedes_screen (test_live.DedupTest.test_replay_supersedes_screen) ... ok
+test_same_message_hash_once (test_live.DedupTest.test_same_message_hash_once) ... ok
+test_v4_tables (test_live.MigrationTest.test_v4_tables) ... ok
+test_mock_frame_pipeline (test_live.MockScreenTest.test_mock_frame_pipeline) ... skipped 'Windows 한국어 OCR 없음'
+test_auto_start_pause_resume_profit (test_live.SessionTest.test_auto_start_pause_resume_profit) ... ok
+test_bus_hybrid_merge_no_double_count (test_live.SessionTest.test_bus_hybrid_merge_no_double_count) ... ok
+test_exp_percent_with_levelup (test_live.SessionTest.test_exp_percent_with_levelup) ... ok
+test_hybrid_upgrade_and_downgrade (test_live.SessionTest.test_hybrid_upgrade_and_downgrade) ... ok
+test_low_confidence_excluded (test_live.SessionTest.test_low_confidence_excluded) ... ok
+test_map_change_splits_session (test_live.SessionTest.test_map_change_splits_session) ... ok
+test_normalize (test_live.TextTest.test_normalize) ... ok
+test_bar_fill (test_live.VisionProfileTest.test_bar_fill) ... ok
+test_profile_store_and_scale (test_live.VisionProfileTest.test_profile_store_and_scale) ... ok
+test_official_parser_fixture (test_navigator.ImportExportValidationTest.test_official_parser_fixture) ... ok
+test_roundtrip (test_navigator.ImportExportValidationTest.test_roundtrip) ... ok
+test_seed_packs_valid (test_navigator.ImportExportValidationTest.test_seed_packs_valid) ... ok
+test_validation_flags (test_navigator.ImportExportValidationTest.test_validation_flags) ... ok
+test_dependency_order_and_cycle (test_navigator.NavigationTest.test_dependency_order_and_cycle) ... ok
+test_job_tree (test_navigator.NavigationTest.test_job_tree) ... ok
+test_navi_command (test_navigator.NavigationTest.test_navi_command) ... ok
+test_item_sum_and_shortage (test_navigator.RequirementTest.test_item_sum_and_shortage) ... ok
+test_level_job (test_navigator.RequirementTest.test_level_job) ... ok
+test_quest_unknown_and_manual (test_navigator.RequirementTest.test_quest_unknown_and_manual) ... ok
+test_readiness_excludes_unknown (test_navigator.RequirementTest.test_readiness_excludes_unknown) ... ok
+test_category_filter (test_navigator.SearchTest.test_category_filter) ... ok
+test_no_result (test_navigator.SearchTest.test_no_result) ... ok
+test_official_and_alias (test_navigator.SearchTest.test_official_and_alias) ... ok
+test_partial_choseong_typo (test_navigator.SearchTest.test_partial_choseong_typo) ... ok
+test_next_job_inquisitor (test_navigator.ServiceTest.test_next_job_inquisitor) ... ok
+test_no_guide_for_jobs_without_official_page (test_navigator.ServiceTest.test_no_guide_for_jobs_without_official_page) ... ok
+test_tomb_materials_and_cost (test_navigator.ServiceTest.test_tomb_materials_and_cost) ... ok
+test_map_changes (test_regression.NormalizerRegression.test_map_changes) ... ok
+test_session_meta (test_regression.NormalizerRegression.test_session_meta) ... ok
+test_unknown_packets_kept (test_regression.NormalizerRegression.test_unknown_packets_kept) ... ok
+test_zeny_matches_meta (test_regression.NormalizerRegression.test_zeny_matches_meta) ... ok
+test_header_timestamp (test_regression.StorageRegression.test_header_timestamp) ... ok
+test_inventory_lists_default_unchanged (test_regression.StorageRegression.test_inventory_lists_default_unchanged) ... ok
+test_storage_lists (test_regression.StorageRegression.test_storage_lists) ... ok
+test_storage_service (test_regression.StorageRegression.test_storage_service) ... ok
+test_hp_never_exceeds_max (test_regression.VitalsRegression.test_hp_never_exceeds_max)
+varID 매핑 검증: 같은 시각의 패킷 묶음이 끝난 뒤 현재 HP(5) ≤ 최대 HP(6). ... ok
+test_hp_regen_on_current_var (test_regression.VitalsRegression.test_hp_regen_on_current_var)
+현재 HP(var5)는 6초 주기 자연회복으로 단독 증가한다. ... ok
+test_duplicate_overlap_same_attack_allowed (test_replay_incremental.IncrementalTests.test_duplicate_overlap_same_attack_allowed) ... ok
+test_every_byte_boundary (test_replay_incremental.IncrementalTests.test_every_byte_boundary) ... ok
+test_final_resume_append (test_replay_incremental.IncrementalTests.test_final_resume_append) ... ok
+test_journal_recovery_reconstructs_state (test_replay_incremental.IncrementalTests.test_journal_recovery_reconstructs_state) ... ok
+test_no_final_for_partial (test_replay_incremental.IncrementalTests.test_no_final_for_partial) ... ok
+test_nonzero_inventory_quantity (test_replay_incremental.IncrementalTests.test_nonzero_inventory_quantity) ... ok
+test_open_container_header_update (test_replay_incremental.IncrementalTests.test_open_container_header_update) ... ok
+test_partial_17_then_11 (test_replay_incremental.IncrementalTests.test_partial_17_then_11) ... ok
+test_random_chunk_100_offline_final (test_replay_incremental.IncrementalTests.test_random_chunk_100_offline_final) ... ok
+test_safe_resync (test_replay_incremental.IncrementalTests.test_safe_resync) ... ok
+test_same_size_inplace_rewrite (test_replay_incremental.IncrementalTests.test_same_size_inplace_rewrite) ... ok
+test_stall_final_and_resume (test_replay_incremental.IncrementalTests.test_stall_final_and_resume) ... ok
+test_truncate_replace (test_replay_incremental.IncrementalTests.test_truncate_replace) ... ok
+test_unknown_and_bad_payload_keep_boundary (test_replay_incremental.IncrementalTests.test_unknown_and_bad_payload_keep_boundary) ... ok
+test_buff_refresh_expiry_and_reconciliation (test_replay_incremental.StateTests.test_buff_refresh_expiry_and_reconciliation) ... ok
+test_long_session_bounded_rolling (test_replay_incremental.StateTests.test_long_session_bounded_rolling) ... ok
+test_map_change_id_reuse_kill (test_replay_incremental.StateTests.test_map_change_id_reuse_kill) ... ok
+test_multihit_cast_is_not_three_casts (test_replay_incremental.StateTests.test_multihit_cast_is_not_three_casts) ... ok
+test_reorder_and_late (test_replay_incremental.StateTests.test_reorder_and_late) ... ok
+test_dashboard_diagnostics_and_settings (test_replay_ui.ReplayUITests.test_dashboard_diagnostics_and_settings) ... ok
+test_db_migration_keeps_market_tables (test_storage_features.StorageFeatureTest.test_db_migration_keeps_market_tables) ... ok
+test_export (test_storage_features.StorageFeatureTest.test_export) ... ok
+test_merge (test_storage_features.StorageFeatureTest.test_merge) ... ok
+test_price_stats_iqr (test_storage_features.StorageFeatureTest.test_price_stats_iqr) ... ok
+test_value_and_sellable (test_storage_features.StorageFeatureTest.test_value_and_sellable) ... ok
+
+----------------------------------------------------------------------
+Ran 86 tests in 5.172s
+
+OK (skipped=1)

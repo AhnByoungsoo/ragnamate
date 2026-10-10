@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256">
+  <!-- 라그메이트 앱 아이콘: 날개 달린 포링(엔젤링풍). 개인 사용 -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#13233A"/>
+  <path d="M15 36 C10 28 5.5 26.5 3.5 28.5 C6.5 30 7.5 32 7 34 C9.5 33.4 11 34.4 11.2 36.4 C12.8 36 14 36.6 15 38.2 Z" fill="#FFFFFF" stroke="#C9D6E8" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M15 36 C10 28 5.5 26.5 3.5 28.5 C6.5 30 7.5 32 7 34 C9.5 33.4 11 34.4 11.2 36.4 C12.8 36 14 36.6 15 38.2 Z" fill="#FFFFFF" stroke="#C9D6E8" stroke-width="1.2" stroke-linejoin="round" transform="translate(64 0) scale(-1 1)"/>
+  <ellipse cx="32" cy="10.5" rx="8.5" ry="2.7" fill="none" stroke="#F2C94C" stroke-width="2.4"/>
+  <ellipse cx="32" cy="57" rx="15" ry="2.4" fill="#000000" opacity="0.28"/>
+  <g transform="translate(4.6 7.6) scale(0.856)">
+    <path d="M30.5 10.5 C34.5 12.5 34.8 16.5 37.6 19.8 C47.5 22.6 53.5 30.8 53.5 40.2 C53.5 49.8 44.5 55.2 32 55.2 C19.5 55.2 10.5 49.8 10.5 40.2 C10.5 31 16.5 23 26.2 20.2 C29.4 17.6 31.6 14.5 30.5 10.5 Z" fill="#FF9DB8" stroke="#D9547C" stroke-width="2.4" stroke-linejoin="round"/>
+    <ellipse cx="21.5" cy="30.5" rx="3.6" ry="6" fill="#FFFFFF" opacity="0.8" transform="rotate(28 21.5 30.5)"/>
+    <ellipse cx="25.5" cy="38.5" rx="2.8" ry="4" fill="#3B1D2A"/>
+    <ellipse cx="38.5" cy="38.5" rx="2.8" ry="4" fill="#3B1D2A"/>
+    <circle cx="26.4" cy="37.1" r="1" fill="#FFFFFF"/>
+    <circle cx="39.4" cy="37.1" r="1" fill="#FFFFFF"/>
+    <ellipse cx="19.5" cy="44" rx="3.2" ry="2" fill="#FF6E97" opacity="0.55"/>
+    <ellipse cx="44.5" cy="44" rx="3.2" ry="2" fill="#FF6E97" opacity="0.55"/>
+    <path d="M28.2 44.2 Q32 49.6 35.8 44.2 Q32 45.8 28.2 44.2 Z" fill="#9C2F52"/>
+  </g>
+</svg>

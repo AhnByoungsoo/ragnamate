@@ -1,0 +1,16 @@
+{
+  "file": "43ww.rrf",
+  "file_bytes": 292196,
+  "chunk_bytes": 1024,
+  "polls": 286,
+  "legacy_bytes_read": 32061796,
+  "incremental_payload_bytes": 292196,
+  "incremental_header_and_anchor_bytes": 116448,
+  "legacy_packets_decoded": 107024,
+  "incremental_packets_decoded": 1955,
+  "legacy_seconds": 3.9665894000063417,
+  "incremental_seconds": 1.1721575999981724,
+  "elapsed_speedup": 3.384006894646698,
+  "read_reduction_percent": 98.72544881765202,
+  "note": "Local growing-file simulation; excludes legacy temporary-copy overhead and full combat/skill passes. Not an in-game latency measurement."
+}

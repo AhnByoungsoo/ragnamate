@@ -1,0 +1,26 @@
+{
+ "checked_at": "2026-09-25",
+ "official_skills": 1185,
+ "reference_links": 376,
+ "sources": [
+  {
+   "url": "https://ro.gnjoy.com/guide/runemidgarts/skilllist.asp",
+   "region": "kRO"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/rathena/rathena/master/db/re/skill_db.yml",
+   "sha256": "e7d6748fc042f2c569083865774f91934ce2fcf8ec3bf201ff18e942e5bc0fdb",
+   "use": "외부 연결 참고, kRO 효과의 실제 발생 원인은 미확정"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/rathena/rathena/master/db/re/status.yml",
+   "sha256": "e7079dcdeb8582153c43ce978cc79c1303bdab51f62a6dcfa6df86749647e58e",
+   "use": "외부 연결 참고, kRO 효과의 실제 발생 원인은 미확정"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/rathena/rathena/master/src/map/status.hpp",
+   "sha256": "ba5bc4c34581995ba3a9e597e4995c8641497d8d6c0e226c209163716bbc187c",
+   "use": "외부 연결 참고, kRO 효과의 실제 발생 원인은 미확정"
+  }
+ ]
+}

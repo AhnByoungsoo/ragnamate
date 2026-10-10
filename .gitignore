@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+logs/
+data/rathena/mob_db.yml
+data/vending.db
+data/item_icons/
+
+# 패킷 조사 스크립트의 출력(리플레이 내용이 섞여 있다)
+tools/packet_research/*.txt
+tools/packet_research/*.pkl
+tools/packet_research/sources/
+
+# 기기마다 다른 것(설정·기록·시세·캐시)은 올리지 않는다 — 다른 기기에서 받아도 서로 덮어쓰지 않게
+config/settings.json
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/item_db.json
+data/sounds/
+data/buff_icons.json
+# 게임 아이콘은 배포하지 않는다 - 기기마다 icon_catalog.json 의 출처에서 받는다
+data/icons/
+price_cache.json

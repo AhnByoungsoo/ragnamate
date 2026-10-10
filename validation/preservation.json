@@ -1,0 +1,47 @@
+[
+  {
+    "path": "config/settings.json",
+    "preserved": true,
+    "sha256": "ae4943b8a56c1572a187bb1a75e630022ed95c5cd8b546aa658575709516d312"
+  },
+  {
+    "path": "config/__init__.py",
+    "preserved": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "data/chat_patterns.json",
+    "preserved": true,
+    "sha256": "0bfe05fb10c27210c91721ee92fbee6cf714ba0b7072857cbfc05fa3d1e219b5"
+  },
+  {
+    "path": "data/guides/job_tree.json",
+    "preserved": true,
+    "sha256": "01c4fa92a04ee92045d216936a28d1260f699f3d241e0ecdf0a45480c3bc8693"
+  },
+  {
+    "path": "data/guides/official_job_changes.json",
+    "preserved": true,
+    "sha256": "e100f1c5f98bc3e2e67d18e30b0e32c01c92bb1a885ce1fde0572eeb70ac6b7d"
+  },
+  {
+    "path": "data/guides/seed_curated.json",
+    "preserved": true,
+    "sha256": "d6bf2b765513d0ec9e6b8a4822aeb8eb3900504a2b19286a88348930f865cf2b"
+  },
+  {
+    "path": "data/item_db.json",
+    "preserved": true,
+    "sha256": "55d6c0e585ecfb1414cfdc759008cf544a8a71b1708d8dc97d7852f7ffda5614"
+  },
+  {
+    "path": "data/market.db",
+    "preserved": true,
+    "sha256": "53d5b93e7e5a3f41c7f2ac868f462812fd4ce1946a34b7e96c29744c02f98117"
+  },
+  {
+    "path": "price_cache.json",
+    "preserved": true,
+    "sha256": "20136128668c2c6ecb1dbee60bea8c1757a51311fdd9f31a194164c5d5158bc9"
+  }
+]

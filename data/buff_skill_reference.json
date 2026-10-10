@@ -1,0 +1,3010 @@
+{
+ "0": {
+  "symbol": "PROVOKE",
+  "skill_id": 6,
+  "name": "프로보크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=6"
+ },
+ "1": {
+  "symbol": "ENDURE",
+  "skill_id": 8,
+  "name": "인듀어 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=8"
+ },
+ "2": {
+  "symbol": "TWOHANDQUICKEN",
+  "skill_id": 60,
+  "name": "투핸드 퀴큰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=60"
+ },
+ "3": {
+  "symbol": "CONCENTRATION",
+  "skill_id": 45,
+  "name": "집중력 향상 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=45"
+ },
+ "5": {
+  "symbol": "CLOAKING",
+  "skill_id": 135,
+  "name": "클로킹 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=135"
+ },
+ "6": {
+  "symbol": "ENCHANTPOISON",
+  "skill_id": 138,
+  "name": "인찬트 포이즌 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=138"
+ },
+ "7": {
+  "symbol": "POISONREACT",
+  "skill_id": 139,
+  "name": "포이즌 리액트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=139"
+ },
+ "8": {
+  "symbol": "QUAGMIRE",
+  "skill_id": 92,
+  "name": "콰그마이어 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=92"
+ },
+ "9": {
+  "symbol": "ANGELUS",
+  "skill_id": 33,
+  "name": "안젤루스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=33"
+ },
+ "11": {
+  "symbol": "CRUCIS",
+  "skill_id": 32,
+  "name": "시그넘 크루시스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=32"
+ },
+ "13": {
+  "symbol": "DEC_AGI",
+  "skill_id": 30,
+  "name": "민첩성 감소 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=30"
+ },
+ "14": {
+  "symbol": "SLOWPOISON",
+  "skill_id": 71,
+  "name": "슬로우 포이즌 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=71"
+ },
+ "15": {
+  "symbol": "IMPOSITIO",
+  "skill_id": 66,
+  "name": "임포시티오 마누스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=66"
+ },
+ "16": {
+  "symbol": "SUFFRAGIUM",
+  "skill_id": 67,
+  "name": "수프라기움 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=67"
+ },
+ "17": {
+  "symbol": "ASPERSIO",
+  "skill_id": 68,
+  "name": "아스페르시오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=68"
+ },
+ "20": {
+  "symbol": "MAGNIFICAT",
+  "skill_id": 74,
+  "name": "마니피캇 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=74"
+ },
+ "21": {
+  "symbol": "GLORIA",
+  "skill_id": 75,
+  "name": "글로리아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=75"
+ },
+ "22": {
+  "symbol": "LEXAETERNA",
+  "skill_id": 78,
+  "name": "렉스 에테르나 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=78"
+ },
+ "23": {
+  "symbol": "ADRENALINE",
+  "skill_id": 111,
+  "name": "아드레날린 러쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=111"
+ },
+ "24": {
+  "symbol": "WEAPONPERFECT",
+  "skill_id": 112,
+  "name": "웨폰 퍼펙션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=112"
+ },
+ "25": {
+  "symbol": "OVERTHRUST",
+  "skill_id": 113,
+  "name": "오버 트러스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=113"
+ },
+ "26": {
+  "symbol": "MAXIMIZE",
+  "skill_id": 114,
+  "name": "맥시마이즈 파워 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=114"
+ },
+ "29": {
+  "symbol": "TRICKDEAD",
+  "skill_id": 143,
+  "name": "죽은척하기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=1&skillid=143"
+ },
+ "30": {
+  "symbol": "SHOUT",
+  "skill_id": 155,
+  "name": "고성방가 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=155"
+ },
+ "31": {
+  "symbol": "ENERGYCOAT",
+  "skill_id": 157,
+  "name": "에너지 코트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=157"
+ },
+ "43": {
+  "symbol": "AUTOCOUNTER",
+  "skill_id": 61,
+  "name": "오토 카운터 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=61"
+ },
+ "44": {
+  "symbol": "SPLASHER",
+  "skill_id": 141,
+  "name": "베넘 스플래셔 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=141"
+ },
+ "51": {
+  "symbol": "NOEQUIPSHIELD",
+  "skill_id": 216,
+  "name": "스트립 쉴드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=216"
+ },
+ "52": {
+  "symbol": "NOEQUIPARMOR",
+  "skill_id": 217,
+  "name": "스트립 아머 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=217"
+ },
+ "53": {
+  "symbol": "NOEQUIPHELM",
+  "skill_id": 218,
+  "name": "스트립 헬름 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=218"
+ },
+ "54": {
+  "symbol": "PROTECTWEAPON",
+  "skill_id": 234,
+  "name": "케미칼 프로텍션(웨폰) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=234"
+ },
+ "55": {
+  "symbol": "PROTECTSHIELD",
+  "skill_id": 235,
+  "name": "케미칼 프로텍션(쉴드) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=235"
+ },
+ "56": {
+  "symbol": "PROTECTARMOR",
+  "skill_id": 236,
+  "name": "케미칼 프로텍션(아머) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=236"
+ },
+ "57": {
+  "symbol": "PROTECTHELM",
+  "skill_id": 237,
+  "name": "케미칼 프로텍션(헬름) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=237"
+ },
+ "58": {
+  "symbol": "AUTOGUARD",
+  "skill_id": 249,
+  "name": "오토 가드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=249"
+ },
+ "59": {
+  "symbol": "REFLECTSHIELD",
+  "skill_id": 252,
+  "name": "리플렉트 쉴드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=252"
+ },
+ "60": {
+  "symbol": "DEVOTION",
+  "skill_id": 255,
+  "name": "헌신 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=255"
+ },
+ "61": {
+  "symbol": "PROVIDENCE",
+  "skill_id": 256,
+  "name": "신의 뜻 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=256"
+ },
+ "62": {
+  "symbol": "DEFENDER",
+  "skill_id": 257,
+  "name": "디펜더 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=257"
+ },
+ "63": {
+  "symbol": "MAGICROD",
+  "skill_id": 276,
+  "name": "매직 로드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=276"
+ },
+ "65": {
+  "symbol": "AUTOSPELL",
+  "skill_id": 279,
+  "name": "오토 스펠 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=279"
+ },
+ "68": {
+  "symbol": "SPEARQUICKEN",
+  "skill_id": 258,
+  "name": "스피어 퀴큰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=258"
+ },
+ "69": {
+  "symbol": "BDPLAYING",
+  "skill_id": 305,
+  "name": "앵콜 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=305"
+ },
+ "70": {
+  "symbol": "WHISTLE",
+  "skill_id": 319,
+  "name": "휘파람 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=319"
+ },
+ "71": {
+  "symbol": "ASSASSINCROSS",
+  "skill_id": 320,
+  "name": "석양의 어세신 크로스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=320"
+ },
+ "72": {
+  "symbol": "POEMBRAGI",
+  "skill_id": 321,
+  "name": "브라기의 시 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=321"
+ },
+ "73": {
+  "symbol": "APPLEIDUN",
+  "skill_id": 322,
+  "name": "이둔의 사과 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=322"
+ },
+ "74": {
+  "symbol": "HUMMING",
+  "skill_id": 327,
+  "name": "흥얼거림 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=327"
+ },
+ "75": {
+  "symbol": "DONTFORGETME",
+  "skill_id": 328,
+  "name": "나를 잊지 말아요 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=328"
+ },
+ "76": {
+  "symbol": "FORTUNEKISS",
+  "skill_id": 329,
+  "name": "행운의 키스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=329"
+ },
+ "77": {
+  "symbol": "SERVICEFORYOU",
+  "skill_id": 330,
+  "name": "당신을 위한 서비스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=330"
+ },
+ "78": {
+  "symbol": "RICHMANKIM",
+  "skill_id": 307,
+  "name": "김서방 돈벌었네 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=307"
+ },
+ "79": {
+  "symbol": "ETERNALCHAOS",
+  "skill_id": 308,
+  "name": "영원의 혼돈 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=308"
+ },
+ "80": {
+  "symbol": "DRUMBATTLEFIELD",
+  "skill_id": 309,
+  "name": "전장의 북소리 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=309"
+ },
+ "81": {
+  "symbol": "RINGNIBELUNGEN",
+  "skill_id": 310,
+  "name": "니벨룽겐의 반지 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=310"
+ },
+ "82": {
+  "symbol": "ROKISWEIL",
+  "skill_id": 311,
+  "name": "울부짖는 로키 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=311"
+ },
+ "83": {
+  "symbol": "INTOABYSS",
+  "skill_id": 312,
+  "name": "심연속으로 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=312"
+ },
+ "84": {
+  "symbol": "SIEGFRIED",
+  "skill_id": 313,
+  "name": "불사신 지크프리드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=313"
+ },
+ "86": {
+  "symbol": "EXPLOSIONSPIRITS",
+  "skill_id": 270,
+  "name": "폭기(爆氣) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=270"
+ },
+ "87": {
+  "symbol": "STEELBODY",
+  "skill_id": 268,
+  "name": "금강불괴(金剛不壞) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=268"
+ },
+ "88": {
+  "symbol": "EXTREMITYFIST",
+  "skill_id": 271,
+  "name": "아수라 패황권(阿修羅覇凰拳) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=271"
+ },
+ "90": {
+  "symbol": "PROPERTYFIRE",
+  "skill_id": 280,
+  "name": "프레임 런쳐 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=280"
+ },
+ "91": {
+  "symbol": "PROPERTYWATER",
+  "skill_id": 281,
+  "name": "프로스트 웨폰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=281"
+ },
+ "92": {
+  "symbol": "PROPERTYWIND",
+  "skill_id": 282,
+  "name": "라이트닝 로더 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=282"
+ },
+ "93": {
+  "symbol": "PROPERTYGROUND",
+  "skill_id": 283,
+  "name": "사이즈믹 웨폰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=283"
+ },
+ "103": {
+  "symbol": "AURABLADE",
+  "skill_id": 355,
+  "name": "오라 블레이드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=355"
+ },
+ "104": {
+  "symbol": "PARRYING",
+  "skill_id": 356,
+  "name": "패링 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=356"
+ },
+ "105": {
+  "symbol": "LKCONCENTRATION",
+  "skill_id": 357,
+  "name": "컨센트레이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=357"
+ },
+ "106": {
+  "symbol": "TENSIONRELAX",
+  "skill_id": 358,
+  "name": "텐션 릴렉스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=358"
+ },
+ "109": {
+  "symbol": "GOSPEL",
+  "skill_id": 369,
+  "name": "가스펠 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=369"
+ },
+ "113": {
+  "symbol": "MAGICPOWER",
+  "skill_id": 366,
+  "name": "마법력 증폭 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=366"
+ },
+ "114": {
+  "symbol": "EDP",
+  "skill_id": 378,
+  "name": "치명적인 독 부여 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=378"
+ },
+ "115": {
+  "symbol": "TRUESIGHT",
+  "skill_id": 380,
+  "name": "트루 사이트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=380"
+ },
+ "116": {
+  "symbol": "WINDWALK",
+  "skill_id": 383,
+  "name": "윈드 워크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=383"
+ },
+ "117": {
+  "symbol": "MELTDOWN",
+  "skill_id": 384,
+  "name": "멜트다운 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=384"
+ },
+ "118": {
+  "symbol": "CARTBOOST",
+  "skill_id": 387,
+  "name": "카트 부스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=387"
+ },
+ "119": {
+  "symbol": "CHASEWALK",
+  "skill_id": 389,
+  "name": "체이스 워크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=389"
+ },
+ "120": {
+  "symbol": "SWORDREJECT",
+  "skill_id": 390,
+  "name": "소드 리젝트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=390"
+ },
+ "121": {
+  "symbol": "MARIONETTE_MASTER",
+  "skill_id": 396,
+  "name": "마리오네트 컨트롤 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=396"
+ },
+ "125": {
+  "symbol": "JOINTBEAT",
+  "skill_id": 399,
+  "name": "조인트 비트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=399"
+ },
+ "126": {
+  "symbol": "MINDBREAKER",
+  "skill_id": 402,
+  "name": "마인드 브레이커 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=402"
+ },
+ "127": {
+  "symbol": "MEMORIZE",
+  "skill_id": 403,
+  "name": "메모라이즈 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=403"
+ },
+ "128": {
+  "symbol": "FOGWALL",
+  "skill_id": 404,
+  "name": "월 오브 포그 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=404"
+ },
+ "129": {
+  "symbol": "SPIDERWEB",
+  "skill_id": 405,
+  "name": "스파이더 웹 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=405"
+ },
+ "132": {
+  "symbol": "AUTOBERSERK",
+  "skill_id": 146,
+  "name": "오토 버서크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=146"
+ },
+ "133": {
+  "symbol": "RUN",
+  "skill_id": 411,
+  "name": "달리기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=411"
+ },
+ "135": {
+  "symbol": "STORMKICK_ON",
+  "skill_id": 412,
+  "name": "회오리 준비 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=412"
+ },
+ "137": {
+  "symbol": "DOWNKICK_ON",
+  "skill_id": 414,
+  "name": "찍기 준비 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=414"
+ },
+ "139": {
+  "symbol": "TURNKICK_ON",
+  "skill_id": 416,
+  "name": "차기 준비 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=416"
+ },
+ "141": {
+  "symbol": "COUNTER_ON",
+  "skill_id": 418,
+  "name": "카운터 준비 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=418"
+ },
+ "143": {
+  "symbol": "DODGE_ON",
+  "skill_id": 420,
+  "name": "낙법 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=420"
+ },
+ "147": {
+  "symbol": "ADRENALINE2",
+  "skill_id": 459,
+  "name": "풀 아드레날린 러쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=459"
+ },
+ "153": {
+  "symbol": "KAITE",
+  "skill_id": 465,
+  "name": "카이트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=465"
+ },
+ "154": {
+  "symbol": "SWOO",
+  "skill_id": 470,
+  "name": "에스우 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=470"
+ },
+ "156": {
+  "symbol": "KAIZEL",
+  "skill_id": 462,
+  "name": "카이젤 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=462"
+ },
+ "157": {
+  "symbol": "KAAHI",
+  "skill_id": 463,
+  "name": "카아히 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=463"
+ },
+ "158": {
+  "symbol": "KAUPE",
+  "skill_id": 464,
+  "name": "카우프 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=464"
+ },
+ "159": {
+  "symbol": "SMA_READY",
+  "skill_id": 469,
+  "name": "에스마 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=469"
+ },
+ "161": {
+  "symbol": "ONEHANDQUICKEN",
+  "skill_id": 495,
+  "name": "원핸드 퀴큰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=495"
+ },
+ "169": {
+  "symbol": "SUN_COMFORT",
+  "skill_id": 431,
+  "name": "태양의 안락함 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=431"
+ },
+ "170": {
+  "symbol": "MOON_COMFORT",
+  "skill_id": 432,
+  "name": "달의 안락함 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=432"
+ },
+ "171": {
+  "symbol": "STAR_COMFORT",
+  "skill_id": 433,
+  "name": "별의 안락함 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=433"
+ },
+ "181": {
+  "symbol": "PRESERVE",
+  "skill_id": 475,
+  "name": "프리저브 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=475"
+ },
+ "186": {
+  "symbol": "DOUBLECASTING",
+  "skill_id": 482,
+  "name": "더블 캐스팅 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=482"
+ },
+ "188": {
+  "symbol": "OVERTHRUSTMAX",
+  "skill_id": 486,
+  "name": "오버트러스트 맥스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=486"
+ },
+ "190": {
+  "symbol": "HERMODE",
+  "skill_id": 488,
+  "name": "헤르모드의 지팡이 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=488"
+ },
+ "191": {
+  "symbol": "TAROTCARD",
+  "skill_id": 489,
+  "name": "운명의 타로 카드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=489"
+ },
+ "197": {
+  "symbol": "CR_SHRINK",
+  "skill_id": 1002,
+  "name": "슈링크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=1002"
+ },
+ "198": {
+  "symbol": "WZ_SIGHTBLASTER",
+  "skill_id": 1006,
+  "name": "사이트 블래스터 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=1006"
+ },
+ "199": {
+  "symbol": "DC_WINKCHARM",
+  "skill_id": 1011,
+  "name": "매혹의 윙크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=1011"
+ },
+ "201": {
+  "symbol": "RG_CCONFINE_S",
+  "skill_id": 1005,
+  "name": "클로즈 컨파인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=1005"
+ },
+ "203": {
+  "symbol": "GS_MADNESSCANCEL",
+  "skill_id": 504,
+  "name": "매드니스 캔슬러 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=504"
+ },
+ "204": {
+  "symbol": "GS_GATLINGFEVER",
+  "skill_id": 517,
+  "name": "개틀링 피버 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=517"
+ },
+ "205": {
+  "symbol": "EARTHSCROLL",
+  "skill_id": 423,
+  "name": "즐거운 휴식 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=423"
+ },
+ "206": {
+  "symbol": "NJ_UTSUSEMI",
+  "skill_id": 531,
+  "name": "매미허물 벗기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=531"
+ },
+ "207": {
+  "symbol": "NJ_BUNSINJYUTSU",
+  "skill_id": 532,
+  "name": "환영분신 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=532"
+ },
+ "208": {
+  "symbol": "NJ_NEN",
+  "skill_id": 543,
+  "name": "염(念) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=543"
+ },
+ "209": {
+  "symbol": "GS_ADJUSTMENT",
+  "skill_id": 505,
+  "name": "애드저스트먼트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=505"
+ },
+ "210": {
+  "symbol": "GS_ACCURACY",
+  "skill_id": 506,
+  "name": "인크리징 어큐러시 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=506"
+ },
+ "211": {
+  "symbol": "NJ_SUITON",
+  "skill_id": 538,
+  "name": "수둔(水遁) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=538"
+ },
+ "316": {
+  "symbol": "ENCHANTBLADE",
+  "skill_id": 2001,
+  "name": "엔첸트 블레이드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2001"
+ },
+ "317": {
+  "symbol": "DEATHBOUND",
+  "skill_id": 2003,
+  "name": "데스 바운드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2003"
+ },
+ "328": {
+  "symbol": "VENOMIMPRESS",
+  "skill_id": 2021,
+  "name": "베놈 임프레스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2021"
+ },
+ "329": {
+  "symbol": "EPICLESIS",
+  "skill_id": 2044,
+  "name": "에피클레시스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2044"
+ },
+ "330": {
+  "symbol": "ORATIO",
+  "skill_id": 2046,
+  "name": "오라티오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2046"
+ },
+ "331": {
+  "symbol": "LAUDAAGNUS",
+  "skill_id": 2047,
+  "name": "라우다아그누스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2047"
+ },
+ "332": {
+  "symbol": "LAUDARAMUS",
+  "skill_id": 2048,
+  "name": "라우다라무스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2048"
+ },
+ "333": {
+  "symbol": "CLOAKINGEXCEED",
+  "skill_id": 2033,
+  "name": "클로킹 익시드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2033"
+ },
+ "334": {
+  "symbol": "HALLUCINATIONWALK",
+  "skill_id": 2035,
+  "name": "할루시네이션 워크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2035"
+ },
+ "336": {
+  "symbol": "RENOVATIO",
+  "skill_id": 2050,
+  "name": "레노바티오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2050"
+ },
+ "337": {
+  "symbol": "WEAPONBLOCKING",
+  "skill_id": 2028,
+  "name": "웨폰 블로킹 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2028"
+ },
+ "339": {
+  "symbol": "ROLLINGCUTTER",
+  "skill_id": 2036,
+  "name": "롤링 커터 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2036"
+ },
+ "340": {
+  "symbol": "EXPIATIO",
+  "skill_id": 2053,
+  "name": "엑스피아티오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2053"
+ },
+ "341": {
+  "symbol": "POISONINGWEAPON",
+  "skill_id": 2027,
+  "name": "포이즈닝 웨폰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2027"
+ },
+ "350": {
+  "symbol": "DUPLELIGHT",
+  "skill_id": 2054,
+  "name": "듀플레 라이트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2054"
+ },
+ "352": {
+  "symbol": "FEARBREEZE",
+  "skill_id": 2234,
+  "name": "피어브리즈 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2234"
+ },
+ "353": {
+  "symbol": "ELECTRICSHOCKER",
+  "skill_id": 2238,
+  "name": "일렉트릭 쇼커 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2238"
+ },
+ "354": {
+  "symbol": "MARSHOFABYSS",
+  "skill_id": 2205,
+  "name": "마쉬 오브 어비스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2205"
+ },
+ "355": {
+  "symbol": "RECOGNIZEDSPELL",
+  "skill_id": 2206,
+  "name": "리코그나이즈드 스펠 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2206"
+ },
+ "356": {
+  "symbol": "STASIS",
+  "skill_id": 2209,
+  "name": "스테이시스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2209"
+ },
+ "358": {
+  "symbol": "WUGDASH",
+  "skill_id": 2242,
+  "name": "워그 대쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2242"
+ },
+ "359": {
+  "symbol": "WUGBITE",
+  "skill_id": 2244,
+  "name": "워그 바이트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2244"
+ },
+ "360": {
+  "symbol": "CAMOUFLAGE",
+  "skill_id": 2247,
+  "name": "카무플라쥬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2247"
+ },
+ "361": {
+  "symbol": "ACCELERATION",
+  "skill_id": 2262,
+  "name": "액셀레이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2262"
+ },
+ "362": {
+  "symbol": "HOVERING",
+  "skill_id": 2263,
+  "name": "호버링 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2263"
+ },
+ "374": {
+  "symbol": "SHAPESHIFT",
+  "skill_id": 2268,
+  "name": "셰이프 쉬프트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2268"
+ },
+ "375": {
+  "symbol": "INFRAREDSCAN",
+  "skill_id": 2270,
+  "name": "인프라레드 스캔 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2270"
+ },
+ "376": {
+  "symbol": "MAGNETICFIELD",
+  "skill_id": 2272,
+  "name": "마그네틱 필드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2272"
+ },
+ "377": {
+  "symbol": "NEUTRALBARRIER",
+  "skill_id": 2273,
+  "name": "뉴트럴 배리어 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2273"
+ },
+ "379": {
+  "symbol": "STEALTHFIELD",
+  "skill_id": 2274,
+  "name": "스텔스 필드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2274"
+ },
+ "385": {
+  "symbol": "REPRODUCE",
+  "skill_id": 2285,
+  "name": "리프로듀스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2285"
+ },
+ "390": {
+  "symbol": "LG_REFLECTDAMAGE",
+  "skill_id": 2311,
+  "name": "리플렉트 데미지 리덕션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2311"
+ },
+ "391": {
+  "symbol": "FORCEOFVANGUARD",
+  "skill_id": 2313,
+  "name": "포스 오브 뱅가드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2313"
+ },
+ "393": {
+  "symbol": "AUTOSHADOWSPELL",
+  "skill_id": 2286,
+  "name": "오토 섀도우 스펠 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2286"
+ },
+ "394": {
+  "symbol": "SHADOWFORM",
+  "skill_id": 2287,
+  "name": "섀도우 폼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2287"
+ },
+ "395": {
+  "symbol": "RAID",
+  "skill_id": 214,
+  "name": "기습 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=214"
+ },
+ "399": {
+  "symbol": "BODYPAINT",
+  "skill_id": 2289,
+  "name": "바디 페인팅 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2289"
+ },
+ "400": {
+  "symbol": "EXEEDBREAK",
+  "skill_id": 2316,
+  "name": "익시드 브레이크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2316"
+ },
+ "401": {
+  "symbol": "ADORAMUS",
+  "skill_id": 2040,
+  "name": "아도라무스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2040"
+ },
+ "402": {
+  "symbol": "PRESTIGE",
+  "skill_id": 2318,
+  "name": "프레스티지 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2318"
+ },
+ "403": {
+  "symbol": "INVISIBILITY",
+  "skill_id": 2290,
+  "name": "인비지빌리티 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2290"
+ },
+ "404": {
+  "symbol": "DEADLYINFECT",
+  "skill_id": 2291,
+  "name": "데들리 인펙트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2291"
+ },
+ "405": {
+  "symbol": "BANDING",
+  "skill_id": 2319,
+  "name": "밴딩 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2319"
+ },
+ "407": {
+  "symbol": "INSPIRATION",
+  "skill_id": 2325,
+  "name": "인스피레이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2325"
+ },
+ "408": {
+  "symbol": "ENERVATION",
+  "skill_id": 2292,
+  "name": "마스커레이드-이너베이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2292"
+ },
+ "409": {
+  "symbol": "GROOMY",
+  "skill_id": 2293,
+  "name": "마스커레이드-그루미 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2293"
+ },
+ "410": {
+  "symbol": "RAISINGDRAGON",
+  "skill_id": 2338,
+  "name": "잠룡승천(潛龍昇天) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2338"
+ },
+ "411": {
+  "symbol": "IGNORANCE",
+  "skill_id": 2294,
+  "name": "마스커레이드-이그노어런스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2294"
+ },
+ "412": {
+  "symbol": "LAZINESS",
+  "skill_id": 2295,
+  "name": "마스커레이드-레이지네스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2295"
+ },
+ "413": {
+  "symbol": "LIGHTNINGWALK",
+  "skill_id": 2335,
+  "name": "섬전보(閃電步) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2335"
+ },
+ "415": {
+  "symbol": "UNLUCKY",
+  "skill_id": 2296,
+  "name": "마스커레이드-언럭키 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2296"
+ },
+ "417": {
+  "symbol": "CURSEDCIRCLE_TARGET",
+  "skill_id": 2334,
+  "name": "주박진(呪縛陣) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2334"
+ },
+ "418": {
+  "symbol": "WEAKNESS",
+  "skill_id": 2297,
+  "name": "마스커레이드-위크니스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2297"
+ },
+ "419": {
+  "symbol": "CRESCENTELBOW",
+  "skill_id": 2333,
+  "name": "파쇄주(破碎柱) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2333"
+ },
+ "421": {
+  "symbol": "STRIPACCESSARY",
+  "skill_id": 2298,
+  "name": "스트립 액세서리 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2298"
+ },
+ "422": {
+  "symbol": "MANHOLE",
+  "skill_id": 2299,
+  "name": "맨홀 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=2299"
+ },
+ "425": {
+  "symbol": "GENTLETOUCH_ENERGYGAIN",
+  "skill_id": 2346,
+  "name": "점혈-구(點穴-球) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2346"
+ },
+ "426": {
+  "symbol": "GENTLETOUCH_CHANGE",
+  "skill_id": 2347,
+  "name": "점혈-반(點穴-反) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2347"
+ },
+ "427": {
+  "symbol": "GENTLETOUCH_REVITALIZE",
+  "skill_id": 2348,
+  "name": "점혈-활(點穴-活) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2348"
+ },
+ "429": {
+  "symbol": "SWING",
+  "skill_id": 2350,
+  "name": "스윙 댄스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2350"
+ },
+ "430": {
+  "symbol": "SYMPHONY_LOVE",
+  "skill_id": 2351,
+  "name": "연인들을 위한 심포니 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2351"
+ },
+ "432": {
+  "symbol": "SPELLFIST",
+  "skill_id": 2445,
+  "name": "스펠 피스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2445"
+ },
+ "435": {
+  "symbol": "DEEP_SLEEP",
+  "skill_id": 2455,
+  "name": "아를로 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2455"
+ },
+ "437": {
+  "symbol": "COLD",
+  "skill_id": 2447,
+  "name": "다이아몬드 더스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2447"
+ },
+ "442": {
+  "symbol": "RUSH_WINDMILL",
+  "skill_id": 2381,
+  "name": "풍차를 향해 돌격 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2381"
+ },
+ "443": {
+  "symbol": "ECHOSONG",
+  "skill_id": 2382,
+  "name": "메아리의 노래 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2382"
+ },
+ "444": {
+  "symbol": "HARMONIZE",
+  "skill_id": 2383,
+  "name": "하모나이즈 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2383"
+ },
+ "445": {
+  "symbol": "STRIKING",
+  "skill_id": 2451,
+  "name": "스트라이킹 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2451"
+ },
+ "446": {
+  "symbol": "WARMER",
+  "skill_id": 2452,
+  "name": "워머 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2452"
+ },
+ "447": {
+  "symbol": "MOONLIT_SERENADE",
+  "skill_id": 2352,
+  "name": "달빛의 세레나데 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=2352"
+ },
+ "450": {
+  "symbol": "ANALYZE",
+  "skill_id": 2271,
+  "name": "애널라이즈 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2271"
+ },
+ "461": {
+  "symbol": "GN_CARTBOOST",
+  "skill_id": 2478,
+  "name": "카트 부스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2478"
+ },
+ "463": {
+  "symbol": "THORNS_TRAP",
+  "skill_id": 2479,
+  "name": "가시나무 덫 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2479"
+ },
+ "464": {
+  "symbol": "BLOOD_SUCKER",
+  "skill_id": 2480,
+  "name": "블러드 서커 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2480"
+ },
+ "470": {
+  "symbol": "MANDRAGORA",
+  "skill_id": 2492,
+  "name": "하울링 오브 만드라고라 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2492"
+ },
+ "472": {
+  "symbol": "AB_SECRAMENT",
+  "skill_id": 2515,
+  "name": "세크라멘트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=2515"
+ },
+ "473": {
+  "symbol": "ASSUMPTIO2",
+  "skill_id": 361,
+  "name": "아숨프티오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=361"
+ },
+ "490": {
+  "symbol": "VACUUM_EXTREME",
+  "skill_id": 2453,
+  "name": "바큠 익스트림 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2453"
+ },
+ "567": {
+  "symbol": "FIRE_INSIGNIA",
+  "skill_id": 2465,
+  "name": "파이어 인시그니아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2465"
+ },
+ "568": {
+  "symbol": "WATER_INSIGNIA",
+  "skill_id": 2466,
+  "name": "워터 인시그니아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2466"
+ },
+ "569": {
+  "symbol": "WIND_INSIGNIA",
+  "skill_id": 2467,
+  "name": "윈드 인시그니아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2467"
+ },
+ "570": {
+  "symbol": "EARTH_INSIGNIA",
+  "skill_id": 2468,
+  "name": "어스 인시그니아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2468"
+ },
+ "645": {
+  "symbol": "KO_JYUMONJIKIRI",
+  "skill_id": 3004,
+  "name": "십자 베기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3004"
+ },
+ "646": {
+  "symbol": "MEIKYOUSISUI",
+  "skill_id": 3011,
+  "name": "명경지수 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3011"
+ },
+ "651": {
+  "symbol": "KYOUGAKU",
+  "skill_id": 3013,
+  "name": "환술 - 경악 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3013"
+ },
+ "652": {
+  "symbol": "IZAYOI",
+  "skill_id": 3022,
+  "name": "열 여섯번째의 밤 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3022"
+ },
+ "653": {
+  "symbol": "ZENKAI",
+  "skill_id": 3020,
+  "name": "술식 전개 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3020"
+ },
+ "654": {
+  "symbol": "KG_KAGEHUMI",
+  "skill_id": 3023,
+  "name": "그림자 밟기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3023"
+ },
+ "655": {
+  "symbol": "KYOMU",
+  "skill_id": 3024,
+  "name": "허무의 그림자 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3024"
+ },
+ "656": {
+  "symbol": "KAGEMUSYA",
+  "skill_id": 3025,
+  "name": "그림자무사 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3025"
+ },
+ "657": {
+  "symbol": "ZANGETSU",
+  "skill_id": 3026,
+  "name": "일그러진 초승달 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3026"
+ },
+ "659": {
+  "symbol": "GENSOU",
+  "skill_id": 3027,
+  "name": "흐린 달빛의 환상 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3027"
+ },
+ "660": {
+  "symbol": "AKAITSUKI",
+  "skill_id": 3029,
+  "name": "불길한 붉은 달빛 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=9&skillid=3029"
+ },
+ "716": {
+  "symbol": "OFFERTORIUM",
+  "skill_id": 5011,
+  "name": "오페르토리움 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=5011"
+ },
+ "717": {
+  "symbol": "TELEKINESIS_INTENSE",
+  "skill_id": 5012,
+  "name": "텔레키네틱 인텐스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=5012"
+ },
+ "720": {
+  "symbol": "FULL_THROTTLE",
+  "skill_id": 5014,
+  "name": "풀 스로틀 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=7&skillid=5014"
+ },
+ "723": {
+  "symbol": "KINGS_GRACE",
+  "skill_id": 5013,
+  "name": "왕의 가호 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=5013"
+ },
+ "734": {
+  "symbol": "ILLUSIONDOPING",
+  "skill_id": 5003,
+  "name": "환각 도핑 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=5003"
+ },
+ "740": {
+  "symbol": "FLASHCOMBO",
+  "skill_id": 5009,
+  "name": "섬광연격(閃光連擊) 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=5009"
+ },
+ "752": {
+  "symbol": "B_TRAP",
+  "skill_id": 2555,
+  "name": "바인드 트랩 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2555"
+ },
+ "753": {
+  "symbol": "E_CHAIN",
+  "skill_id": 2558,
+  "name": "이터널 체인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2558"
+ },
+ "755": {
+  "symbol": "C_MARKER",
+  "skill_id": 2560,
+  "name": "크림즌 마커 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2560"
+ },
+ "756": {
+  "symbol": "H_MINE",
+  "skill_id": 2562,
+  "name": "하울링 마인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2562"
+ },
+ "758": {
+  "symbol": "P_ALTER",
+  "skill_id": 2563,
+  "name": "플래티넘 알터 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2563"
+ },
+ "759": {
+  "symbol": "HEAT_BARREL",
+  "skill_id": 2568,
+  "name": "히트 배럴 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2568"
+ },
+ "760": {
+  "symbol": "ANTI_M_BLAST",
+  "skill_id": 2569,
+  "name": "안티 매터리얼 블래스트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=2569"
+ },
+ "893": {
+  "symbol": "SU_STOOP",
+  "skill_id": 5022,
+  "name": "웅크리기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5022"
+ },
+ "894": {
+  "symbol": "CATNIPPOWDER",
+  "skill_id": 5027,
+  "name": "개박하 가루 뿌리기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5027"
+ },
+ "896": {
+  "symbol": "SV_ROOTTWIST",
+  "skill_id": 5029,
+  "name": "개다래 뿌리 휘감기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5029"
+ },
+ "917": {
+  "symbol": "BITESCAR",
+  "skill_id": 5032,
+  "name": "타로우의 상처 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5032"
+ },
+ "918": {
+  "symbol": "ARCLOUSEDASH",
+  "skill_id": 5035,
+  "name": "아크라우스 대시 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5035"
+ },
+ "919": {
+  "symbol": "TUNAPARTY",
+  "skill_id": 5039,
+  "name": "참치 파티 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5039"
+ },
+ "920": {
+  "symbol": "SHRIMP",
+  "skill_id": 5040,
+  "name": "새우 떼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5040"
+ },
+ "921": {
+  "symbol": "FRESHSHRIMP",
+  "skill_id": 5041,
+  "name": "새우의 신선함 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5041"
+ },
+ "933": {
+  "symbol": "SUHIDE",
+  "skill_id": 5020,
+  "name": "숨기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=11&skillid=5020"
+ },
+ "966": {
+  "symbol": "GS_MAGICAL_BULLET",
+  "skill_id": 507,
+  "name": "매지컬 블릿 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=10&skillid=507"
+ },
+ "1035": {
+  "symbol": "LIGHTOFMOON",
+  "skill_id": 2574,
+  "name": "달의 빛 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2574"
+ },
+ "1036": {
+  "symbol": "LIGHTOFSUN",
+  "skill_id": 2590,
+  "name": "태양의 빛 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2590"
+ },
+ "1037": {
+  "symbol": "LIGHTOFSTAR",
+  "skill_id": 2577,
+  "name": "별의 빛 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2577"
+ },
+ "1038": {
+  "symbol": "LUNARSTANCE",
+  "skill_id": 2575,
+  "name": "달의 자세 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2575"
+ },
+ "1039": {
+  "symbol": "UNIVERSESTANCE",
+  "skill_id": 2583,
+  "name": "우주의 자세 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2583"
+ },
+ "1040": {
+  "symbol": "SUNSTANCE",
+  "skill_id": 2591,
+  "name": "태양의 자세 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2591"
+ },
+ "1041": {
+  "symbol": "FLASHKICK",
+  "skill_id": 2580,
+  "name": "섬광각 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2580"
+ },
+ "1042": {
+  "symbol": "NEWMOON",
+  "skill_id": 2579,
+  "name": "삭월각 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2579"
+ },
+ "1043": {
+  "symbol": "STARSTANCE",
+  "skill_id": 2578,
+  "name": "별의 자세 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2578"
+ },
+ "1047": {
+  "symbol": "CREATINGSTAR",
+  "skill_id": 2587,
+  "name": "창성의 서 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2587"
+ },
+ "1048": {
+  "symbol": "FALLINGSTAR",
+  "skill_id": 2584,
+  "name": "유성 낙하 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2584"
+ },
+ "1049": {
+  "symbol": "NOVAEXPLOSING",
+  "skill_id": 2582,
+  "name": "신성 폭발 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2582"
+ },
+ "1050": {
+  "symbol": "GRAVITYCONTROL",
+  "skill_id": 2585,
+  "name": "중력 조절 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2585"
+ },
+ "1053": {
+  "symbol": "SOULCOLLECT",
+  "skill_id": 2609,
+  "name": "영혼 축적 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2609"
+ },
+ "1054": {
+  "symbol": "SOULREAPER",
+  "skill_id": 2607,
+  "name": "영혼 수확 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2607"
+ },
+ "1055": {
+  "symbol": "SOULUNITY",
+  "skill_id": 2605,
+  "name": "영혼 결속 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2605"
+ },
+ "1056": {
+  "symbol": "SOULSHADOW",
+  "skill_id": 2597,
+  "name": "그림자의 영혼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2597"
+ },
+ "1057": {
+  "symbol": "SOULFAIRY",
+  "skill_id": 2599,
+  "name": "요정의 영혼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2599"
+ },
+ "1058": {
+  "symbol": "SOULFALCON",
+  "skill_id": 2598,
+  "name": "매의 영혼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2598"
+ },
+ "1059": {
+  "symbol": "SOULGOLEM",
+  "skill_id": 2596,
+  "name": "고렘의 영혼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2596"
+ },
+ "1060": {
+  "symbol": "SOULDIVISION",
+  "skill_id": 2606,
+  "name": "영혼 분열 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2606"
+ },
+ "1064": {
+  "symbol": "SP_SHA",
+  "skill_id": 2603,
+  "name": "에스하 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2603"
+ },
+ "1089": {
+  "symbol": "ADAPTATION",
+  "skill_id": 304,
+  "name": "임기응변 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=5&skillid=304"
+ },
+ "1107": {
+  "symbol": "WEAPONBLOCK_ON",
+  "skill_id": 5292,
+  "name": "임팩트 크레이터 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5292"
+ },
+ "1122": {
+  "symbol": "BASILICA_BUFF",
+  "skill_id": 362,
+  "name": "바실리카 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=6&skillid=362"
+ },
+ "1125": {
+  "symbol": "SOULCURSE",
+  "skill_id": 2601,
+  "name": "사악한 영혼의 저주 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=8&skillid=2601"
+ },
+ "1142": {
+  "symbol": "MAGIC_POISON",
+  "skill_id": 2213,
+  "name": "커미트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2213"
+ },
+ "1150": {
+  "symbol": "DEADLY_DEFEASANCE",
+  "skill_id": 5214,
+  "name": "데들리 프로젝션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5214"
+ },
+ "1151": {
+  "symbol": "CLIMAX_DES_HU",
+  "skill_id": 5215,
+  "name": "디스트럭티브 허리케인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5215"
+ },
+ "1152": {
+  "symbol": "CLIMAX",
+  "skill_id": 5232,
+  "name": "클라이막스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5232"
+ },
+ "1160": {
+  "symbol": "POWERFUL_FAITH",
+  "skill_id": 5238,
+  "name": "강인한 신념 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5238"
+ },
+ "1161": {
+  "symbol": "SINCERE_FAITH",
+  "skill_id": 5242,
+  "name": "신실한 신념 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5242"
+ },
+ "1162": {
+  "symbol": "FIRM_FAITH",
+  "skill_id": 5239,
+  "name": "굳건한 신념 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5239"
+ },
+ "1165": {
+  "symbol": "HELLS_PLANT_ARMOR",
+  "skill_id": 2490,
+  "name": "헬즈 플랜트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2490"
+ },
+ "1172": {
+  "symbol": "SERVANTWEAPON",
+  "skill_id": 5201,
+  "name": "서번트 웨폰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5201"
+ },
+ "1173": {
+  "symbol": "SERVANT_SIGN",
+  "skill_id": 5203,
+  "name": "서번트 웨폰-사인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5203"
+ },
+ "1174": {
+  "symbol": "CHARGINGPIERCE",
+  "skill_id": 5206,
+  "name": "챠징 피어스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5206"
+ },
+ "1176": {
+  "symbol": "DRAGONIC_AURA",
+  "skill_id": 5210,
+  "name": "드래고닉 오라 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5210"
+ },
+ "1178": {
+  "symbol": "VIGOR",
+  "skill_id": 5212,
+  "name": "비고르 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5212"
+ },
+ "1182": {
+  "symbol": "CLIMAX_EARTH",
+  "skill_id": 5218,
+  "name": "바일런트 퀘이크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5218"
+ },
+ "1183": {
+  "symbol": "CLIMAX_BLOOM",
+  "skill_id": 5222,
+  "name": "올 블룸 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5222"
+ },
+ "1184": {
+  "symbol": "CLIMAX_CRYIMP",
+  "skill_id": 5225,
+  "name": "크리스탈 임팩트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5225"
+ },
+ "1190": {
+  "symbol": "HOLY_OIL",
+  "skill_id": 5241,
+  "name": "성유세례 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5241"
+ },
+ "1192": {
+  "symbol": "SHADOW_EXCEED",
+  "skill_id": 5285,
+  "name": "쉐도우 익시드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5285"
+ },
+ "1193": {
+  "symbol": "DANCING_KNIFE",
+  "skill_id": 5286,
+  "name": "댄싱 나이프 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5286"
+ },
+ "1194": {
+  "symbol": "POTENT_VENOM",
+  "skill_id": 5290,
+  "name": "포텐트 베넘 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5290"
+ },
+ "1196": {
+  "symbol": "E_SLASH_COUNT",
+  "skill_id": 5289,
+  "name": "이터널 슬래쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5289"
+ },
+ "1197": {
+  "symbol": "MEDIALE",
+  "skill_id": 5269,
+  "name": "메디알레 보툼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5269"
+ },
+ "1198": {
+  "symbol": "A_VITA",
+  "skill_id": 5271,
+  "name": "아르구투스 비타 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5271"
+ },
+ "1199": {
+  "symbol": "A_TELUM",
+  "skill_id": 5272,
+  "name": "아르구투스 텔룸 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5272"
+ },
+ "1200": {
+  "symbol": "PRE_ACIES",
+  "skill_id": 5275,
+  "name": "프레센스 아치에스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5275"
+ },
+ "1201": {
+  "symbol": "COMPETENTIA",
+  "skill_id": 5278,
+  "name": "콤페텐티아 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5278"
+ },
+ "1202": {
+  "symbol": "GUARD_STANCE",
+  "skill_id": 5255,
+  "name": "가드 스탠스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5255"
+ },
+ "1203": {
+  "symbol": "ATTACK_STANCE",
+  "skill_id": 5260,
+  "name": "어택 스탠스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5260"
+ },
+ "1204": {
+  "symbol": "GUARDIAN_S",
+  "skill_id": 5256,
+  "name": "가디언 쉴드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5256"
+ },
+ "1205": {
+  "symbol": "HANDICAPSTATE_DEEPBLIND",
+  "skill_id": 5204,
+  "name": "서번트 웨폰-팬텀 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5204"
+ },
+ "1206": {
+  "symbol": "HANDICAPSTATE_DEEPSILENCE",
+  "skill_id": 5273,
+  "name": "아르비트리움 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5273"
+ },
+ "1208": {
+  "symbol": "HANDICAPSTATE_FROSTBITE",
+  "skill_id": 5369,
+  "name": "다이아몬드 스톰 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5369"
+ },
+ "1210": {
+  "symbol": "HANDICAPSTATE_LIGHTNINGSTRIKE",
+  "skill_id": 5370,
+  "name": "라이트닝 랜드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5370"
+ },
+ "1211": {
+  "symbol": "HANDICAPSTATE_CRYSTALLIZATION",
+  "skill_id": 5373,
+  "name": "테라 드라이브 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5373"
+ },
+ "1212": {
+  "symbol": "HANDICAPSTATE_CONFLAGRATION",
+  "skill_id": 5372,
+  "name": "컨프래그레이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5372"
+ },
+ "1213": {
+  "symbol": "HANDICAPSTATE_MISFORTUNE",
+  "skill_id": 5315,
+  "name": "언럭키 러쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5315"
+ },
+ "1214": {
+  "symbol": "HANDICAPSTATE_DEADLYPOISON",
+  "skill_id": 5371,
+  "name": "베놈 스웜프 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5371"
+ },
+ "1217": {
+  "symbol": "REBOUND_S",
+  "skill_id": 5257,
+  "name": "리바운드 쉴드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5257"
+ },
+ "1220": {
+  "symbol": "HOLY_S",
+  "skill_id": 5262,
+  "name": "홀리 쉴드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5262"
+ },
+ "1221": {
+  "symbol": "ULTIMATE_S",
+  "skill_id": 5261,
+  "name": "얼티메이트 세크리파이스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5261"
+ },
+ "1222": {
+  "symbol": "SPEAR_SCAR",
+  "skill_id": 5263,
+  "name": "그랜드 저지먼트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5263"
+ },
+ "1223": {
+  "symbol": "SHIELD_POWER",
+  "skill_id": 5265,
+  "name": "쉴드 슈팅 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=2&skillid=5265"
+ },
+ "1226": {
+  "symbol": "SHADOW_WEAPON",
+  "skill_id": 5293,
+  "name": "인챈팅 쉐도우 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5293"
+ },
+ "1227": {
+  "symbol": "RELIGIO",
+  "skill_id": 5281,
+  "name": "렐리지오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5281"
+ },
+ "1228": {
+  "symbol": "BENEDICTUM",
+  "skill_id": 5282,
+  "name": "베네딕툼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5282"
+ },
+ "1230": {
+  "symbol": "FIRST_BRAND",
+  "skill_id": 5245,
+  "name": "제1격 : 낙인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5245"
+ },
+ "1232": {
+  "symbol": "SECOND_JUDGE",
+  "skill_id": 5247,
+  "name": "제2장 : 심판자 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5247"
+ },
+ "1233": {
+  "symbol": "THIRD_EXOR_FLAME",
+  "skill_id": 5254,
+  "name": "최종장 : 멸마의 불꽃 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5254"
+ },
+ "1234": {
+  "symbol": "FIRST_FAITH_POWER",
+  "skill_id": 5246,
+  "name": "제1장 : 신념의 힘 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5246"
+ },
+ "1235": {
+  "symbol": "AXE_STOMP",
+  "skill_id": 5295,
+  "name": "액스 스톰프 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5295"
+ },
+ "1237": {
+  "symbol": "D_MACHINE",
+  "skill_id": 5299,
+  "name": "방어 장치 활성화 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5299"
+ },
+ "1242": {
+  "symbol": "SHADOW_STRIP",
+  "skill_id": 5313,
+  "name": "스트립 쉐도우 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5313"
+ },
+ "1243": {
+  "symbol": "ABYSS_DAGGER",
+  "skill_id": 5314,
+  "name": "어비스 대거 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5314"
+ },
+ "1244": {
+  "symbol": "ABYSSFORCEWEAPON",
+  "skill_id": 5317,
+  "name": "프롬 디 어비스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5317"
+ },
+ "1245": {
+  "symbol": "ABYSS_SLAYER",
+  "skill_id": 5318,
+  "name": "어비스 슬레이어 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=5318"
+ },
+ "1247": {
+  "symbol": "PROTECTSHADOWEQUIP",
+  "skill_id": 5339,
+  "name": "풀 쉐도우 프로텍션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5339"
+ },
+ "1248": {
+  "symbol": "RESEARCHREPORT",
+  "skill_id": 5347,
+  "name": "리서치 리포트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5347"
+ },
+ "1250": {
+  "symbol": "WINDSIGN",
+  "skill_id": 5324,
+  "name": "윈드 사인 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5324"
+ },
+ "1251": {
+  "symbol": "CRESCIVEBOLT",
+  "skill_id": 5334,
+  "name": "크레시브 볼트 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5334"
+ },
+ "1252": {
+  "symbol": "CALAMITYGALE",
+  "skill_id": 5328,
+  "name": "캘러미티 가일 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5328"
+ },
+ "1256": {
+  "symbol": "MYSTIC_SYMPHONY",
+  "skill_id": 5351,
+  "name": "미스틱 심포니 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5351"
+ },
+ "1257": {
+  "symbol": "KVASIR_SONATA",
+  "skill_id": 5352,
+  "name": "소나타 오브 크바시르 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5352"
+ },
+ "1258": {
+  "symbol": "SOUNDBLEND",
+  "skill_id": 5357,
+  "name": "사운드 블렌드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5357"
+ },
+ "1259": {
+  "symbol": "GEF_NOCTURN",
+  "skill_id": 5358,
+  "name": "게페니아 녹턴 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5358"
+ },
+ "1260": {
+  "symbol": "AIN_RHAPSODY",
+  "skill_id": 5360,
+  "name": "마인워커 랩소디 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5360"
+ },
+ "1261": {
+  "symbol": "MUSICAL_INTERLUDE",
+  "skill_id": 5361,
+  "name": "뮤지컬 인터루드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5361"
+ },
+ "1262": {
+  "symbol": "JAWAII_SERENADE",
+  "skill_id": 5362,
+  "name": "저녁 노을의 세레나데 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5362"
+ },
+ "1263": {
+  "symbol": "PRON_MARCH",
+  "skill_id": 5364,
+  "name": "프론테라 행진곡 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5364"
+ },
+ "1264": {
+  "symbol": "ROSEBLOSSOM",
+  "skill_id": 5353,
+  "name": "로제 블라썸 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=5&skillid=5353"
+ },
+ "1271": {
+  "symbol": "SPELL_ENCHANTING",
+  "skill_id": 5366,
+  "name": "스펠 인챈팅 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5366"
+ },
+ "1272": {
+  "symbol": "SUMMON_ELEMENTAL_ARDOR",
+  "skill_id": 5375,
+  "name": "서몬 엘레멘탈 : 아르도르 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5375"
+ },
+ "1273": {
+  "symbol": "SUMMON_ELEMENTAL_DILUVIO",
+  "skill_id": 5376,
+  "name": "서몬 엘레멘탈 : 딜루비오 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5376"
+ },
+ "1274": {
+  "symbol": "SUMMON_ELEMENTAL_PROCELLA",
+  "skill_id": 5377,
+  "name": "서몬 엘레멘탈 : 프로첼라 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5377"
+ },
+ "1275": {
+  "symbol": "SUMMON_ELEMENTAL_TERREMOTUS",
+  "skill_id": 5378,
+  "name": "서몬 엘레멘탈 : 테레모투스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5378"
+ },
+ "1276": {
+  "symbol": "SUMMON_ELEMENTAL_SERPENS",
+  "skill_id": 5379,
+  "name": "서몬 엘레멘탈 : 세르펜스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5379"
+ },
+ "1297": {
+  "symbol": "ABR_BATTLE_WARIOR",
+  "skill_id": 5302,
+  "name": "ABR-배틀워리어 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5302"
+ },
+ "1298": {
+  "symbol": "ABR_DUAL_CANNON",
+  "skill_id": 5303,
+  "name": "ABR-듀얼캐논 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5303"
+ },
+ "1299": {
+  "symbol": "ABR_MOTHER_NET",
+  "skill_id": 5304,
+  "name": "ABR-마더넷 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5304"
+ },
+ "1300": {
+  "symbol": "ABR_INFINITY",
+  "skill_id": 5305,
+  "name": "ABR-인피니티 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5305"
+ },
+ "1301": {
+  "symbol": "ELEMENTAL_VEIL",
+  "skill_id": 5381,
+  "name": "엘레멘탈 베일 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=4&skillid=5381"
+ },
+ "1303": {
+  "symbol": "HOMUN_TIME",
+  "skill_id": 243,
+  "name": "콜 호문클루스 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=243"
+ },
+ "1315": {
+  "symbol": "OVERBRANDREADY",
+  "skill_id": 2320,
+  "name": "문 슬래셔 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=2&skillid=2320"
+ },
+ "1318": {
+  "symbol": "CLOUD_POISON",
+  "skill_id": 2450,
+  "name": "클라우드 킬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=4&skillid=2450"
+ },
+ "1319": {
+  "symbol": "SPORE_EXPLOSION_DEBUFF",
+  "skill_id": 2481,
+  "name": "스포어 익스플로젼 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineSeq=3&skillid=2481"
+ },
+ "1326": {
+  "symbol": "MASSIVE_F_BLASTER",
+  "skill_id": 5243,
+  "name": "염화멸마신탄 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=6&skillid=5243"
+ },
+ "1345": {
+  "symbol": "INTENSIVE_AIM",
+  "skill_id": 5403,
+  "name": "집중 조준 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=10&skillid=5403"
+ },
+ "1353": {
+  "symbol": "AUTO_FIRING_LAUNCHEREFST",
+  "skill_id": 5413,
+  "name": "오토 파이어링 런처 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=10&skillid=5413"
+ },
+ "1354": {
+  "symbol": "HIDDEN_CARD",
+  "skill_id": 5414,
+  "name": "히든 카드 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=10&skillid=5414"
+ },
+ "1356": {
+  "symbol": "TALISMAN_OF_PROTECTION",
+  "skill_id": 5418,
+  "name": "수호부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5418"
+ },
+ "1357": {
+  "symbol": "TALISMAN_OF_WARRIOR",
+  "skill_id": 5419,
+  "name": "무사부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5419"
+ },
+ "1358": {
+  "symbol": "TALISMAN_OF_MAGICIAN",
+  "skill_id": 5420,
+  "name": "법사부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5420"
+ },
+ "1359": {
+  "symbol": "TALISMAN_OF_FIVE_ELEMENTS",
+  "skill_id": 5423,
+  "name": "오행부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5423"
+ },
+ "1360": {
+  "symbol": "T_FIRST_GOD",
+  "skill_id": 5426,
+  "name": "청룡부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5426"
+ },
+ "1361": {
+  "symbol": "T_SECOND_GOD",
+  "skill_id": 5427,
+  "name": "백호부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5427"
+ },
+ "1362": {
+  "symbol": "T_THIRD_GOD",
+  "skill_id": 5428,
+  "name": "주작부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5428"
+ },
+ "1363": {
+  "symbol": "T_FOURTH_GOD",
+  "skill_id": 5429,
+  "name": "현무부 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5429"
+ },
+ "1364": {
+  "symbol": "T_FIVETH_GOD",
+  "skill_id": 5431,
+  "name": "사방오행진 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5431"
+ },
+ "1365": {
+  "symbol": "HEAVEN_AND_EARTH",
+  "skill_id": 5432,
+  "name": "천지신령 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5432"
+ },
+ "1366": {
+  "symbol": "HOGOGONG",
+  "skill_id": 5436,
+  "name": "철호 포효 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5436"
+ },
+ "1367": {
+  "symbol": "MARINE_FESTIVAL",
+  "skill_id": 5440,
+  "name": "귀설 바다축제 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5440"
+ },
+ "1368": {
+  "symbol": "SANDY_FESTIVAL",
+  "skill_id": 5441,
+  "name": "귀설 모래축제 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5441"
+ },
+ "1369": {
+  "symbol": "KI_SUL_RAMPAGE",
+  "skill_id": 5442,
+  "name": "귀설 거칠게 요동치기 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5442"
+ },
+ "1377": {
+  "symbol": "TEMPORARY_COMMUNION",
+  "skill_id": 5447,
+  "name": "급속 교감 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5447"
+ },
+ "1378": {
+  "symbol": "BLESSING_OF_M_CREATURES",
+  "skill_id": 5448,
+  "name": "영물들의 축복 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=11&skillid=5448"
+ },
+ "1380": {
+  "symbol": "SHIELDCHAINRUSH",
+  "skill_id": 5453,
+  "name": "쉴드 체인 러쉬 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=1&skillid=5453"
+ },
+ "1381": {
+  "symbol": "MISTYFROST",
+  "skill_id": 5457,
+  "name": "잭 프로스트 노바 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=1&skillid=5457"
+ },
+ "1382": {
+  "symbol": "GROUNDGRAVITY",
+  "skill_id": 5459,
+  "name": "그라운드 그라비테이션 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=1&skillid=5459"
+ },
+ "1383": {
+  "symbol": "BREAKINGLIMIT",
+  "skill_id": 5461,
+  "name": "한계돌파 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=1&skillid=5461"
+ },
+ "1384": {
+  "symbol": "RULEBREAK",
+  "skill_id": 5462,
+  "name": "룰 브레이킹 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=1&skillid=5462"
+ },
+ "1391": {
+  "symbol": "STAR_BURST",
+  "skill_id": 5472,
+  "name": "천명낙성 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5472"
+ },
+ "1392": {
+  "symbol": "SKY_ENCHANT",
+  "skill_id": 5475,
+  "name": "천기지신 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=8&skillid=5475"
+ },
+ "1403": {
+  "symbol": "RUSH_QUAKE2",
+  "skill_id": 5296,
+  "name": "러쉬 퀘이크 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=3&skillid=5296"
+ },
+ "1415": {
+  "symbol": "SBUNSHIN",
+  "skill_id": 5479,
+  "name": "신기루 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=9&skillid=5479"
+ },
+ "1560": {
+  "symbol": "CHASING",
+  "skill_id": 6512,
+  "name": "히트 앤드 슬라이딩 효과",
+  "src": "rathena_link",
+  "checked_at": "2026-09-25",
+  "skill_url": "https://ro.gnjoy.com/guide/runemidgarts/skillview.asp?lineseq=7&skillid=6512"
+ }
+}

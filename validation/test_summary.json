@@ -1,0 +1,12 @@
+{
+  "tests_run": 86,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_mock_frame_pipeline (test_live.MockScreenTest.test_mock_frame_pipeline)",
+      "reason": "Windows 한국어 OCR 없음"
+    }
+  ],
+  "successful": true
+}

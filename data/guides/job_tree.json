@@ -1,0 +1,1159 @@
+{
+ "version": 1,
+ "note": "name_source=official: 룬미드가츠 도서관 전직 페이지 제목. client_common: 공식 페이지 없음(일반 명칭, 검증 필요). 부모 관계는 공식 전직 조건 문구로 교차검증(navigator.validation).",
+ "jobs": [
+  {
+   "id": 0,
+   "name": "노비스",
+   "tier": 0,
+   "family": "novice",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 1,
+   "name": "소드맨",
+   "tier": 1,
+   "family": "swordman",
+   "parents": [
+    0
+   ],
+   "official_title": "소드맨",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 2,
+   "name": "매지션",
+   "tier": 1,
+   "family": "mage",
+   "parents": [
+    0
+   ],
+   "official_title": "매지션",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 3,
+   "name": "아쳐",
+   "tier": 1,
+   "family": "archer",
+   "parents": [
+    0
+   ],
+   "official_title": "아쳐",
+   "aliases": [
+    "궁수"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4,
+   "name": "어콜라이트",
+   "tier": 1,
+   "family": "acolyte",
+   "parents": [
+    0
+   ],
+   "official_title": "어콜라이트",
+   "aliases": [
+    "복사"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 5,
+   "name": "머천트",
+   "tier": 1,
+   "family": "merchant",
+   "parents": [
+    0
+   ],
+   "official_title": "머천트",
+   "aliases": [
+    "상인"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 6,
+   "name": "씨프",
+   "tier": 1,
+   "family": "thief",
+   "parents": [
+    0
+   ],
+   "official_title": "씨프",
+   "aliases": [
+    "도둑"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 7,
+   "name": "나이트",
+   "tier": 2,
+   "family": "swordman",
+   "parents": [
+    1
+   ],
+   "official_title": "나이트",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 8,
+   "name": "프리스트",
+   "tier": 2,
+   "family": "acolyte",
+   "parents": [
+    4
+   ],
+   "official_title": "프리스트",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 9,
+   "name": "위저드",
+   "tier": 2,
+   "family": "mage",
+   "parents": [
+    2
+   ],
+   "official_title": "위저드",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 10,
+   "name": "블랙스미스",
+   "tier": 2,
+   "family": "merchant",
+   "parents": [
+    5
+   ],
+   "official_title": "블랙스미스",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 11,
+   "name": "헌터",
+   "tier": 2,
+   "family": "archer",
+   "parents": [
+    3
+   ],
+   "official_title": "헌터",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 12,
+   "name": "어쌔신",
+   "tier": 2,
+   "family": "thief",
+   "parents": [
+    6
+   ],
+   "official_title": "어쌔신",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 14,
+   "name": "크루세이더",
+   "tier": 2,
+   "family": "swordman",
+   "parents": [
+    1
+   ],
+   "official_title": "크루세이더",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 15,
+   "name": "몽크",
+   "tier": 2,
+   "family": "acolyte",
+   "parents": [
+    4
+   ],
+   "official_title": "몽크",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 16,
+   "name": "세이지",
+   "tier": 2,
+   "family": "mage",
+   "parents": [
+    2
+   ],
+   "official_title": "세이지",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 17,
+   "name": "로그",
+   "tier": 2,
+   "family": "thief",
+   "parents": [
+    6
+   ],
+   "official_title": "로그",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 18,
+   "name": "알케미스트",
+   "tier": 2,
+   "family": "merchant",
+   "parents": [
+    5
+   ],
+   "official_title": "알케미스트",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 19,
+   "name": "바드",
+   "tier": 2,
+   "family": "archer",
+   "parents": [
+    3
+   ],
+   "official_title": "바드",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 20,
+   "name": "댄서",
+   "tier": 2,
+   "family": "archer",
+   "parents": [
+    3
+   ],
+   "official_title": "댄서",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 23,
+   "name": "슈퍼 노비스",
+   "tier": 1,
+   "family": "super_novice",
+   "parents": [
+    0
+   ],
+   "official_title": "슈퍼 노비스",
+   "aliases": [
+    "슈노"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 24,
+   "name": "건슬링거",
+   "tier": 1,
+   "family": "gunslinger",
+   "parents": [
+    0
+   ],
+   "official_title": "건슬링거",
+   "aliases": [
+    "건슬"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 25,
+   "name": "닌자",
+   "tier": 1,
+   "family": "ninja",
+   "parents": [
+    0
+   ],
+   "official_title": "닌자",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4008,
+   "name": "로드 나이트",
+   "tier": 2,
+   "family": "swordman",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4009,
+   "name": "하이 프리스트",
+   "tier": 2,
+   "family": "acolyte",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4010,
+   "name": "하이 위저드",
+   "tier": 2,
+   "family": "mage",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4011,
+   "name": "화이트 스미스",
+   "tier": 2,
+   "family": "merchant",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4012,
+   "name": "스나이퍼",
+   "tier": 2,
+   "family": "archer",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4013,
+   "name": "어새신 크로스",
+   "tier": 2,
+   "family": "thief",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4015,
+   "name": "팔라딘",
+   "tier": 2,
+   "family": "swordman",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4016,
+   "name": "챔피언",
+   "tier": 2,
+   "family": "acolyte",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4017,
+   "name": "프로페서",
+   "tier": 2,
+   "family": "mage",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4018,
+   "name": "스토커",
+   "tier": 2,
+   "family": "thief",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4019,
+   "name": "크리에이터",
+   "tier": 2,
+   "family": "merchant",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4020,
+   "name": "클라운",
+   "tier": 2,
+   "family": "archer",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4021,
+   "name": "집시",
+   "tier": 2,
+   "family": "archer",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4046,
+   "name": "태권 소년/소녀",
+   "tier": 1,
+   "family": "taekwon",
+   "parents": [
+    0
+   ],
+   "official_title": "태권 소년 / 소녀",
+   "aliases": [
+    "태권"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4047,
+   "name": "권성",
+   "tier": 2,
+   "family": "taekwon",
+   "parents": [
+    4046
+   ],
+   "official_title": "권성",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4049,
+   "name": "소울링커",
+   "tier": 2,
+   "family": "taekwon",
+   "parents": [
+    4046
+   ],
+   "official_title": "소울링커",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4054,
+   "name": "룬나이트",
+   "tier": 3,
+   "family": "swordman",
+   "parents": [
+    7,
+    4008
+   ],
+   "official_title": "룬나이트",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4055,
+   "name": "워록",
+   "tier": 3,
+   "family": "mage",
+   "parents": [
+    9,
+    4010
+   ],
+   "official_title": "워록",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4056,
+   "name": "레인져",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    11,
+    4012
+   ],
+   "official_title": "레인저",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4057,
+   "name": "아크비숍",
+   "tier": 3,
+   "family": "acolyte",
+   "parents": [
+    8,
+    4009
+   ],
+   "official_title": "아크비숍",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4058,
+   "name": "미케닉",
+   "tier": 3,
+   "family": "merchant",
+   "parents": [
+    10,
+    4011
+   ],
+   "official_title": "미케닉",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4059,
+   "name": "길로틴 크로스",
+   "tier": 3,
+   "family": "thief",
+   "parents": [
+    12,
+    4013
+   ],
+   "official_title": "길로틴 크로스",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4060,
+   "name": "룬나이트(전승)",
+   "tier": 3,
+   "family": "swordman",
+   "parents": [
+    4008
+   ],
+   "official_title": null,
+   "aliases": [
+    "룬나이트"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4061,
+   "name": "워록(전승)",
+   "tier": 3,
+   "family": "mage",
+   "parents": [
+    4010
+   ],
+   "official_title": null,
+   "aliases": [
+    "워록"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4062,
+   "name": "레인져(전승)",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    4012
+   ],
+   "official_title": null,
+   "aliases": [
+    "레인져"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4063,
+   "name": "아크비숍(전승)",
+   "tier": 3,
+   "family": "acolyte",
+   "parents": [
+    4009
+   ],
+   "official_title": null,
+   "aliases": [
+    "아크비숍"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4064,
+   "name": "미케닉(전승)",
+   "tier": 3,
+   "family": "merchant",
+   "parents": [
+    4011
+   ],
+   "official_title": null,
+   "aliases": [
+    "미케닉"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4065,
+   "name": "길로틴 크로스(전승)",
+   "tier": 3,
+   "family": "thief",
+   "parents": [
+    4013
+   ],
+   "official_title": null,
+   "aliases": [
+    "길로틴 크로스"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4066,
+   "name": "로얄가드",
+   "tier": 3,
+   "family": "swordman",
+   "parents": [
+    14,
+    4015
+   ],
+   "official_title": "로얄가드",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4067,
+   "name": "소서러",
+   "tier": 3,
+   "family": "mage",
+   "parents": [
+    16,
+    4017
+   ],
+   "official_title": "소서러",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4068,
+   "name": "민스트럴",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    19,
+    4020
+   ],
+   "official_title": "민스트럴",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4069,
+   "name": "원더러",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    20,
+    4021
+   ],
+   "official_title": "윈더러",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4070,
+   "name": "수라",
+   "tier": 3,
+   "family": "acolyte",
+   "parents": [
+    15,
+    4016
+   ],
+   "official_title": "수라",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4071,
+   "name": "제네릭",
+   "tier": 3,
+   "family": "merchant",
+   "parents": [
+    18,
+    4019
+   ],
+   "official_title": "제네릭",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4072,
+   "name": "쉐도우 체이서",
+   "tier": 3,
+   "family": "thief",
+   "parents": [
+    17,
+    4018
+   ],
+   "official_title": "쉐도우 체이서",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4073,
+   "name": "로얄가드(전승)",
+   "tier": 3,
+   "family": "swordman",
+   "parents": [
+    4015
+   ],
+   "official_title": null,
+   "aliases": [
+    "로얄가드"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4074,
+   "name": "소서러(전승)",
+   "tier": 3,
+   "family": "mage",
+   "parents": [
+    4017
+   ],
+   "official_title": null,
+   "aliases": [
+    "소서러"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4075,
+   "name": "민스트럴(전승)",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    4020
+   ],
+   "official_title": null,
+   "aliases": [
+    "민스트럴"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4076,
+   "name": "원더러(전승)",
+   "tier": 3,
+   "family": "archer",
+   "parents": [
+    4021
+   ],
+   "official_title": null,
+   "aliases": [
+    "원더러"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4077,
+   "name": "수라(전승)",
+   "tier": 3,
+   "family": "acolyte",
+   "parents": [
+    4016
+   ],
+   "official_title": null,
+   "aliases": [
+    "수라"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4078,
+   "name": "제네릭(전승)",
+   "tier": 3,
+   "family": "merchant",
+   "parents": [
+    4019
+   ],
+   "official_title": null,
+   "aliases": [
+    "제네릭"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4079,
+   "name": "쉐도우 체이서(전승)",
+   "tier": 3,
+   "family": "thief",
+   "parents": [
+    4018
+   ],
+   "official_title": null,
+   "aliases": [
+    "쉐도우 체이서"
+   ],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4190,
+   "name": "슈퍼 노비스(확장)",
+   "tier": 2,
+   "family": "super_novice",
+   "parents": [
+    23
+   ],
+   "official_title": "슈퍼 노비스 레벨확장",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4211,
+   "name": "카게로우",
+   "tier": 2,
+   "family": "ninja",
+   "parents": [
+    25
+   ],
+   "official_title": "카게로우/오보로",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4212,
+   "name": "오보로",
+   "tier": 2,
+   "family": "ninja",
+   "parents": [
+    25
+   ],
+   "official_title": "카게로우/오보로",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4215,
+   "name": "리벨리온",
+   "tier": 2,
+   "family": "gunslinger",
+   "parents": [
+    24
+   ],
+   "official_title": "리벨리온",
+   "aliases": [],
+   "name_source": "official"
+  },
+  {
+   "id": 4218,
+   "name": "소환사",
+   "tier": 1,
+   "family": "summoner",
+   "parents": [],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4239,
+   "name": "성제",
+   "tier": 3,
+   "family": "taekwon",
+   "parents": [
+    4047
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4240,
+   "name": "소울 리퍼",
+   "tier": 3,
+   "family": "taekwon",
+   "parents": [
+    4049
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4252,
+   "name": "드래곤 나이트",
+   "tier": 4,
+   "family": "swordman",
+   "parents": [
+    4060
+   ],
+   "official_title": "드래곤 나이트",
+   "aliases": [
+    "드래곤나이트"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4253,
+   "name": "마이스터",
+   "tier": 4,
+   "family": "merchant",
+   "parents": [
+    4064
+   ],
+   "official_title": "마이스터",
+   "aliases": [
+    "마이스터"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4254,
+   "name": "쉐도우 크로스",
+   "tier": 4,
+   "family": "thief",
+   "parents": [
+    4065
+   ],
+   "official_title": "쉐도우 크로스",
+   "aliases": [
+    "쉐도우크로스"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4255,
+   "name": "아크 메이지",
+   "tier": 4,
+   "family": "mage",
+   "parents": [
+    4061
+   ],
+   "official_title": "아크 메이지",
+   "aliases": [
+    "아크메이지"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4256,
+   "name": "카디날",
+   "tier": 4,
+   "family": "acolyte",
+   "parents": [
+    4063
+   ],
+   "official_title": "카디날",
+   "aliases": [
+    "카디날"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4257,
+   "name": "윈드 호크",
+   "tier": 4,
+   "family": "archer",
+   "parents": [
+    4062
+   ],
+   "official_title": "윈드 호크",
+   "aliases": [
+    "윈드호크"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4258,
+   "name": "임페리얼 가드",
+   "tier": 4,
+   "family": "swordman",
+   "parents": [
+    4073
+   ],
+   "official_title": "임페리얼 가드",
+   "aliases": [
+    "임페리얼가드"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4259,
+   "name": "바이올로",
+   "tier": 4,
+   "family": "merchant",
+   "parents": [
+    4078
+   ],
+   "official_title": "바이올로",
+   "aliases": [
+    "바이올로"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4260,
+   "name": "어비스 체이서",
+   "tier": 4,
+   "family": "thief",
+   "parents": [
+    4079
+   ],
+   "official_title": "어비스 체이서",
+   "aliases": [
+    "어비스체이서"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4261,
+   "name": "엘레멘탈 마스터",
+   "tier": 4,
+   "family": "mage",
+   "parents": [
+    4074
+   ],
+   "official_title": "엘레멘탈 마스터",
+   "aliases": [
+    "엘레멘탈마스터"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4262,
+   "name": "인퀴지터",
+   "tier": 4,
+   "family": "acolyte",
+   "parents": [
+    4077
+   ],
+   "official_title": "인퀴지터",
+   "aliases": [
+    "인퀴지터"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4263,
+   "name": "트루바두르",
+   "tier": 4,
+   "family": "archer",
+   "parents": [
+    4075
+   ],
+   "official_title": "트루바두르",
+   "aliases": [
+    "트루바두르"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4264,
+   "name": "트루베르",
+   "tier": 4,
+   "family": "archer",
+   "parents": [
+    4076
+   ],
+   "official_title": "트루베르",
+   "aliases": [
+    "트루베르"
+   ],
+   "name_source": "official"
+  },
+  {
+   "id": 4302,
+   "name": "천제",
+   "tier": 4,
+   "family": "taekwon",
+   "parents": [
+    4239
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4303,
+   "name": "영도사",
+   "tier": 4,
+   "family": "taekwon",
+   "parents": [
+    4240
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4304,
+   "name": "신키로",
+   "tier": 4,
+   "family": "ninja",
+   "parents": [
+    4211
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4305,
+   "name": "시라누이",
+   "tier": 4,
+   "family": "ninja",
+   "parents": [
+    4212
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4306,
+   "name": "나이트 와치",
+   "tier": 4,
+   "family": "gunslinger",
+   "parents": [
+    4215
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4307,
+   "name": "하이퍼 노비스",
+   "tier": 4,
+   "family": "super_novice",
+   "parents": [
+    4190
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  },
+  {
+   "id": 4308,
+   "name": "스피릿 핸들러",
+   "tier": 4,
+   "family": "summoner",
+   "parents": [
+    4218
+   ],
+   "official_title": null,
+   "aliases": [],
+   "name_source": "client_common"
+  }
+ ]
+}

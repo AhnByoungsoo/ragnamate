@@ -1,0 +1,5890 @@
+{
+ "-1": {
+  "name": "BLANK",
+  "src": "rathena"
+ },
+ "0": {
+  "name": "PROVOKE",
+  "src": "rathena"
+ },
+ "1": {
+  "name": "ENDURE",
+  "src": "rathena"
+ },
+ "2": {
+  "name": "TWOHANDQUICKEN",
+  "src": "rathena"
+ },
+ "3": {
+  "name": "CONCENTRATION",
+  "src": "rathena"
+ },
+ "4": {
+  "name": "HIDING",
+  "src": "rathena"
+ },
+ "5": {
+  "name": "CLOAKING",
+  "src": "rathena"
+ },
+ "6": {
+  "name": "ENCHANTPOISON",
+  "src": "rathena"
+ },
+ "7": {
+  "name": "POISONREACT",
+  "src": "rathena"
+ },
+ "8": {
+  "name": "QUAGMIRE",
+  "src": "rathena"
+ },
+ "9": {
+  "name": "ANGELUS",
+  "src": "rathena"
+ },
+ "10": {
+  "name": "BLESSING",
+  "src": "rathena"
+ },
+ "11": {
+  "name": "CRUCIS",
+  "src": "rathena"
+ },
+ "12": {
+  "name": "INC_AGI",
+  "src": "rathena"
+ },
+ "13": {
+  "name": "DEC_AGI",
+  "src": "rathena"
+ },
+ "14": {
+  "name": "SLOWPOISON",
+  "src": "rathena"
+ },
+ "15": {
+  "name": "IMPOSITIO",
+  "src": "rathena"
+ },
+ "16": {
+  "name": "SUFFRAGIUM",
+  "src": "rathena"
+ },
+ "17": {
+  "name": "ASPERSIO",
+  "src": "rathena"
+ },
+ "18": {
+  "name": "BENEDICTIO",
+  "src": "rathena"
+ },
+ "19": {
+  "name": "KYRIE",
+  "src": "rathena"
+ },
+ "20": {
+  "name": "MAGNIFICAT",
+  "src": "rathena"
+ },
+ "21": {
+  "name": "GLORIA",
+  "src": "rathena"
+ },
+ "22": {
+  "name": "LEXAETERNA",
+  "src": "rathena"
+ },
+ "23": {
+  "name": "ADRENALINE",
+  "src": "rathena"
+ },
+ "24": {
+  "name": "WEAPONPERFECT",
+  "src": "rathena"
+ },
+ "25": {
+  "name": "OVERTHRUST",
+  "src": "rathena"
+ },
+ "26": {
+  "name": "MAXIMIZE",
+  "src": "rathena"
+ },
+ "27": {
+  "name": "RIDING",
+  "src": "rathena"
+ },
+ "28": {
+  "name": "FALCON",
+  "src": "rathena"
+ },
+ "29": {
+  "name": "TRICKDEAD",
+  "src": "rathena"
+ },
+ "30": {
+  "name": "SHOUT",
+  "src": "rathena"
+ },
+ "31": {
+  "name": "ENERGYCOAT",
+  "src": "rathena"
+ },
+ "32": {
+  "name": "BROKENARMOR",
+  "src": "rathena"
+ },
+ "33": {
+  "name": "BROKENWEAPON",
+  "src": "rathena"
+ },
+ "34": {
+  "name": "ILLUSION",
+  "src": "rathena"
+ },
+ "35": {
+  "name": "WEIGHTOVER50",
+  "src": "rathena"
+ },
+ "36": {
+  "name": "WEIGHTOVER90",
+  "src": "rathena"
+ },
+ "37": {
+  "name": "ATTHASTE_POTION1",
+  "src": "rathena"
+ },
+ "38": {
+  "name": "ATTHASTE_POTION2",
+  "src": "rathena"
+ },
+ "39": {
+  "name": "ATTHASTE_POTION3",
+  "src": "rathena"
+ },
+ "40": {
+  "name": "ATTHASTE_INFINITY",
+  "src": "rathena"
+ },
+ "41": {
+  "name": "MOVHASTE_POTION",
+  "src": "rathena"
+ },
+ "42": {
+  "name": "MOVHASTE_INFINITY",
+  "src": "rathena"
+ },
+ "43": {
+  "name": "AUTOCOUNTER",
+  "src": "rathena"
+ },
+ "44": {
+  "name": "SPLASHER",
+  "src": "rathena"
+ },
+ "45": {
+  "name": "ANKLESNARE",
+  "src": "rathena"
+ },
+ "46": {
+  "name": "POSTDELAY",
+  "src": "rathena"
+ },
+ "47": {
+  "name": "NOACTION",
+  "src": "rathena"
+ },
+ "48": {
+  "name": "IMPOSSIBLEPICKUP",
+  "src": "rathena"
+ },
+ "49": {
+  "name": "BARRIER",
+  "src": "rathena"
+ },
+ "50": {
+  "name": "NOEQUIPWEAPON",
+  "src": "rathena"
+ },
+ "51": {
+  "name": "NOEQUIPSHIELD",
+  "src": "rathena"
+ },
+ "52": {
+  "name": "NOEQUIPARMOR",
+  "src": "rathena"
+ },
+ "53": {
+  "name": "NOEQUIPHELM",
+  "src": "rathena"
+ },
+ "54": {
+  "name": "PROTECTWEAPON",
+  "src": "rathena"
+ },
+ "55": {
+  "name": "PROTECTSHIELD",
+  "src": "rathena"
+ },
+ "56": {
+  "name": "PROTECTARMOR",
+  "src": "rathena"
+ },
+ "57": {
+  "name": "PROTECTHELM",
+  "src": "rathena"
+ },
+ "58": {
+  "name": "AUTOGUARD",
+  "src": "rathena"
+ },
+ "59": {
+  "name": "REFLECTSHIELD",
+  "src": "rathena"
+ },
+ "60": {
+  "name": "DEVOTION",
+  "src": "rathena"
+ },
+ "61": {
+  "name": "PROVIDENCE",
+  "src": "rathena"
+ },
+ "62": {
+  "name": "DEFENDER",
+  "src": "rathena"
+ },
+ "63": {
+  "name": "MAGICROD",
+  "src": "rathena"
+ },
+ "64": {
+  "name": "WEAPONPROPERTY",
+  "src": "rathena"
+ },
+ "65": {
+  "name": "AUTOSPELL",
+  "src": "rathena"
+ },
+ "66": {
+  "name": "SPECIALZONE",
+  "src": "rathena"
+ },
+ "67": {
+  "name": "MASK",
+  "src": "rathena"
+ },
+ "68": {
+  "name": "SPEARQUICKEN",
+  "src": "rathena"
+ },
+ "69": {
+  "name": "BDPLAYING",
+  "src": "rathena"
+ },
+ "70": {
+  "name": "WHISTLE",
+  "src": "rathena"
+ },
+ "71": {
+  "name": "ASSASSINCROSS",
+  "src": "rathena"
+ },
+ "72": {
+  "name": "POEMBRAGI",
+  "src": "rathena"
+ },
+ "73": {
+  "name": "APPLEIDUN",
+  "src": "rathena"
+ },
+ "74": {
+  "name": "HUMMING",
+  "src": "rathena"
+ },
+ "75": {
+  "name": "DONTFORGETME",
+  "src": "rathena"
+ },
+ "76": {
+  "name": "FORTUNEKISS",
+  "src": "rathena"
+ },
+ "77": {
+  "name": "SERVICEFORYOU",
+  "src": "rathena"
+ },
+ "78": {
+  "name": "RICHMANKIM",
+  "src": "rathena"
+ },
+ "79": {
+  "name": "ETERNALCHAOS",
+  "src": "rathena"
+ },
+ "80": {
+  "name": "DRUMBATTLEFIELD",
+  "src": "rathena"
+ },
+ "81": {
+  "name": "RINGNIBELUNGEN",
+  "src": "rathena"
+ },
+ "82": {
+  "name": "ROKISWEIL",
+  "src": "rathena"
+ },
+ "83": {
+  "name": "INTOABYSS",
+  "src": "rathena"
+ },
+ "84": {
+  "name": "SIEGFRIED",
+  "src": "rathena"
+ },
+ "85": {
+  "name": "BLADESTOP",
+  "src": "rathena"
+ },
+ "86": {
+  "name": "EXPLOSIONSPIRITS",
+  "src": "rathena"
+ },
+ "87": {
+  "name": "STEELBODY",
+  "src": "rathena"
+ },
+ "88": {
+  "name": "EXTREMITYFIST",
+  "src": "rathena"
+ },
+ "89": {
+  "name": "COMBOATTACK",
+  "src": "rathena"
+ },
+ "90": {
+  "name": "PROPERTYFIRE",
+  "src": "rathena"
+ },
+ "91": {
+  "name": "PROPERTYWATER",
+  "src": "rathena"
+ },
+ "92": {
+  "name": "PROPERTYWIND",
+  "src": "rathena"
+ },
+ "93": {
+  "name": "PROPERTYGROUND",
+  "src": "rathena"
+ },
+ "94": {
+  "name": "MAGICATTACK",
+  "src": "rathena"
+ },
+ "95": {
+  "name": "STOP",
+  "src": "rathena"
+ },
+ "96": {
+  "name": "WEAPONBRAKER",
+  "src": "rathena"
+ },
+ "97": {
+  "name": "PROPERTYUNDEAD",
+  "src": "rathena"
+ },
+ "98": {
+  "name": "POWERUP",
+  "src": "rathena"
+ },
+ "99": {
+  "name": "AGIUP",
+  "src": "rathena"
+ },
+ "100": {
+  "name": "SIEGEMODE",
+  "src": "rathena"
+ },
+ "101": {
+  "name": "INVISIBLE",
+  "src": "rathena"
+ },
+ "102": {
+  "name": "STATUSONE",
+  "src": "rathena"
+ },
+ "103": {
+  "name": "AURABLADE",
+  "src": "rathena"
+ },
+ "104": {
+  "name": "PARRYING",
+  "src": "rathena"
+ },
+ "105": {
+  "name": "LKCONCENTRATION",
+  "src": "rathena"
+ },
+ "106": {
+  "name": "TENSIONRELAX",
+  "src": "rathena"
+ },
+ "107": {
+  "name": "BERSERK",
+  "src": "rathena"
+ },
+ "108": {
+  "name": "SACRIFICE",
+  "src": "rathena"
+ },
+ "109": {
+  "name": "GOSPEL",
+  "src": "rathena"
+ },
+ "110": {
+  "name": "ASSUMPTIO",
+  "src": "rathena"
+ },
+ "111": {
+  "name": "BASILICA",
+  "src": "rathena"
+ },
+ "112": {
+  "name": "GROUNDMAGIC",
+  "src": "rathena"
+ },
+ "113": {
+  "name": "MAGICPOWER",
+  "src": "rathena"
+ },
+ "114": {
+  "name": "EDP",
+  "src": "rathena"
+ },
+ "115": {
+  "name": "TRUESIGHT",
+  "src": "rathena"
+ },
+ "116": {
+  "name": "WINDWALK",
+  "src": "rathena"
+ },
+ "117": {
+  "name": "MELTDOWN",
+  "src": "rathena"
+ },
+ "118": {
+  "name": "CARTBOOST",
+  "src": "rathena"
+ },
+ "119": {
+  "name": "CHASEWALK",
+  "src": "rathena"
+ },
+ "120": {
+  "name": "SWORDREJECT",
+  "src": "rathena"
+ },
+ "121": {
+  "name": "MARIONETTE_MASTER",
+  "src": "rathena"
+ },
+ "122": {
+  "name": "MARIONETTE",
+  "src": "rathena"
+ },
+ "123": {
+  "name": "MOON",
+  "src": "rathena"
+ },
+ "124": {
+  "name": "BLOODING",
+  "src": "rathena"
+ },
+ "125": {
+  "name": "JOINTBEAT",
+  "src": "rathena"
+ },
+ "126": {
+  "name": "MINDBREAKER",
+  "src": "rathena"
+ },
+ "127": {
+  "name": "MEMORIZE",
+  "src": "rathena"
+ },
+ "128": {
+  "name": "FOGWALL",
+  "src": "rathena"
+ },
+ "129": {
+  "name": "SPIDERWEB",
+  "src": "rathena"
+ },
+ "130": {
+  "name": "PROTECTEXP",
+  "src": "rathena"
+ },
+ "131": {
+  "name": "SUB_WEAPONPROPERTY",
+  "src": "rathena"
+ },
+ "132": {
+  "name": "AUTOBERSERK",
+  "src": "rathena"
+ },
+ "133": {
+  "name": "RUN",
+  "src": "rathena"
+ },
+ "134": {
+  "name": "TING",
+  "src": "rathena"
+ },
+ "135": {
+  "name": "STORMKICK_ON",
+  "src": "rathena"
+ },
+ "136": {
+  "name": "STORMKICK_READY",
+  "src": "rathena"
+ },
+ "137": {
+  "name": "DOWNKICK_ON",
+  "src": "rathena"
+ },
+ "138": {
+  "name": "DOWNKICK_READY",
+  "src": "rathena"
+ },
+ "139": {
+  "name": "TURNKICK_ON",
+  "src": "rathena"
+ },
+ "140": {
+  "name": "TURNKICK_READY",
+  "src": "rathena"
+ },
+ "141": {
+  "name": "COUNTER_ON",
+  "src": "rathena"
+ },
+ "142": {
+  "name": "COUNTER_READY",
+  "src": "rathena"
+ },
+ "143": {
+  "name": "DODGE_ON",
+  "src": "rathena"
+ },
+ "144": {
+  "name": "DODGE_READY",
+  "src": "rathena"
+ },
+ "145": {
+  "name": "STRUP",
+  "src": "rathena"
+ },
+ "146": {
+  "name": "PROPERTYDARK",
+  "src": "rathena"
+ },
+ "147": {
+  "name": "ADRENALINE2",
+  "src": "rathena"
+ },
+ "148": {
+  "name": "PROPERTYTELEKINESIS",
+  "src": "rathena"
+ },
+ "149": {
+  "name": "SOULLINK",
+  "src": "rathena"
+ },
+ "150": {
+  "name": "PLUSATTACKPOWER",
+  "src": "rathena"
+ },
+ "151": {
+  "name": "PLUSMAGICPOWER",
+  "src": "rathena"
+ },
+ "152": {
+  "name": "DEVIL1",
+  "src": "rathena"
+ },
+ "153": {
+  "name": "KAITE",
+  "src": "rathena"
+ },
+ "154": {
+  "name": "SWOO",
+  "src": "rathena"
+ },
+ "155": {
+  "name": "STAR2",
+  "src": "rathena"
+ },
+ "156": {
+  "name": "KAIZEL",
+  "src": "rathena"
+ },
+ "157": {
+  "name": "KAAHI",
+  "src": "rathena"
+ },
+ "158": {
+  "name": "KAUPE",
+  "src": "rathena"
+ },
+ "159": {
+  "name": "SMA_READY",
+  "src": "rathena"
+ },
+ "160": {
+  "name": "SKE",
+  "src": "rathena"
+ },
+ "161": {
+  "name": "ONEHANDQUICKEN",
+  "src": "rathena"
+ },
+ "162": {
+  "name": "FRIEND",
+  "src": "rathena"
+ },
+ "163": {
+  "name": "FRIENDUP",
+  "src": "rathena"
+ },
+ "164": {
+  "name": "SG_WARM",
+  "src": "rathena"
+ },
+ "165": {
+  "name": "SG_SUN_WARM",
+  "src": "rathena"
+ },
+ "166": {
+  "name": "SG_MOON_WARM",
+  "src": "rathena"
+ },
+ "167": {
+  "name": "SG_STAR_WARM",
+  "src": "rathena"
+ },
+ "168": {
+  "name": "EMOTION",
+  "src": "rathena"
+ },
+ "169": {
+  "name": "SUN_COMFORT",
+  "src": "rathena"
+ },
+ "170": {
+  "name": "MOON_COMFORT",
+  "src": "rathena"
+ },
+ "171": {
+  "name": "STAR_COMFORT",
+  "src": "rathena"
+ },
+ "172": {
+  "name": "EXPUP",
+  "src": "rathena"
+ },
+ "173": {
+  "name": "GDSKILL_BATTLEORDER",
+  "src": "rathena"
+ },
+ "174": {
+  "name": "GDSKILL_REGENERATION",
+  "src": "rathena"
+ },
+ "175": {
+  "name": "GDSKILL_POSTDELAY",
+  "src": "rathena"
+ },
+ "176": {
+  "name": "RESISTHANDICAP",
+  "src": "rathena"
+ },
+ "177": {
+  "name": "MAXHPPERCENT",
+  "src": "rathena"
+ },
+ "178": {
+  "name": "MAXSPPERCENT",
+  "src": "rathena"
+ },
+ "179": {
+  "name": "DEFENCE",
+  "src": "rathena"
+ },
+ "180": {
+  "name": "SLOWDOWN",
+  "src": "rathena"
+ },
+ "181": {
+  "name": "PRESERVE",
+  "src": "rathena"
+ },
+ "182": {
+  "name": "CHASEWALK2",
+  "src": "rathena"
+ },
+ "183": {
+  "name": "NOT_EXTREMITYFIST",
+  "src": "rathena"
+ },
+ "184": {
+  "name": "CLAIRVOYANCE",
+  "src": "rathena"
+ },
+ "185": {
+  "name": "MOVESLOW_POTION",
+  "src": "rathena"
+ },
+ "186": {
+  "name": "DOUBLECASTING",
+  "src": "rathena"
+ },
+ "187": {
+  "name": "GRAVITATION",
+  "src": "rathena"
+ },
+ "188": {
+  "name": "OVERTHRUSTMAX",
+  "src": "rathena"
+ },
+ "189": {
+  "name": "LONGING",
+  "src": "rathena"
+ },
+ "190": {
+  "name": "HERMODE",
+  "src": "rathena"
+ },
+ "191": {
+  "name": "TAROTCARD",
+  "src": "rathena"
+ },
+ "192": {
+  "name": "HLIF_AVOID",
+  "src": "rathena"
+ },
+ "193": {
+  "name": "HFLI_FLEET",
+  "src": "rathena"
+ },
+ "194": {
+  "name": "HFLI_SPEED",
+  "src": "rathena"
+ },
+ "195": {
+  "name": "HLIF_CHANGE",
+  "src": "rathena"
+ },
+ "196": {
+  "name": "HAMI_BLOODLUST",
+  "src": "rathena"
+ },
+ "197": {
+  "name": "CR_SHRINK",
+  "src": "rathena"
+ },
+ "198": {
+  "name": "WZ_SIGHTBLASTER",
+  "src": "rathena"
+ },
+ "199": {
+  "name": "DC_WINKCHARM",
+  "src": "rathena"
+ },
+ "200": {
+  "name": "RG_CCONFINE_M",
+  "src": "rathena"
+ },
+ "201": {
+  "name": "RG_CCONFINE_S",
+  "src": "rathena"
+ },
+ "202": {
+  "name": "DISABLEMOVE",
+  "src": "rathena"
+ },
+ "203": {
+  "name": "GS_MADNESSCANCEL",
+  "src": "rathena"
+ },
+ "204": {
+  "name": "GS_GATLINGFEVER",
+  "src": "rathena"
+ },
+ "205": {
+  "name": "EARTHSCROLL",
+  "src": "rathena"
+ },
+ "206": {
+  "name": "NJ_UTSUSEMI",
+  "src": "rathena"
+ },
+ "207": {
+  "name": "NJ_BUNSINJYUTSU",
+  "src": "rathena"
+ },
+ "208": {
+  "name": "NJ_NEN",
+  "src": "rathena"
+ },
+ "209": {
+  "name": "GS_ADJUSTMENT",
+  "src": "rathena"
+ },
+ "210": {
+  "name": "GS_ACCURACY",
+  "src": "rathena"
+ },
+ "211": {
+  "name": "NJ_SUITON",
+  "src": "rathena"
+ },
+ "212": {
+  "name": "PET",
+  "src": "rathena"
+ },
+ "213": {
+  "name": "MENTAL",
+  "src": "rathena"
+ },
+ "214": {
+  "name": "EXPMEMORY",
+  "src": "rathena"
+ },
+ "215": {
+  "name": "PERFORMANCE",
+  "src": "rathena"
+ },
+ "216": {
+  "name": "GAIN",
+  "src": "rathena"
+ },
+ "217": {
+  "name": "GRIFFON",
+  "src": "rathena"
+ },
+ "218": {
+  "name": "DRIFT",
+  "src": "rathena"
+ },
+ "219": {
+  "name": "WALLSHIFT",
+  "src": "rathena"
+ },
+ "220": {
+  "name": "REINCARNATION",
+  "src": "rathena"
+ },
+ "221": {
+  "name": "PATTACK",
+  "src": "rathena"
+ },
+ "222": {
+  "name": "PSPEED",
+  "src": "rathena"
+ },
+ "223": {
+  "name": "PDEFENSE",
+  "src": "rathena"
+ },
+ "224": {
+  "name": "PCRITICAL",
+  "src": "rathena"
+ },
+ "225": {
+  "name": "RANKING",
+  "src": "rathena"
+ },
+ "226": {
+  "name": "PTRIPLE",
+  "src": "rathena"
+ },
+ "227": {
+  "name": "DENERGY",
+  "src": "rathena"
+ },
+ "228": {
+  "name": "WAVE1",
+  "src": "rathena"
+ },
+ "229": {
+  "name": "WAVE2",
+  "src": "rathena"
+ },
+ "230": {
+  "name": "WAVE3",
+  "src": "rathena"
+ },
+ "231": {
+  "name": "WAVE4",
+  "src": "rathena"
+ },
+ "232": {
+  "name": "DAURA",
+  "src": "rathena"
+ },
+ "233": {
+  "name": "DFREEZER",
+  "src": "rathena"
+ },
+ "234": {
+  "name": "DPUNISH",
+  "src": "rathena"
+ },
+ "235": {
+  "name": "DBARRIER",
+  "src": "rathena"
+ },
+ "236": {
+  "name": "DWARNING",
+  "src": "rathena"
+ },
+ "237": {
+  "name": "MOUSEWHEEL",
+  "src": "rathena"
+ },
+ "238": {
+  "name": "DGAUGE",
+  "src": "rathena"
+ },
+ "239": {
+  "name": "DACCEL",
+  "src": "rathena"
+ },
+ "240": {
+  "name": "DBLOCK",
+  "src": "rathena"
+ },
+ "241": {
+  "name": "FOOD_STR",
+  "src": "rathena"
+ },
+ "242": {
+  "name": "FOOD_AGI",
+  "src": "rathena"
+ },
+ "243": {
+  "name": "FOOD_VIT",
+  "src": "rathena"
+ },
+ "244": {
+  "name": "FOOD_DEX",
+  "src": "rathena"
+ },
+ "245": {
+  "name": "FOOD_INT",
+  "src": "rathena"
+ },
+ "246": {
+  "name": "FOOD_LUK",
+  "src": "rathena"
+ },
+ "247": {
+  "name": "FOOD_BASICAVOIDANCE",
+  "src": "rathena"
+ },
+ "248": {
+  "name": "FOOD_BASICHIT",
+  "src": "rathena"
+ },
+ "249": {
+  "name": "FOOD_CRITICALSUCCESSVALUE",
+  "src": "rathena"
+ },
+ "250": {
+  "name": "CASH_PLUSEXP",
+  "src": "rathena"
+ },
+ "251": {
+  "name": "CASH_DEATHPENALTY",
+  "src": "rathena"
+ },
+ "252": {
+  "name": "CASH_RECEIVEITEM",
+  "src": "rathena"
+ },
+ "253": {
+  "name": "CASH_BOSS_ALARM",
+  "src": "rathena"
+ },
+ "254": {
+  "name": "DA_ENERGY",
+  "src": "rathena"
+ },
+ "255": {
+  "name": "DA_FIRSTSLOT",
+  "src": "rathena"
+ },
+ "256": {
+  "name": "DA_HEADDEF",
+  "src": "rathena"
+ },
+ "257": {
+  "name": "DA_SPACE",
+  "src": "rathena"
+ },
+ "258": {
+  "name": "DA_TRANSFORM",
+  "src": "rathena"
+ },
+ "259": {
+  "name": "DA_ITEMREBUILD",
+  "src": "rathena"
+ },
+ "260": {
+  "name": "DA_ILLUSION",
+  "src": "rathena"
+ },
+ "261": {
+  "name": "DA_DARKPOWER",
+  "src": "rathena"
+ },
+ "262": {
+  "name": "DA_EARPLUG",
+  "src": "rathena"
+ },
+ "263": {
+  "name": "DA_CONTRACT",
+  "src": "rathena"
+ },
+ "264": {
+  "name": "DA_BLACK",
+  "src": "rathena"
+ },
+ "265": {
+  "name": "DA_MAGICCART",
+  "src": "rathena"
+ },
+ "266": {
+  "name": "CRYSTAL",
+  "src": "rathena"
+ },
+ "267": {
+  "name": "DA_REBUILD",
+  "src": "rathena"
+ },
+ "268": {
+  "name": "DA_EDARKNESS",
+  "src": "rathena"
+ },
+ "269": {
+  "name": "DA_EGUARDIAN",
+  "src": "rathena"
+ },
+ "270": {
+  "name": "DA_TIMEOUT",
+  "src": "rathena"
+ },
+ "271": {
+  "name": "FOOD_STR_CASH",
+  "src": "rathena"
+ },
+ "272": {
+  "name": "FOOD_AGI_CASH",
+  "src": "rathena"
+ },
+ "273": {
+  "name": "FOOD_VIT_CASH",
+  "src": "rathena"
+ },
+ "274": {
+  "name": "FOOD_DEX_CASH",
+  "src": "rathena"
+ },
+ "275": {
+  "name": "FOOD_INT_CASH",
+  "src": "rathena"
+ },
+ "276": {
+  "name": "FOOD_LUK_CASH",
+  "src": "rathena"
+ },
+ "277": {
+  "name": "MER_FLEE",
+  "src": "rathena"
+ },
+ "278": {
+  "name": "MER_ATK",
+  "src": "rathena"
+ },
+ "279": {
+  "name": "MER_HP",
+  "src": "rathena"
+ },
+ "280": {
+  "name": "MER_SP",
+  "src": "rathena"
+ },
+ "281": {
+  "name": "MER_HIT",
+  "src": "rathena"
+ },
+ "282": {
+  "name": "SLOWCAST",
+  "src": "rathena"
+ },
+ "283": {
+  "name": "MAGICMIRROR",
+  "src": "rathena"
+ },
+ "284": {
+  "name": "STONESKIN",
+  "src": "rathena"
+ },
+ "285": {
+  "name": "ANTIMAGIC",
+  "src": "rathena"
+ },
+ "286": {
+  "name": "CRITICALWOUND",
+  "src": "rathena"
+ },
+ "287": {
+  "name": "NPC_DEFENDER",
+  "src": "rathena"
+ },
+ "288": {
+  "name": "NOACTION_WAIT",
+  "src": "rathena"
+ },
+ "289": {
+  "name": "MOVHASTE_HORSE",
+  "src": "rathena"
+ },
+ "290": {
+  "name": "PROTECT_DEF",
+  "src": "rathena"
+ },
+ "291": {
+  "name": "PROTECT_MDEF",
+  "src": "rathena"
+ },
+ "292": {
+  "name": "HEALPLUS",
+  "src": "rathena"
+ },
+ "293": {
+  "name": "S_LIFEPOTION",
+  "src": "rathena"
+ },
+ "294": {
+  "name": "L_LIFEPOTION",
+  "src": "rathena"
+ },
+ "295": {
+  "name": "CRITICALPERCENT",
+  "src": "rathena"
+ },
+ "296": {
+  "name": "PLUSAVOIDVALUE",
+  "src": "rathena"
+ },
+ "297": {
+  "name": "ATKER_ASPD",
+  "src": "rathena"
+ },
+ "298": {
+  "name": "TARGET_ASPD",
+  "src": "rathena"
+ },
+ "299": {
+  "name": "ATKER_MOVESPEED",
+  "src": "rathena"
+ },
+ "300": {
+  "name": "ATKER_BLOOD",
+  "src": "rathena"
+ },
+ "301": {
+  "name": "TARGET_BLOOD",
+  "src": "rathena"
+ },
+ "302": {
+  "name": "ARMOR_PROPERTY",
+  "src": "rathena"
+ },
+ "303": {
+  "name": "REUSE_LIMIT_A",
+  "src": "rathena"
+ },
+ "304": {
+  "name": "HELLPOWER",
+  "src": "rathena"
+ },
+ "305": {
+  "name": "STEAMPACK",
+  "src": "rathena"
+ },
+ "306": {
+  "name": "REUSE_LIMIT_B",
+  "src": "rathena"
+ },
+ "307": {
+  "name": "REUSE_LIMIT_C",
+  "src": "rathena"
+ },
+ "308": {
+  "name": "REUSE_LIMIT_D",
+  "src": "rathena"
+ },
+ "309": {
+  "name": "REUSE_LIMIT_E",
+  "src": "rathena"
+ },
+ "310": {
+  "name": "REUSE_LIMIT_F",
+  "src": "rathena"
+ },
+ "311": {
+  "name": "INVINCIBLE",
+  "src": "rathena"
+ },
+ "312": {
+  "name": "CASH_PLUSONLYJOBEXP",
+  "src": "rathena"
+ },
+ "313": {
+  "name": "PARTYFLEE",
+  "src": "rathena"
+ },
+ "314": {
+  "name": "ANGEL_PROTECT",
+  "src": "rathena"
+ },
+ "315": {
+  "name": "ENDURE_MDEF",
+  "src": "rathena"
+ },
+ "316": {
+  "name": "ENCHANTBLADE",
+  "src": "rathena"
+ },
+ "317": {
+  "name": "DEATHBOUND",
+  "src": "rathena"
+ },
+ "318": {
+  "name": "REFRESH",
+  "src": "rathena"
+ },
+ "319": {
+  "name": "GIANTGROWTH",
+  "src": "rathena"
+ },
+ "320": {
+  "name": "STONEHARDSKIN",
+  "src": "rathena"
+ },
+ "321": {
+  "name": "VITALITYACTIVATION",
+  "src": "rathena"
+ },
+ "322": {
+  "name": "FIGHTINGSPIRIT",
+  "src": "rathena"
+ },
+ "323": {
+  "name": "ABUNDANCE",
+  "src": "rathena"
+ },
+ "324": {
+  "name": "REUSE_MILLENNIUMSHIELD",
+  "src": "rathena"
+ },
+ "325": {
+  "name": "REUSE_CRUSHSTRIKE",
+  "src": "rathena"
+ },
+ "326": {
+  "name": "REUSE_REFRESH",
+  "src": "rathena"
+ },
+ "327": {
+  "name": "REUSE_STORMBLAST",
+  "src": "rathena"
+ },
+ "328": {
+  "name": "VENOMIMPRESS",
+  "src": "rathena"
+ },
+ "329": {
+  "name": "EPICLESIS",
+  "src": "rathena"
+ },
+ "330": {
+  "name": "ORATIO",
+  "src": "rathena"
+ },
+ "331": {
+  "name": "LAUDAAGNUS",
+  "src": "rathena"
+ },
+ "332": {
+  "name": "LAUDARAMUS",
+  "src": "rathena"
+ },
+ "333": {
+  "name": "CLOAKINGEXCEED",
+  "src": "rathena"
+ },
+ "334": {
+  "name": "HALLUCINATIONWALK",
+  "src": "rathena"
+ },
+ "335": {
+  "name": "HALLUCINATIONWALK_POSTDELAY",
+  "src": "rathena"
+ },
+ "336": {
+  "name": "RENOVATIO",
+  "src": "rathena"
+ },
+ "337": {
+  "name": "WEAPONBLOCKING",
+  "src": "rathena"
+ },
+ "338": {
+  "name": "WEAPONBLOCKING_POSTDELAY",
+  "src": "rathena"
+ },
+ "339": {
+  "name": "ROLLINGCUTTER",
+  "src": "rathena"
+ },
+ "340": {
+  "name": "EXPIATIO",
+  "src": "rathena"
+ },
+ "341": {
+  "name": "POISONINGWEAPON",
+  "src": "rathena"
+ },
+ "342": {
+  "name": "TOXIN",
+  "src": "rathena"
+ },
+ "343": {
+  "name": "PARALYSE",
+  "src": "rathena"
+ },
+ "344": {
+  "name": "VENOMBLEED",
+  "src": "rathena"
+ },
+ "345": {
+  "name": "MAGICMUSHROOM",
+  "src": "rathena"
+ },
+ "346": {
+  "name": "DEATHHURT",
+  "src": "rathena"
+ },
+ "347": {
+  "name": "PYREXIA",
+  "src": "rathena"
+ },
+ "348": {
+  "name": "OBLIVIONCURSE",
+  "src": "rathena"
+ },
+ "349": {
+  "name": "LEECHESEND",
+  "src": "rathena"
+ },
+ "350": {
+  "name": "DUPLELIGHT",
+  "src": "rathena"
+ },
+ "351": {
+  "name": "FROSTMISTY",
+  "src": "rathena"
+ },
+ "352": {
+  "name": "FEARBREEZE",
+  "src": "rathena"
+ },
+ "353": {
+  "name": "ELECTRICSHOCKER",
+  "src": "rathena"
+ },
+ "354": {
+  "name": "MARSHOFABYSS",
+  "src": "rathena"
+ },
+ "355": {
+  "name": "RECOGNIZEDSPELL",
+  "src": "rathena"
+ },
+ "356": {
+  "name": "STASIS",
+  "src": "rathena"
+ },
+ "357": {
+  "name": "WUGRIDER",
+  "src": "rathena"
+ },
+ "358": {
+  "name": "WUGDASH",
+  "src": "rathena"
+ },
+ "359": {
+  "name": "WUGBITE",
+  "src": "rathena"
+ },
+ "360": {
+  "name": "CAMOUFLAGE",
+  "src": "rathena"
+ },
+ "361": {
+  "name": "ACCELERATION",
+  "src": "rathena"
+ },
+ "362": {
+  "name": "HOVERING",
+  "src": "rathena"
+ },
+ "363": {
+  "name": "SUMMON1",
+  "src": "rathena"
+ },
+ "364": {
+  "name": "SUMMON2",
+  "src": "rathena"
+ },
+ "365": {
+  "name": "SUMMON3",
+  "src": "rathena"
+ },
+ "366": {
+  "name": "SUMMON4",
+  "src": "rathena"
+ },
+ "367": {
+  "name": "SUMMON5",
+  "src": "rathena"
+ },
+ "368": {
+  "name": "MVPCARD_TAOGUNKA",
+  "src": "rathena"
+ },
+ "369": {
+  "name": "MVPCARD_MISTRESS",
+  "src": "rathena"
+ },
+ "370": {
+  "name": "MVPCARD_ORCHERO",
+  "src": "rathena"
+ },
+ "371": {
+  "name": "MVPCARD_ORCLORD",
+  "src": "rathena"
+ },
+ "372": {
+  "name": "OVERHEAT_LIMITPOINT",
+  "src": "rathena"
+ },
+ "373": {
+  "name": "OVERHEAT",
+  "src": "rathena"
+ },
+ "374": {
+  "name": "SHAPESHIFT",
+  "src": "rathena"
+ },
+ "375": {
+  "name": "INFRAREDSCAN",
+  "src": "rathena"
+ },
+ "376": {
+  "name": "MAGNETICFIELD",
+  "src": "rathena"
+ },
+ "377": {
+  "name": "NEUTRALBARRIER",
+  "src": "rathena"
+ },
+ "378": {
+  "name": "NEUTRALBARRIER_MASTER",
+  "src": "rathena"
+ },
+ "379": {
+  "name": "STEALTHFIELD",
+  "src": "rathena"
+ },
+ "380": {
+  "name": "STEALTHFIELD_MASTER",
+  "src": "rathena"
+ },
+ "381": {
+  "name": "MANU_ATK",
+  "src": "rathena"
+ },
+ "382": {
+  "name": "MANU_DEF",
+  "src": "rathena"
+ },
+ "383": {
+  "name": "SPL_ATK",
+  "src": "rathena"
+ },
+ "384": {
+  "name": "SPL_DEF",
+  "src": "rathena"
+ },
+ "385": {
+  "name": "REPRODUCE",
+  "src": "rathena"
+ },
+ "386": {
+  "name": "MANU_MATK",
+  "src": "rathena"
+ },
+ "387": {
+  "name": "SPL_MATK",
+  "src": "rathena"
+ },
+ "388": {
+  "name": "STR_SCROLL",
+  "src": "rathena"
+ },
+ "389": {
+  "name": "INT_SCROLL",
+  "src": "rathena"
+ },
+ "390": {
+  "name": "LG_REFLECTDAMAGE",
+  "src": "rathena"
+ },
+ "391": {
+  "name": "FORCEOFVANGUARD",
+  "src": "rathena"
+ },
+ "392": {
+  "name": "BUCHEDENOEL",
+  "src": "rathena"
+ },
+ "393": {
+  "name": "AUTOSHADOWSPELL",
+  "src": "rathena"
+ },
+ "394": {
+  "name": "SHADOWFORM",
+  "src": "rathena"
+ },
+ "395": {
+  "name": "RAID",
+  "src": "rathena"
+ },
+ "396": {
+  "name": "SHIELDSPELL_DEF",
+  "src": "rathena"
+ },
+ "397": {
+  "name": "SHIELDSPELL_MDEF",
+  "src": "rathena"
+ },
+ "398": {
+  "name": "SHIELDSPELL_REF",
+  "src": "rathena"
+ },
+ "399": {
+  "name": "BODYPAINT",
+  "src": "rathena"
+ },
+ "400": {
+  "name": "EXEEDBREAK",
+  "src": "rathena"
+ },
+ "401": {
+  "name": "ADORAMUS",
+  "src": "rathena"
+ },
+ "402": {
+  "name": "PRESTIGE",
+  "src": "rathena"
+ },
+ "403": {
+  "name": "INVISIBILITY",
+  "src": "rathena"
+ },
+ "404": {
+  "name": "DEADLYINFECT",
+  "src": "rathena"
+ },
+ "405": {
+  "name": "BANDING",
+  "src": "rathena"
+ },
+ "406": {
+  "name": "EARTHDRIVE",
+  "src": "rathena"
+ },
+ "407": {
+  "name": "INSPIRATION",
+  "src": "rathena"
+ },
+ "408": {
+  "name": "ENERVATION",
+  "src": "rathena"
+ },
+ "409": {
+  "name": "GROOMY",
+  "src": "rathena"
+ },
+ "410": {
+  "name": "RAISINGDRAGON",
+  "src": "rathena"
+ },
+ "411": {
+  "name": "IGNORANCE",
+  "src": "rathena"
+ },
+ "412": {
+  "name": "LAZINESS",
+  "src": "rathena"
+ },
+ "413": {
+  "name": "LIGHTNINGWALK",
+  "src": "rathena"
+ },
+ "414": {
+  "name": "ACARAJE",
+  "src": "rathena"
+ },
+ "415": {
+  "name": "UNLUCKY",
+  "src": "rathena"
+ },
+ "416": {
+  "name": "CURSEDCIRCLE_ATKER",
+  "src": "rathena"
+ },
+ "417": {
+  "name": "CURSEDCIRCLE_TARGET",
+  "src": "rathena"
+ },
+ "418": {
+  "name": "WEAKNESS",
+  "src": "rathena"
+ },
+ "419": {
+  "name": "CRESCENTELBOW",
+  "src": "rathena"
+ },
+ "420": {
+  "name": "NOEQUIPACCESSARY",
+  "src": "rathena"
+ },
+ "421": {
+  "name": "STRIPACCESSARY",
+  "src": "rathena"
+ },
+ "422": {
+  "name": "MANHOLE",
+  "src": "rathena"
+ },
+ "423": {
+  "name": "POPECOOKIE",
+  "src": "rathena"
+ },
+ "424": {
+  "name": "FALLENEMPIRE",
+  "src": "rathena"
+ },
+ "425": {
+  "name": "GENTLETOUCH_ENERGYGAIN",
+  "src": "rathena"
+ },
+ "426": {
+  "name": "GENTLETOUCH_CHANGE",
+  "src": "rathena"
+ },
+ "427": {
+  "name": "GENTLETOUCH_REVITALIZE",
+  "src": "rathena"
+ },
+ "428": {
+  "name": "BLOODYLUST",
+  "src": "rathena"
+ },
+ "429": {
+  "name": "SWING",
+  "src": "rathena"
+ },
+ "430": {
+  "name": "SYMPHONY_LOVE",
+  "src": "rathena"
+ },
+ "431": {
+  "name": "PROPERTYWALK",
+  "src": "rathena"
+ },
+ "432": {
+  "name": "SPELLFIST",
+  "src": "rathena"
+ },
+ "433": {
+  "name": "NETHERWORLD",
+  "src": "rathena"
+ },
+ "434": {
+  "name": "SIREN",
+  "src": "rathena"
+ },
+ "435": {
+  "name": "DEEP_SLEEP",
+  "src": "rathena"
+ },
+ "436": {
+  "name": "SIRCLEOFNATURE",
+  "src": "rathena"
+ },
+ "437": {
+  "name": "COLD",
+  "src": "rathena"
+ },
+ "438": {
+  "name": "GLOOMYDAY",
+  "src": "rathena"
+ },
+ "439": {
+  "name": "SONG_OF_MANA",
+  "src": "rathena"
+ },
+ "440": {
+  "name": "CLOUD_KILL",
+  "src": "rathena"
+ },
+ "441": {
+  "name": "DANCE_WITH_WUG",
+  "src": "rathena"
+ },
+ "442": {
+  "name": "RUSH_WINDMILL",
+  "src": "rathena"
+ },
+ "443": {
+  "name": "ECHOSONG",
+  "src": "rathena"
+ },
+ "444": {
+  "name": "HARMONIZE",
+  "src": "rathena"
+ },
+ "445": {
+  "name": "STRIKING",
+  "src": "rathena"
+ },
+ "446": {
+  "name": "WARMER",
+  "src": "rathena"
+ },
+ "447": {
+  "name": "MOONLIT_SERENADE",
+  "src": "rathena"
+ },
+ "448": {
+  "name": "SATURDAY_NIGHT_FEVER",
+  "src": "rathena"
+ },
+ "449": {
+  "name": "SITDOWN_FORCE",
+  "src": "rathena"
+ },
+ "450": {
+  "name": "ANALYZE",
+  "src": "rathena"
+ },
+ "451": {
+  "name": "LERADS_DEW",
+  "src": "rathena"
+ },
+ "452": {
+  "name": "MELODYOFSINK",
+  "src": "rathena"
+ },
+ "453": {
+  "name": "BEYOND_OF_WARCRY",
+  "src": "rathena"
+ },
+ "454": {
+  "name": "UNLIMITED_HUMMING_VOICE",
+  "src": "rathena"
+ },
+ "455": {
+  "name": "SPELLBOOK1",
+  "src": "rathena"
+ },
+ "456": {
+  "name": "SPELLBOOK2",
+  "src": "rathena"
+ },
+ "457": {
+  "name": "SPELLBOOK3",
+  "src": "rathena"
+ },
+ "458": {
+  "name": "FREEZE_SP",
+  "src": "rathena"
+ },
+ "459": {
+  "name": "GN_TRAINING_SWORD",
+  "src": "rathena"
+ },
+ "460": {
+  "name": "GN_REMODELING_CART",
+  "src": "rathena"
+ },
+ "461": {
+  "name": "GN_CARTBOOST",
+  "src": "rathena"
+ },
+ "462": {
+  "name": "FIXEDCASTINGTM_REDUCE",
+  "src": "rathena"
+ },
+ "463": {
+  "name": "THORNS_TRAP",
+  "src": "rathena"
+ },
+ "464": {
+  "name": "BLOOD_SUCKER",
+  "src": "rathena"
+ },
+ "465": {
+  "name": "SPORE_EXPLOSION",
+  "src": "rathena"
+ },
+ "466": {
+  "name": "DEMONIC_FIRE",
+  "src": "rathena"
+ },
+ "467": {
+  "name": "FIRE_EXPANSION_SMOKE_POWDER",
+  "src": "rathena"
+ },
+ "468": {
+  "name": "FIRE_EXPANSION_TEAR_GAS",
+  "src": "rathena"
+ },
+ "469": {
+  "name": "BLOCKING_PLAY",
+  "src": "rathena"
+ },
+ "470": {
+  "name": "MANDRAGORA",
+  "src": "rathena"
+ },
+ "471": {
+  "name": "ACTIVATE",
+  "src": "rathena"
+ },
+ "472": {
+  "name": "AB_SECRAMENT",
+  "src": "rathena"
+ },
+ "473": {
+  "name": "ASSUMPTIO2",
+  "src": "rathena"
+ },
+ "474": {
+  "name": "TK_SEVENWIND",
+  "src": "rathena"
+ },
+ "475": {
+  "name": "LIMIT_ODINS_RECALL",
+  "src": "rathena"
+ },
+ "476": {
+  "name": "STOMACHACHE",
+  "src": "rathena"
+ },
+ "477": {
+  "name": "MYSTERIOUS_POWDER",
+  "src": "rathena"
+ },
+ "478": {
+  "name": "MELON_BOMB",
+  "src": "rathena"
+ },
+ "479": {
+  "name": "BANANA_BOMB_SITDOWN_POSTDELAY",
+  "src": "rathena"
+ },
+ "480": {
+  "name": "PROMOTE_HEALTH_RESERCH",
+  "src": "rathena"
+ },
+ "481": {
+  "name": "ENERGY_DRINK_RESERCH",
+  "src": "rathena"
+ },
+ "482": {
+  "name": "EXTRACT_WHITE_POTION_Z",
+  "src": "rathena"
+ },
+ "483": {
+  "name": "VITATA_500",
+  "src": "rathena"
+ },
+ "484": {
+  "name": "EXTRACT_SALAMINE_JUICE",
+  "src": "rathena"
+ },
+ "485": {
+  "name": "BOOST500",
+  "src": "rathena"
+ },
+ "486": {
+  "name": "FULL_SWING_K",
+  "src": "rathena"
+ },
+ "487": {
+  "name": "MANA_PLUS",
+  "src": "rathena"
+ },
+ "488": {
+  "name": "MUSTLE_M",
+  "src": "rathena"
+ },
+ "489": {
+  "name": "LIFE_FORCE_F",
+  "src": "rathena"
+ },
+ "490": {
+  "name": "VACUUM_EXTREME",
+  "src": "rathena"
+ },
+ "491": {
+  "name": "SAVAGE_STEAK",
+  "src": "rathena"
+ },
+ "492": {
+  "name": "COCKTAIL_WARG_BLOOD",
+  "src": "rathena"
+ },
+ "493": {
+  "name": "MINOR_BBQ",
+  "src": "rathena"
+ },
+ "494": {
+  "name": "SIROMA_ICE_TEA",
+  "src": "rathena"
+ },
+ "495": {
+  "name": "DROCERA_HERB_STEAMED",
+  "src": "rathena"
+ },
+ "496": {
+  "name": "PUTTI_TAILS_NOODLES",
+  "src": "rathena"
+ },
+ "497": {
+  "name": "BANANA_BOMB",
+  "src": "rathena"
+ },
+ "498": {
+  "name": "SUMMON_AGNI",
+  "src": "rathena"
+ },
+ "499": {
+  "name": "SPELLBOOK4",
+  "src": "rathena"
+ },
+ "500": {
+  "name": "SPELLBOOK5",
+  "src": "rathena"
+ },
+ "501": {
+  "name": "SPELLBOOK6",
+  "src": "rathena"
+ },
+ "502": {
+  "name": "SPELLBOOK7",
+  "src": "rathena"
+ },
+ "503": {
+  "name": "ELEMENTAL_AGGRESSIVE",
+  "src": "rathena"
+ },
+ "504": {
+  "name": "RETURN_TO_ELDICASTES",
+  "src": "rathena"
+ },
+ "505": {
+  "name": "BANDING_DEFENCE",
+  "src": "rathena"
+ },
+ "506": {
+  "name": "SKELSCROLL",
+  "src": "rathena"
+ },
+ "507": {
+  "name": "DISTRUCTIONSCROLL",
+  "src": "rathena"
+ },
+ "508": {
+  "name": "ROYALSCROLL",
+  "src": "rathena"
+ },
+ "509": {
+  "name": "IMMUNITYSCROLL",
+  "src": "rathena"
+ },
+ "510": {
+  "name": "MYSTICSCROLL",
+  "src": "rathena"
+ },
+ "511": {
+  "name": "BATTLESCROLL",
+  "src": "rathena"
+ },
+ "512": {
+  "name": "ARMORSCROLL",
+  "src": "rathena"
+ },
+ "513": {
+  "name": "FREYJASCROLL",
+  "src": "rathena"
+ },
+ "514": {
+  "name": "SOULSCROLL",
+  "src": "rathena"
+ },
+ "515": {
+  "name": "CIRCLE_OF_FIRE",
+  "src": "rathena"
+ },
+ "516": {
+  "name": "CIRCLE_OF_FIRE_OPTION",
+  "src": "rathena"
+ },
+ "517": {
+  "name": "FIRE_CLOAK",
+  "src": "rathena"
+ },
+ "518": {
+  "name": "FIRE_CLOAK_OPTION",
+  "src": "rathena"
+ },
+ "519": {
+  "name": "WATER_SCREEN",
+  "src": "rathena"
+ },
+ "520": {
+  "name": "WATER_SCREEN_OPTION",
+  "src": "rathena"
+ },
+ "521": {
+  "name": "WATER_DROP",
+  "src": "rathena"
+ },
+ "522": {
+  "name": "WATER_DROP_OPTION",
+  "src": "rathena"
+ },
+ "523": {
+  "name": "WIND_STEP",
+  "src": "rathena"
+ },
+ "524": {
+  "name": "WIND_STEP_OPTION",
+  "src": "rathena"
+ },
+ "525": {
+  "name": "WIND_CURTAIN",
+  "src": "rathena"
+ },
+ "526": {
+  "name": "WIND_CURTAIN_OPTION",
+  "src": "rathena"
+ },
+ "527": {
+  "name": "WATER_BARRIER",
+  "src": "rathena"
+ },
+ "528": {
+  "name": "ZEPHYR",
+  "src": "rathena"
+ },
+ "529": {
+  "name": "SOLID_SKIN",
+  "src": "rathena"
+ },
+ "530": {
+  "name": "SOLID_SKIN_OPTION",
+  "src": "rathena"
+ },
+ "531": {
+  "name": "STONE_SHIELD",
+  "src": "rathena"
+ },
+ "532": {
+  "name": "STONE_SHIELD_OPTION",
+  "src": "rathena"
+ },
+ "533": {
+  "name": "POWER_OF_GAIA",
+  "src": "rathena"
+ },
+ "534": {
+  "name": "EL_WAIT",
+  "src": "rathena"
+ },
+ "535": {
+  "name": "EL_PASSIVE",
+  "src": "rathena"
+ },
+ "536": {
+  "name": "EL_DEFENSIVE",
+  "src": "rathena"
+ },
+ "537": {
+  "name": "EL_OFFENSIVE",
+  "src": "rathena"
+ },
+ "538": {
+  "name": "EL_COST",
+  "src": "rathena"
+ },
+ "539": {
+  "name": "PYROTECHNIC",
+  "src": "rathena"
+ },
+ "540": {
+  "name": "PYROTECHNIC_OPTION",
+  "src": "rathena"
+ },
+ "541": {
+  "name": "HEATER",
+  "src": "rathena"
+ },
+ "542": {
+  "name": "HEATER_OPTION",
+  "src": "rathena"
+ },
+ "543": {
+  "name": "TROPIC",
+  "src": "rathena"
+ },
+ "544": {
+  "name": "TROPIC_OPTION",
+  "src": "rathena"
+ },
+ "545": {
+  "name": "AQUAPLAY",
+  "src": "rathena"
+ },
+ "546": {
+  "name": "AQUAPLAY_OPTION",
+  "src": "rathena"
+ },
+ "547": {
+  "name": "COOLER",
+  "src": "rathena"
+ },
+ "548": {
+  "name": "COOLER_OPTION",
+  "src": "rathena"
+ },
+ "549": {
+  "name": "CHILLY_AIR",
+  "src": "rathena"
+ },
+ "550": {
+  "name": "CHILLY_AIR_OPTION",
+  "src": "rathena"
+ },
+ "551": {
+  "name": "GUST",
+  "src": "rathena"
+ },
+ "552": {
+  "name": "GUST_OPTION",
+  "src": "rathena"
+ },
+ "553": {
+  "name": "BLAST",
+  "src": "rathena"
+ },
+ "554": {
+  "name": "BLAST_OPTION",
+  "src": "rathena"
+ },
+ "555": {
+  "name": "WILD_STORM",
+  "src": "rathena"
+ },
+ "556": {
+  "name": "WILD_STORM_OPTION",
+  "src": "rathena"
+ },
+ "557": {
+  "name": "PETROLOGY",
+  "src": "rathena"
+ },
+ "558": {
+  "name": "PETROLOGY_OPTION",
+  "src": "rathena"
+ },
+ "559": {
+  "name": "CURSED_SOIL",
+  "src": "rathena"
+ },
+ "560": {
+  "name": "CURSED_SOIL_OPTION",
+  "src": "rathena"
+ },
+ "561": {
+  "name": "UPHEAVAL",
+  "src": "rathena"
+ },
+ "562": {
+  "name": "UPHEAVAL_OPTION",
+  "src": "rathena"
+ },
+ "563": {
+  "name": "TIDAL_WEAPON",
+  "src": "rathena"
+ },
+ "564": {
+  "name": "TIDAL_WEAPON_OPTION",
+  "src": "rathena"
+ },
+ "565": {
+  "name": "ROCK_CRUSHER",
+  "src": "rathena"
+ },
+ "566": {
+  "name": "ROCK_CRUSHER_ATK",
+  "src": "rathena"
+ },
+ "567": {
+  "name": "FIRE_INSIGNIA",
+  "src": "rathena"
+ },
+ "568": {
+  "name": "WATER_INSIGNIA",
+  "src": "rathena"
+ },
+ "569": {
+  "name": "WIND_INSIGNIA",
+  "src": "rathena"
+ },
+ "570": {
+  "name": "EARTH_INSIGNIA",
+  "src": "rathena"
+ },
+ "571": {
+  "name": "EQUIPED_FLOOR",
+  "src": "rathena"
+ },
+ "572": {
+  "name": "GUARDIAN_RECALL",
+  "src": "rathena"
+ },
+ "573": {
+  "name": "MORA_BUFF",
+  "src": "rathena"
+ },
+ "574": {
+  "name": "REUSE_LIMIT_G",
+  "src": "rathena"
+ },
+ "575": {
+  "name": "REUSE_LIMIT_H",
+  "src": "rathena"
+ },
+ "576": {
+  "name": "NEEDLE_OF_PARALYZE",
+  "src": "rathena"
+ },
+ "577": {
+  "name": "PAIN_KILLER",
+  "src": "rathena"
+ },
+ "578": {
+  "name": "G_LIFEPOTION",
+  "src": "rathena"
+ },
+ "579": {
+  "name": "VITALIZE_POTION",
+  "src": "rathena"
+ },
+ "580": {
+  "name": "LIGHT_OF_REGENE",
+  "src": "rathena"
+ },
+ "581": {
+  "name": "OVERED_BOOST",
+  "src": "rathena"
+ },
+ "582": {
+  "name": "SILENT_BREEZE",
+  "src": "rathena"
+ },
+ "583": {
+  "name": "ODINS_POWER",
+  "src": "rathena"
+ },
+ "584": {
+  "name": "STYLE_CHANGE",
+  "src": "rathena"
+ },
+ "585": {
+  "name": "SONIC_CLAW_POSTDELAY",
+  "src": "rathena"
+ },
+ "596": {
+  "name": "SILVERVEIN_RUSH_POSTDELAY",
+  "src": "rathena"
+ },
+ "597": {
+  "name": "MIDNIGHT_FRENZY_POSTDELAY",
+  "src": "rathena"
+ },
+ "598": {
+  "name": "GOLDENE_FERSE",
+  "src": "rathena"
+ },
+ "599": {
+  "name": "ANGRIFFS_MODUS",
+  "src": "rathena"
+ },
+ "600": {
+  "name": "TINDER_BREAKER",
+  "src": "rathena"
+ },
+ "601": {
+  "name": "TINDER_BREAKER_POSTDELAY",
+  "src": "rathena"
+ },
+ "602": {
+  "name": "CBC",
+  "src": "rathena"
+ },
+ "603": {
+  "name": "CBC_POSTDELAY",
+  "src": "rathena"
+ },
+ "604": {
+  "name": "EQC",
+  "src": "rathena"
+ },
+ "605": {
+  "name": "MAGMA_FLOW",
+  "src": "rathena"
+ },
+ "606": {
+  "name": "GRANITIC_ARMOR",
+  "src": "rathena"
+ },
+ "607": {
+  "name": "PYROCLASTIC",
+  "src": "rathena"
+ },
+ "608": {
+  "name": "VOLCANIC_ASH",
+  "src": "rathena"
+ },
+ "609": {
+  "name": "SPIRITS_SAVEINFO1",
+  "src": "rathena"
+ },
+ "610": {
+  "name": "SPIRITS_SAVEINFO2",
+  "src": "rathena"
+ },
+ "611": {
+  "name": "MAGIC_CANDY",
+  "src": "rathena"
+ },
+ "612": {
+  "name": "SEARCH_STORE_INFO",
+  "src": "rathena"
+ },
+ "613": {
+  "name": "ALL_RIDING",
+  "src": "rathena"
+ },
+ "614": {
+  "name": "ALL_RIDING_REUSE_LIMIT",
+  "src": "rathena"
+ },
+ "615": {
+  "name": "MACRO",
+  "src": "rathena"
+ },
+ "616": {
+  "name": "MACRO_POSTDELAY",
+  "src": "rathena"
+ },
+ "617": {
+  "name": "BEER_BOTTLE_CAP",
+  "src": "rathena"
+ },
+ "618": {
+  "name": "OVERLAPEXPUP",
+  "src": "rathena"
+ },
+ "619": {
+  "name": "PC_IZ_DUN05",
+  "src": "rathena"
+ },
+ "620": {
+  "name": "CRUSHSTRIKE",
+  "src": "rathena"
+ },
+ "621": {
+  "name": "MONSTER_TRANSFORM",
+  "src": "rathena"
+ },
+ "622": {
+  "name": "SIT",
+  "src": "rathena"
+ },
+ "623": {
+  "name": "ONAIR",
+  "src": "rathena"
+ },
+ "624": {
+  "name": "MTF_ASPD",
+  "src": "rathena"
+ },
+ "625": {
+  "name": "MTF_RANGEATK",
+  "src": "rathena"
+ },
+ "626": {
+  "name": "MTF_MATK",
+  "src": "rathena"
+ },
+ "627": {
+  "name": "MTF_MLEATKED",
+  "src": "rathena"
+ },
+ "628": {
+  "name": "MTF_CRIDAMAGE",
+  "src": "rathena"
+ },
+ "629": {
+  "name": "REUSE_LIMIT_MTF",
+  "src": "rathena"
+ },
+ "630": {
+  "name": "MACRO_PERMIT",
+  "src": "rathena"
+ },
+ "631": {
+  "name": "MACRO_PLAY",
+  "src": "rathena"
+ },
+ "632": {
+  "name": "SKF_CAST",
+  "src": "rathena"
+ },
+ "633": {
+  "name": "SKF_ASPD",
+  "src": "rathena"
+ },
+ "634": {
+  "name": "SKF_ATK",
+  "src": "rathena"
+ },
+ "635": {
+  "name": "SKF_MATK",
+  "src": "rathena"
+ },
+ "636": {
+  "name": "REWARD_PLUSONLYJOBEXP",
+  "src": "rathena"
+ },
+ "637": {
+  "name": "HANDICAPSTATE_NORECOVER",
+  "src": "rathena"
+ },
+ "638": {
+  "name": "SET_NUM_DEF",
+  "src": "rathena"
+ },
+ "639": {
+  "name": "SET_NUM_MDEF",
+  "src": "rathena"
+ },
+ "640": {
+  "name": "SET_PER_DEF",
+  "src": "rathena"
+ },
+ "641": {
+  "name": "SET_PER_MDEF",
+  "src": "rathena"
+ },
+ "642": {
+  "name": "PARTYBOOKING_SEARCH_DEALY",
+  "src": "rathena"
+ },
+ "643": {
+  "name": "PARTYBOOKING_REGISTER_DEALY",
+  "src": "rathena"
+ },
+ "644": {
+  "name": "PERIOD_TIME_CHECK_DETECT_SKILL",
+  "src": "rathena"
+ },
+ "645": {
+  "name": "KO_JYUMONJIKIRI",
+  "src": "rathena"
+ },
+ "646": {
+  "name": "MEIKYOUSISUI",
+  "src": "rathena"
+ },
+ "647": {
+  "name": "ATTHASTE_CASH",
+  "src": "rathena"
+ },
+ "648": {
+  "name": "EQUIPPED_DIVINE_ARMOR",
+  "src": "rathena"
+ },
+ "649": {
+  "name": "EQUIPPED_HOLY_ARMOR",
+  "src": "rathena"
+ },
+ "650": {
+  "name": "2011RWC",
+  "src": "rathena"
+ },
+ "651": {
+  "name": "KYOUGAKU",
+  "src": "rathena"
+ },
+ "652": {
+  "name": "IZAYOI",
+  "src": "rathena"
+ },
+ "653": {
+  "name": "ZENKAI",
+  "src": "rathena"
+ },
+ "654": {
+  "name": "KG_KAGEHUMI",
+  "src": "rathena"
+ },
+ "655": {
+  "name": "KYOMU",
+  "src": "rathena"
+ },
+ "656": {
+  "name": "KAGEMUSYA",
+  "src": "rathena"
+ },
+ "657": {
+  "name": "ZANGETSU",
+  "src": "rathena"
+ },
+ "658": {
+  "name": "PHI_DEMON",
+  "src": "rathena"
+ },
+ "659": {
+  "name": "GENSOU",
+  "src": "rathena"
+ },
+ "660": {
+  "name": "AKAITSUKI",
+  "src": "rathena"
+ },
+ "661": {
+  "name": "TETANY",
+  "src": "rathena"
+ },
+ "662": {
+  "name": "GM_BATTLE",
+  "src": "rathena"
+ },
+ "663": {
+  "name": "GM_BATTLE2",
+  "src": "rathena"
+ },
+ "664": {
+  "name": "2011RWC_SCROLL",
+  "src": "rathena"
+ },
+ "665": {
+  "name": "ACTIVE_MONSTER_TRANSFORM",
+  "src": "rathena"
+ },
+ "666": {
+  "name": "MYSTICPOWDER",
+  "src": "rathena"
+ },
+ "667": {
+  "name": "ECLAGE_RECALL",
+  "src": "rathena"
+ },
+ "668": {
+  "name": "ENTRY_QUEUE_APPLY_DELAY",
+  "src": "rathena"
+ },
+ "669": {
+  "name": "REUSE_LIMIT_ECL",
+  "src": "rathena"
+ },
+ "670": {
+  "name": "M_LIFEPOTION",
+  "src": "rathena"
+ },
+ "671": {
+  "name": "ENTRY_QUEUE_NOTIFY_ADMISSION_TIME_OUT",
+  "src": "rathena"
+ },
+ "672": {
+  "name": "UNKNOWN_NAME",
+  "src": "rathena"
+ },
+ "673": {
+  "name": "ON_PUSH_CART",
+  "src": "rathena"
+ },
+ "674": {
+  "name": "HAT_EFFECT",
+  "src": "rathena"
+ },
+ "675": {
+  "name": "FLOWER_LEAF",
+  "src": "rathena"
+ },
+ "676": {
+  "name": "RAY_OF_PROTECTION",
+  "src": "rathena"
+ },
+ "677": {
+  "name": "GLASTHEIM_ATK",
+  "src": "rathena"
+ },
+ "678": {
+  "name": "GLASTHEIM_DEF",
+  "src": "rathena"
+ },
+ "679": {
+  "name": "GLASTHEIM_HEAL",
+  "src": "rathena"
+ },
+ "680": {
+  "name": "GLASTHEIM_HIDDEN",
+  "src": "rathena"
+ },
+ "681": {
+  "name": "GLASTHEIM_STATE",
+  "src": "rathena"
+ },
+ "682": {
+  "name": "GLASTHEIM_ITEMDEF",
+  "src": "rathena"
+ },
+ "683": {
+  "name": "GLASTHEIM_HPSP",
+  "src": "rathena"
+ },
+ "684": {
+  "name": "HOMUN_SKILL_POSTDELAY",
+  "src": "rathena"
+ },
+ "686": {
+  "name": "GVG_GIANT",
+  "src": "rathena"
+ },
+ "687": {
+  "name": "GVG_GOLEM",
+  "src": "rathena"
+ },
+ "688": {
+  "name": "GVG_STUN",
+  "src": "rathena"
+ },
+ "689": {
+  "name": "GVG_STONE",
+  "src": "rathena"
+ },
+ "690": {
+  "name": "GVG_FREEZ",
+  "src": "rathena"
+ },
+ "691": {
+  "name": "GVG_SLEEP",
+  "src": "rathena"
+ },
+ "692": {
+  "name": "GVG_CURSE",
+  "src": "rathena"
+ },
+ "693": {
+  "name": "GVG_SILENCE",
+  "src": "rathena"
+ },
+ "694": {
+  "name": "GVG_BLIND",
+  "src": "rathena"
+ },
+ "695": {
+  "name": "CLIENT_ONLY_EQUIP_ARROW",
+  "src": "rathena"
+ },
+ "696": {
+  "name": "CLAN_INFO",
+  "src": "rathena"
+ },
+ "697": {
+  "name": "JP_EVENT01",
+  "src": "rathena"
+ },
+ "698": {
+  "name": "JP_EVENT02",
+  "src": "rathena"
+ },
+ "699": {
+  "name": "JP_EVENT03",
+  "src": "rathena"
+ },
+ "700": {
+  "name": "JP_EVENT04",
+  "src": "rathena"
+ },
+ "701": {
+  "name": "TELEPORT_FIXEDCASTINGDELAY",
+  "src": "rathena"
+ },
+ "702": {
+  "name": "GEFFEN_MAGIC1",
+  "src": "rathena"
+ },
+ "703": {
+  "name": "GEFFEN_MAGIC2",
+  "src": "rathena"
+ },
+ "704": {
+  "name": "GEFFEN_MAGIC3",
+  "src": "rathena"
+ },
+ "705": {
+  "name": "QUEST_BUFF1",
+  "src": "rathena"
+ },
+ "706": {
+  "name": "QUEST_BUFF2",
+  "src": "rathena"
+ },
+ "707": {
+  "name": "QUEST_BUFF3",
+  "src": "rathena"
+ },
+ "708": {
+  "name": "REUSE_LIMIT_RECALL",
+  "src": "rathena"
+ },
+ "709": {
+  "name": "SAVEPOSITION",
+  "src": "rathena"
+ },
+ "710": {
+  "name": "HANDICAPSTATE_ICEEXPLO",
+  "src": "rathena"
+ },
+ "711": {
+  "name": "FENRIR_CARD",
+  "src": "rathena"
+ },
+ "712": {
+  "name": "REUSE_LIMIT_ASPD_POTION",
+  "src": "rathena"
+ },
+ "713": {
+  "name": "MAXPAIN",
+  "src": "rathena"
+ },
+ "714": {
+  "name": "PC_STOP",
+  "src": "rathena"
+ },
+ "715": {
+  "name": "FRIGG_SONG",
+  "src": "rathena"
+ },
+ "716": {
+  "name": "OFFERTORIUM",
+  "src": "rathena"
+ },
+ "717": {
+  "name": "TELEKINESIS_INTENSE",
+  "src": "rathena"
+ },
+ "718": {
+  "name": "MOONSTAR",
+  "src": "rathena"
+ },
+ "719": {
+  "name": "STRANGELIGHTS",
+  "src": "rathena"
+ },
+ "720": {
+  "name": "FULL_THROTTLE",
+  "src": "rathena"
+ },
+ "721": {
+  "name": "REBOUND",
+  "src": "rathena"
+ },
+ "722": {
+  "name": "UNLIMIT",
+  "src": "rathena"
+ },
+ "723": {
+  "name": "KINGS_GRACE",
+  "src": "rathena"
+ },
+ "724": {
+  "name": "ITEM_ATKMAX",
+  "src": "rathena"
+ },
+ "725": {
+  "name": "ITEM_ATKMIN",
+  "src": "rathena"
+ },
+ "726": {
+  "name": "ITEM_MATKMAX",
+  "src": "rathena"
+ },
+ "727": {
+  "name": "ITEM_MATKMIN",
+  "src": "rathena"
+ },
+ "728": {
+  "name": "SUPER_STAR",
+  "src": "rathena"
+ },
+ "729": {
+  "name": "HIGH_RANKER",
+  "src": "rathena"
+ },
+ "730": {
+  "name": "DARKCROW",
+  "src": "rathena"
+ },
+ "731": {
+  "name": "2013_VALENTINE1",
+  "src": "rathena"
+ },
+ "732": {
+  "name": "2013_VALENTINE2",
+  "src": "rathena"
+ },
+ "733": {
+  "name": "2013_VALENTINE3",
+  "src": "rathena"
+ },
+ "734": {
+  "name": "ILLUSIONDOPING",
+  "src": "rathena"
+ },
+ "735": {
+  "name": "WIDEWEB",
+  "src": "rathena"
+ },
+ "736": {
+  "name": "CHILL",
+  "src": "rathena"
+ },
+ "737": {
+  "name": "BURNT",
+  "src": "rathena"
+ },
+ "738": {
+  "name": "PCCAFE_PLAY_TIME",
+  "src": "rathena"
+ },
+ "739": {
+  "name": "TWISTED_TIME",
+  "src": "rathena"
+ },
+ "740": {
+  "name": "FLASHCOMBO",
+  "src": "rathena"
+ },
+ "741": {
+  "name": "JITTER_BUFF1",
+  "src": "rathena"
+ },
+ "742": {
+  "name": "JITTER_BUFF2",
+  "src": "rathena"
+ },
+ "743": {
+  "name": "JITTER_BUFF3",
+  "src": "rathena"
+ },
+ "744": {
+  "name": "JITTER_BUFF4",
+  "src": "rathena"
+ },
+ "745": {
+  "name": "JITTER_BUFF5",
+  "src": "rathena"
+ },
+ "746": {
+  "name": "JITTER_BUFF6",
+  "src": "rathena"
+ },
+ "747": {
+  "name": "JITTER_BUFF7",
+  "src": "rathena"
+ },
+ "748": {
+  "name": "JITTER_BUFF8",
+  "src": "rathena"
+ },
+ "749": {
+  "name": "JITTER_BUFF9",
+  "src": "rathena"
+ },
+ "750": {
+  "name": "JITTER_BUFF10",
+  "src": "rathena"
+ },
+ "751": {
+  "name": "CUP_OF_BOZA",
+  "src": "rathena"
+ },
+ "752": {
+  "name": "B_TRAP",
+  "src": "rathena"
+ },
+ "753": {
+  "name": "E_CHAIN",
+  "src": "rathena"
+ },
+ "754": {
+  "name": "E_QD_SHOT_READY",
+  "src": "rathena"
+ },
+ "755": {
+  "name": "C_MARKER",
+  "src": "rathena"
+ },
+ "756": {
+  "name": "H_MINE",
+  "src": "rathena"
+ },
+ "757": {
+  "name": "H_MINE_SPLASH",
+  "src": "rathena"
+ },
+ "758": {
+  "name": "P_ALTER",
+  "src": "rathena"
+ },
+ "759": {
+  "name": "HEAT_BARREL",
+  "src": "rathena"
+ },
+ "760": {
+  "name": "ANTI_M_BLAST",
+  "src": "rathena"
+ },
+ "761": {
+  "name": "SLUGSHOT",
+  "src": "rathena"
+ },
+ "762": {
+  "name": "SWORDCLAN",
+  "src": "rathena"
+ },
+ "763": {
+  "name": "ARCWANDCLAN",
+  "src": "rathena"
+ },
+ "764": {
+  "name": "GOLDENMACECLAN",
+  "src": "rathena"
+ },
+ "765": {
+  "name": "CROSSBOWCLAN",
+  "src": "rathena"
+ },
+ "766": {
+  "name": "PACKING_ENVELOPE1",
+  "src": "rathena"
+ },
+ "767": {
+  "name": "PACKING_ENVELOPE2",
+  "src": "rathena"
+ },
+ "768": {
+  "name": "PACKING_ENVELOPE3",
+  "src": "rathena"
+ },
+ "769": {
+  "name": "PACKING_ENVELOPE4",
+  "src": "rathena"
+ },
+ "770": {
+  "name": "PACKING_ENVELOPE5",
+  "src": "rathena"
+ },
+ "771": {
+  "name": "PACKING_ENVELOPE6",
+  "src": "rathena"
+ },
+ "772": {
+  "name": "PACKING_ENVELOPE7",
+  "src": "rathena"
+ },
+ "773": {
+  "name": "PACKING_ENVELOPE8",
+  "src": "rathena"
+ },
+ "774": {
+  "name": "PACKING_ENVELOPE9",
+  "src": "rathena"
+ },
+ "775": {
+  "name": "PACKING_ENVELOPE10",
+  "src": "rathena"
+ },
+ "776": {
+  "name": "GLASTHEIM_TRANS",
+  "src": "rathena"
+ },
+ "777": {
+  "name": "ZONGZI_POUCH_TRANS",
+  "src": "rathena"
+ },
+ "778": {
+  "name": "HEAT_BARREL_AFTER",
+  "src": "rathena"
+ },
+ "779": {
+  "name": "DECORATION_OF_MUSIC",
+  "src": "rathena"
+ },
+ "780": {
+  "name": "OVERSEAEXPUP",
+  "src": "rathena"
+ },
+ "781": {
+  "name": "CLOWN_N_GYPSY_CARD",
+  "src": "rathena"
+ },
+ "782": {
+  "name": "OPEN_NPC_MARKET",
+  "src": "rathena"
+ },
+ "783": {
+  "name": "BEEF_RIB_STEW",
+  "src": "rathena"
+ },
+ "784": {
+  "name": "PORK_RIB_STEW",
+  "src": "rathena"
+ },
+ "785": {
+  "name": "CHUSEOK_MONDAY",
+  "src": "rathena"
+ },
+ "786": {
+  "name": "CHUSEOK_TUESDAY",
+  "src": "rathena"
+ },
+ "787": {
+  "name": "CHUSEOK_WEDNESDAY",
+  "src": "rathena"
+ },
+ "788": {
+  "name": "CHUSEOK_THURSDAY",
+  "src": "rathena"
+ },
+ "789": {
+  "name": "CHUSEOK_FRIDAY",
+  "src": "rathena"
+ },
+ "790": {
+  "name": "CHUSEOK_WEEKEND",
+  "src": "rathena"
+ },
+ "791": {
+  "name": "ALL_LIGHTGUARD",
+  "src": "rathena"
+ },
+ "792": {
+  "name": "ALL_LIGHTGUARD_COOL_TIME",
+  "src": "rathena"
+ },
+ "793": {
+  "name": "MTF_MHP",
+  "src": "rathena"
+ },
+ "794": {
+  "name": "MTF_MSP",
+  "src": "rathena"
+ },
+ "795": {
+  "name": "MTF_PUMPKIN",
+  "src": "rathena"
+ },
+ "796": {
+  "name": "MTF_HITFLEE",
+  "src": "rathena"
+ },
+ "797": {
+  "name": "MTF_CRIDAMAGE2",
+  "src": "rathena"
+ },
+ "798": {
+  "name": "MTF_SPDRAIN",
+  "src": "rathena"
+ },
+ "799": {
+  "name": "ACUO_MINT_GUM",
+  "src": "rathena"
+ },
+ "800": {
+  "name": "S_HEALPOTION",
+  "src": "rathena"
+ },
+ "801": {
+  "name": "REUSE_LIMIT_S_HEAL_POTION",
+  "src": "rathena"
+ },
+ "802": {
+  "name": "PLAYTIME_STATISTICS",
+  "src": "rathena"
+ },
+ "803": {
+  "name": "GN_CHANGEMATERIAL_OPERATOR",
+  "src": "rathena"
+ },
+ "804": {
+  "name": "GN_MIX_COOKING_OPERATOR",
+  "src": "rathena"
+ },
+ "805": {
+  "name": "GN_MAKEBOMB_OPERATOR",
+  "src": "rathena"
+ },
+ "806": {
+  "name": "GN_S_PHARMACY_OPERATOR",
+  "src": "rathena"
+ },
+ "807": {
+  "name": "SO_EL_ANALYSIS_DISASSEMBLY_OPERATOR",
+  "src": "rathena"
+ },
+ "808": {
+  "name": "SO_EL_ANALYSIS_COMBINATION_OPERATOR",
+  "src": "rathena"
+ },
+ "809": {
+  "name": "NC_MAGICDECOY_OPERATOR",
+  "src": "rathena"
+ },
+ "810": {
+  "name": "GUILD_STORAGE",
+  "src": "rathena"
+ },
+ "811": {
+  "name": "GC_POISONINGWEAPON_OPERATOR",
+  "src": "rathena"
+ },
+ "812": {
+  "name": "WS_WEAPONREFINE_OPERATOR",
+  "src": "rathena"
+ },
+ "813": {
+  "name": "BS_REPAIRWEAPON_OPERATOR",
+  "src": "rathena"
+ },
+ "814": {
+  "name": "GET_MAILBOX",
+  "src": "rathena"
+ },
+ "815": {
+  "name": "JUMPINGCLAN",
+  "src": "rathena"
+ },
+ "816": {
+  "name": "JP_OTP",
+  "src": "rathena"
+ },
+ "817": {
+  "name": "HANDICAPTOLERANCE_LEVELGAP",
+  "src": "rathena"
+ },
+ "818": {
+  "name": "MTF_RANGEATK2",
+  "src": "rathena"
+ },
+ "819": {
+  "name": "MTF_ASPD2",
+  "src": "rathena"
+ },
+ "820": {
+  "name": "MTF_MATK2",
+  "src": "rathena"
+ },
+ "821": {
+  "name": "SHOW_NPCHPBAR",
+  "src": "rathena"
+ },
+ "822": {
+  "name": "FLOWERSMOKE",
+  "src": "rathena"
+ },
+ "823": {
+  "name": "FSTONE",
+  "src": "rathena"
+ },
+ "824": {
+  "name": "DAILYSENDMAILCNT",
+  "src": "rathena"
+ },
+ "825": {
+  "name": "QSCARABA",
+  "src": "rathena"
+ },
+ "826": {
+  "name": "LJOSALFAR",
+  "src": "rathena"
+ },
+ "827": {
+  "name": "PAD_READER_KNIGHT",
+  "src": "rathena"
+ },
+ "828": {
+  "name": "PAD_READER_CRUSADER",
+  "src": "rathena"
+ },
+ "829": {
+  "name": "PAD_READER_BLACKSMITH",
+  "src": "rathena"
+ },
+ "830": {
+  "name": "PAD_READER_ALCHEMIST",
+  "src": "rathena"
+ },
+ "831": {
+  "name": "PAD_READER_ASSASSIN",
+  "src": "rathena"
+ },
+ "832": {
+  "name": "PAD_READER_ROGUE",
+  "src": "rathena"
+ },
+ "833": {
+  "name": "PAD_READER_WIZARD",
+  "src": "rathena"
+ },
+ "834": {
+  "name": "PAD_READER_SAGE",
+  "src": "rathena"
+ },
+ "835": {
+  "name": "PAD_READER_PRIEST",
+  "src": "rathena"
+ },
+ "836": {
+  "name": "PAD_READER_MONK",
+  "src": "rathena"
+ },
+ "837": {
+  "name": "PAD_READER_HUNTER",
+  "src": "rathena"
+ },
+ "838": {
+  "name": "PAD_READER_BARD",
+  "src": "rathena"
+ },
+ "839": {
+  "name": "PAD_READER_DANCER",
+  "src": "rathena"
+ },
+ "840": {
+  "name": "PAD_READER_TAEKWON",
+  "src": "rathena"
+ },
+ "841": {
+  "name": "PAD_READER_NINJA",
+  "src": "rathena"
+ },
+ "842": {
+  "name": "PAD_READER_GUNSLINGER",
+  "src": "rathena"
+ },
+ "843": {
+  "name": "PAD_READER_SUPERNOVICE",
+  "src": "rathena"
+ },
+ "844": {
+  "name": "ESSENCE_OF_TIME",
+  "src": "rathena"
+ },
+ "845": {
+  "name": "MINIGAME_ROULETTE",
+  "src": "rathena"
+ },
+ "846": {
+  "name": "MINIGAME_GOLD_POINT",
+  "src": "rathena"
+ },
+ "847": {
+  "name": "MINIGAME_SILVER_POINT",
+  "src": "rathena"
+ },
+ "848": {
+  "name": "MINIGAME_BRONZE_POINT",
+  "src": "rathena"
+ },
+ "849": {
+  "name": "HAPPINESS_STAR",
+  "src": "rathena"
+ },
+ "850": {
+  "name": "SUMMEREVENT01",
+  "src": "rathena"
+ },
+ "851": {
+  "name": "SUMMEREVENT02",
+  "src": "rathena"
+ },
+ "852": {
+  "name": "SUMMEREVENT03",
+  "src": "rathena"
+ },
+ "853": {
+  "name": "SUMMEREVENT04",
+  "src": "rathena"
+ },
+ "854": {
+  "name": "SUMMEREVENT05",
+  "src": "rathena"
+ },
+ "855": {
+  "name": "MINIGAME_ROULETTE_BONUS_ITEM",
+  "src": "rathena"
+ },
+ "856": {
+  "name": "DRESS_UP",
+  "src": "rathena"
+ },
+ "857": {
+  "name": "MAPLE_FALLS",
+  "src": "rathena"
+ },
+ "858": {
+  "name": "ALL_NIFLHEIM_RECALL",
+  "src": "rathena"
+ },
+ "859": {
+  "name": "MARKING_USE_CHANGEMONSTER",
+  "src": "rathena"
+ },
+ "860": {
+  "name": "MTF_MARIONETTE",
+  "src": "rathena"
+ },
+ "861": {
+  "name": "MTF_LUDE",
+  "src": "rathena"
+ },
+ "862": {
+  "name": "MTF_CRUISER",
+  "src": "rathena"
+ },
+ "863": {
+  "name": "MERMAID_LONGING",
+  "src": "rathena"
+ },
+ "864": {
+  "name": "MAGICAL_FEATHER",
+  "src": "rathena"
+ },
+ "865": {
+  "name": "DRACULA_CARD",
+  "src": "rathena"
+ },
+ "866": {
+  "name": "ALL_PRONTERA_RECALL",
+  "src": "rathena"
+ },
+ "867": {
+  "name": "LIMIT_POWER_BOOSTER",
+  "src": "rathena"
+ },
+ "868": {
+  "name": "GIFT_OF_SNOW",
+  "src": "rathena"
+ },
+ "869": {
+  "name": "NPC_HALLUCINATIONWALK",
+  "src": "rathena"
+ },
+ "870": {
+  "name": "NPC_HALLUCINATIONWALK_POSTDELAY",
+  "src": "rathena"
+ },
+ "871": {
+  "name": "NPC_XXXWALK",
+  "src": "rathena"
+ },
+ "872": {
+  "name": "TIME_ACCESSORY",
+  "src": "rathena"
+ },
+ "873": {
+  "name": "EP16_DEF",
+  "src": "rathena"
+ },
+ "874": {
+  "name": "NORMAL_ATKED_SP",
+  "src": "rathena"
+ },
+ "875": {
+  "name": "BODYSTATE_STONECURSE",
+  "src": "rathena"
+ },
+ "876": {
+  "name": "BODYSTATE_FREEZING",
+  "src": "rathena"
+ },
+ "877": {
+  "name": "BODYSTATE_STUN",
+  "src": "rathena"
+ },
+ "878": {
+  "name": "BODYSTATE_SLEEP",
+  "src": "rathena"
+ },
+ "879": {
+  "name": "BODYSTATE_UNDEAD",
+  "src": "rathena"
+ },
+ "880": {
+  "name": "BODYSTATE_STONECURSE_ING",
+  "src": "rathena"
+ },
+ "881": {
+  "name": "BODYSTATE_BURNNING",
+  "src": "rathena"
+ },
+ "882": {
+  "name": "BODYSTATE_IMPRISON",
+  "src": "rathena"
+ },
+ "883": {
+  "name": "HEALTHSTATE_POISON",
+  "src": "rathena"
+ },
+ "884": {
+  "name": "HEALTHSTATE_CURSE",
+  "src": "rathena"
+ },
+ "885": {
+  "name": "HEALTHSTATE_SILENCE",
+  "src": "rathena"
+ },
+ "886": {
+  "name": "HEALTHSTATE_CONFUSION",
+  "src": "rathena"
+ },
+ "887": {
+  "name": "HEALTHSTATE_BLIND",
+  "src": "rathena"
+ },
+ "888": {
+  "name": "HEALTHSTATE_ANGELUS",
+  "src": "rathena"
+ },
+ "889": {
+  "name": "HEALTHSTATE_BLOODING",
+  "src": "rathena"
+ },
+ "890": {
+  "name": "HEALTHSTATE_HEAVYPOISON",
+  "src": "rathena"
+ },
+ "891": {
+  "name": "HEALTHSTATE_FEAR",
+  "src": "rathena"
+ },
+ "892": {
+  "name": "CHERRY_BLOSSOM_CAKE",
+  "src": "rathena"
+ },
+ "893": {
+  "name": "SU_STOOP",
+  "src": "rathena"
+ },
+ "894": {
+  "name": "CATNIPPOWDER",
+  "src": "rathena"
+ },
+ "895": {
+  "name": "HEAD_EQUIPMENT_EFFECT",
+  "src": "rathena"
+ },
+ "896": {
+  "name": "SV_ROOTTWIST",
+  "src": "rathena"
+ },
+ "897": {
+  "name": "ATTACK_PROPERTY_NOTHING",
+  "src": "rathena"
+ },
+ "898": {
+  "name": "ATTACK_PROPERTY_WATER",
+  "src": "rathena"
+ },
+ "899": {
+  "name": "ATTACK_PROPERTY_GROUND",
+  "src": "rathena"
+ },
+ "900": {
+  "name": "ATTACK_PROPERTY_FIRE",
+  "src": "rathena"
+ },
+ "901": {
+  "name": "ATTACK_PROPERTY_WIND",
+  "src": "rathena"
+ },
+ "902": {
+  "name": "ATTACK_PROPERTY_POISON",
+  "src": "rathena"
+ },
+ "903": {
+  "name": "ATTACK_PROPERTY_SAINT",
+  "src": "rathena"
+ },
+ "904": {
+  "name": "ATTACK_PROPERTY_DARKNESS",
+  "src": "rathena"
+ },
+ "905": {
+  "name": "ATTACK_PROPERTY_TELEKINESIS",
+  "src": "rathena"
+ },
+ "906": {
+  "name": "ATTACK_PROPERTY_UNDEAD",
+  "src": "rathena"
+ },
+ "907": {
+  "name": "RESIST_PROPERTY_NOTHING",
+  "src": "rathena"
+ },
+ "908": {
+  "name": "RESIST_PROPERTY_WATER",
+  "src": "rathena"
+ },
+ "909": {
+  "name": "RESIST_PROPERTY_GROUND",
+  "src": "rathena"
+ },
+ "910": {
+  "name": "RESIST_PROPERTY_FIRE",
+  "src": "rathena"
+ },
+ "911": {
+  "name": "RESIST_PROPERTY_WIND",
+  "src": "rathena"
+ },
+ "912": {
+  "name": "RESIST_PROPERTY_POISON",
+  "src": "rathena"
+ },
+ "913": {
+  "name": "RESIST_PROPERTY_SAINT",
+  "src": "rathena"
+ },
+ "914": {
+  "name": "RESIST_PROPERTY_DARKNESS",
+  "src": "rathena"
+ },
+ "915": {
+  "name": "RESIST_PROPERTY_TELEKINESIS",
+  "src": "rathena"
+ },
+ "916": {
+  "name": "RESIST_PROPERTY_UNDEAD",
+  "src": "rathena"
+ },
+ "917": {
+  "name": "BITESCAR",
+  "src": "rathena"
+ },
+ "918": {
+  "name": "ARCLOUSEDASH",
+  "src": "rathena"
+ },
+ "919": {
+  "name": "TUNAPARTY",
+  "src": "rathena"
+ },
+ "920": {
+  "name": "SHRIMP",
+  "src": "rathena"
+ },
+ "921": {
+  "name": "FRESHSHRIMP",
+  "src": "rathena"
+ },
+ "922": {
+  "name": "PERIOD_RECEIVEITEM",
+  "src": "rathena"
+ },
+ "923": {
+  "name": "PERIOD_PLUSEXP",
+  "src": "rathena"
+ },
+ "924": {
+  "name": "PERIOD_PLUSJOBEXP",
+  "src": "rathena"
+ },
+ "925": {
+  "name": "RUNEHELM",
+  "src": "rathena"
+ },
+ "926": {
+  "name": "HELM_VERKANA",
+  "src": "rathena"
+ },
+ "927": {
+  "name": "HELM_RHYDO",
+  "src": "rathena"
+ },
+ "928": {
+  "name": "HELM_TURISUS",
+  "src": "rathena"
+ },
+ "929": {
+  "name": "HELM_HAGALAS",
+  "src": "rathena"
+ },
+ "930": {
+  "name": "HELM_ISIA",
+  "src": "rathena"
+ },
+ "931": {
+  "name": "HELM_ASIR",
+  "src": "rathena"
+ },
+ "932": {
+  "name": "HELM_URJ",
+  "src": "rathena"
+ },
+ "933": {
+  "name": "SUHIDE",
+  "src": "rathena"
+ },
+ "934": {
+  "name": "REUSE_LIMIT_MG",
+  "src": "rathena"
+ },
+ "935": {
+  "name": "DORAM_BUF_01",
+  "src": "rathena"
+ },
+ "936": {
+  "name": "DORAM_BUF_02",
+  "src": "rathena"
+ },
+ "937": {
+  "name": "SPRITEMABLE",
+  "src": "rathena"
+ },
+ "938": {
+  "name": "AID_PERIOD_RECEIVEITEM",
+  "src": "rathena"
+ },
+ "939": {
+  "name": "AID_PERIOD_PLUSEXP",
+  "src": "rathena"
+ },
+ "940": {
+  "name": "AID_PERIOD_PLUSJOBEXP",
+  "src": "rathena"
+ },
+ "941": {
+  "name": "AID_PERIOD_DEADPENALTY",
+  "src": "rathena"
+ },
+ "942": {
+  "name": "AID_PERIOD_ADDSTOREITEMCOUNT",
+  "src": "rathena"
+ },
+ "943": {
+  "name": "ALL_GLASTHEIM_RECALL",
+  "src": "rathena"
+ },
+ "944": {
+  "name": "REUSE_LIMIT_PEPO_MD",
+  "src": "rathena"
+ },
+ "945": {
+  "name": "ALL_THANATOS_RECALL",
+  "src": "rathena"
+ },
+ "946": {
+  "name": "KAFRA_STORE",
+  "src": "rathena"
+ },
+ "947": {
+  "name": "REUSE_ABBYS",
+  "src": "rathena"
+ },
+ "948": {
+  "name": "MAGICSTONE_OF_GRACE_SET",
+  "src": "rathena"
+ },
+ "949": {
+  "name": "PRIVATE_AIRPLANE",
+  "src": "rathena"
+ },
+ "950": {
+  "name": "HISS",
+  "src": "rathena"
+ },
+ "951": {
+  "name": "HISS_AVOID",
+  "src": "rathena"
+ },
+ "952": {
+  "name": "NYANGGRASS",
+  "src": "rathena"
+ },
+ "953": {
+  "name": "CHATTERING",
+  "src": "rathena"
+ },
+ "954": {
+  "name": "CHATTERING_OPT_ATK_MATK",
+  "src": "rathena"
+ },
+ "955": {
+  "name": "CHATTERING_OPT_HASTE",
+  "src": "rathena"
+ },
+ "956": {
+  "name": "SPIRITOFLAND_STEMSPEAR",
+  "src": "rathena"
+ },
+ "957": {
+  "name": "SPIRITOFLAND_ROOTTWIST",
+  "src": "rathena"
+ },
+ "958": {
+  "name": "SPIRITOFLAND_POWDERING",
+  "src": "rathena"
+ },
+ "959": {
+  "name": "SPIRITOFLAND_METEOR",
+  "src": "rathena"
+ },
+ "960": {
+  "name": "SPIRITOFLAND_NYANGGRASS",
+  "src": "rathena"
+ },
+ "961": {
+  "name": "GROOMING",
+  "src": "rathena"
+ },
+ "962": {
+  "name": "PROTECTIONOFSHRIMP",
+  "src": "rathena"
+ },
+ "963": {
+  "name": "EP16_2_BUFF_SS",
+  "src": "rathena"
+ },
+ "964": {
+  "name": "EP16_2_BUFF_SC",
+  "src": "rathena"
+ },
+ "965": {
+  "name": "EP16_2_BUFF_AC",
+  "src": "rathena"
+ },
+ "966": {
+  "name": "GS_MAGICAL_BULLET",
+  "src": "rathena"
+ },
+ "976": {
+  "name": "FALLEN_ANGEL",
+  "src": "rathena"
+ },
+ "977": {
+  "name": "REUSE_LIMIT_MOVEPOINT",
+  "src": "rathena"
+ },
+ "978": {
+  "name": "MACRO_DETECTOR_ANSWER_WAITING",
+  "src": "rathena"
+ },
+ "979": {
+  "name": "BLAZE_BEAD",
+  "src": "rathena"
+ },
+ "980": {
+  "name": "FROZEN_BEAD",
+  "src": "rathena"
+ },
+ "981": {
+  "name": "BREEZE_BEAD",
+  "src": "rathena"
+ },
+ "982": {
+  "name": "SOULATTACK",
+  "src": "rathena"
+ },
+ "983": {
+  "name": "AID_PERIOD_RECEIVEITEM_2ND",
+  "src": "rathena"
+ },
+ "984": {
+  "name": "AID_PERIOD_PLUSEXP_2ND",
+  "src": "rathena"
+ },
+ "985": {
+  "name": "AID_PERIOD_PLUSJOBEXP_2ND",
+  "src": "rathena"
+ },
+ "986": {
+  "name": "PRONTERA_JP",
+  "src": "rathena"
+ },
+ "987": {
+  "name": "ASSISTANT_VENDING",
+  "src": "rathena"
+ },
+ "988": {
+  "name": "GLOOM_CARD",
+  "src": "rathena"
+ },
+ "989": {
+  "name": "PHARAOH_CARD",
+  "src": "rathena"
+ },
+ "990": {
+  "name": "KIEL_CARD",
+  "src": "rathena"
+ },
+ "991": {
+  "name": "ASSISTANT_BUYING",
+  "src": "rathena"
+ },
+ "992": {
+  "name": "CHEERUP",
+  "src": "rathena"
+ },
+ "993": {
+  "name": "GET_CNT_UNREAD_RODEX_CHARDB",
+  "src": "rathena"
+ },
+ "994": {
+  "name": "GET_CNT_UNREAD_RODEX_GLOBALDB",
+  "src": "rathena"
+ },
+ "995": {
+  "name": "S_MANAPOTION",
+  "src": "rathena"
+ },
+ "996": {
+  "name": "M_DEFSCROLL",
+  "src": "rathena"
+ },
+ "997": {
+  "name": "OPEN_REFINING_UI",
+  "src": "rathena"
+ },
+ "998": {
+  "name": "ALL_LIGHTHALZEN_RECALL",
+  "src": "rathena"
+ },
+ "999": {
+  "name": "SWAP_EQUIPITEM",
+  "src": "rathena"
+ },
+ "1000": {
+  "name": "AS_RAGGED_GOLEM_CARD",
+  "src": "rathena"
+ },
+ "1001": {
+  "name": "LHZ_DUN_N1",
+  "src": "rathena"
+ },
+ "1002": {
+  "name": "LHZ_DUN_N2",
+  "src": "rathena"
+ },
+ "1003": {
+  "name": "LHZ_DUN_N3",
+  "src": "rathena"
+ },
+ "1004": {
+  "name": "LHZ_DUN_N4",
+  "src": "rathena"
+ },
+ "1005": {
+  "name": "TAEKWON_MISSION",
+  "src": "rathena"
+ },
+ "1006": {
+  "name": "SUN_PLACE",
+  "src": "rathena"
+ },
+ "1007": {
+  "name": "MOON_PLACE",
+  "src": "rathena"
+ },
+ "1008": {
+  "name": "STAR_PLACE",
+  "src": "rathena"
+ },
+ "1009": {
+  "name": "SUN_MONSTER",
+  "src": "rathena"
+ },
+ "1010": {
+  "name": "MOON_MONSTER",
+  "src": "rathena"
+ },
+ "1011": {
+  "name": "STAR_MONSTER",
+  "src": "rathena"
+ },
+ "1012": {
+  "name": "AL_WARP_ADDSLOT",
+  "src": "rathena"
+ },
+ "1013": {
+  "name": "ALL_STAT_DOWN",
+  "src": "rathena"
+ },
+ "1014": {
+  "name": "GRADUAL_GRAVITY",
+  "src": "rathena"
+ },
+ "1015": {
+  "name": "DAMAGE_HEAL",
+  "src": "rathena"
+ },
+ "1016": {
+  "name": "IMMUNE_PROPERTY_NOTHING",
+  "src": "rathena"
+ },
+ "1017": {
+  "name": "IMMUNE_PROPERTY_WATER",
+  "src": "rathena"
+ },
+ "1018": {
+  "name": "IMMUNE_PROPERTY_GROUND",
+  "src": "rathena"
+ },
+ "1019": {
+  "name": "IMMUNE_PROPERTY_FIRE",
+  "src": "rathena"
+ },
+ "1020": {
+  "name": "IMMUNE_PROPERTY_WIND",
+  "src": "rathena"
+ },
+ "1021": {
+  "name": "IMMUNE_PROPERTY_POISON",
+  "src": "rathena"
+ },
+ "1022": {
+  "name": "IMMUNE_PROPERTY_SAINT",
+  "src": "rathena"
+ },
+ "1023": {
+  "name": "IMMUNE_PROPERTY_DARKNESS",
+  "src": "rathena"
+ },
+ "1024": {
+  "name": "IMMUNE_PROPERTY_TELEKINESIS",
+  "src": "rathena"
+ },
+ "1025": {
+  "name": "IMMUNE_PROPERTY_UNDEAD",
+  "src": "rathena"
+ },
+ "1026": {
+  "name": "REUSE_LIMIT_NP",
+  "src": "rathena"
+ },
+ "1027": {
+  "name": "SPECIALCOOKIE",
+  "src": "rathena"
+ },
+ "1028": {
+  "name": "DAMAGE_HEAL2",
+  "src": "rathena"
+ },
+ "1029": {
+  "name": "DAMAGE_HEAL3",
+  "src": "rathena"
+ },
+ "1030": {
+  "name": "GLORY_OF_RETURN",
+  "src": "rathena"
+ },
+ "1031": {
+  "name": "ATK_POPCORN",
+  "src": "rathena"
+ },
+ "1032": {
+  "name": "MATK_POPCORN",
+  "src": "rathena"
+ },
+ "1033": {
+  "name": "ASPD_POPCORN",
+  "src": "rathena"
+ },
+ "1034": {
+  "name": "ULTIMATECOOK",
+  "src": "rathena"
+ },
+ "1035": {
+  "name": "LIGHTOFMOON",
+  "src": "rathena"
+ },
+ "1036": {
+  "name": "LIGHTOFSUN",
+  "src": "rathena"
+ },
+ "1037": {
+  "name": "LIGHTOFSTAR",
+  "src": "rathena"
+ },
+ "1038": {
+  "name": "LUNARSTANCE",
+  "src": "rathena"
+ },
+ "1039": {
+  "name": "UNIVERSESTANCE",
+  "src": "rathena"
+ },
+ "1040": {
+  "name": "SUNSTANCE",
+  "src": "rathena"
+ },
+ "1041": {
+  "name": "FLASHKICK",
+  "src": "rathena"
+ },
+ "1042": {
+  "name": "NEWMOON",
+  "src": "rathena"
+ },
+ "1043": {
+  "name": "STARSTANCE",
+  "src": "rathena"
+ },
+ "1044": {
+  "name": "DIMENSION",
+  "src": "rathena"
+ },
+ "1045": {
+  "name": "DIMENSION1",
+  "src": "rathena"
+ },
+ "1046": {
+  "name": "DIMENSION2",
+  "src": "rathena"
+ },
+ "1047": {
+  "name": "CREATINGSTAR",
+  "src": "rathena"
+ },
+ "1048": {
+  "name": "FALLINGSTAR",
+  "src": "rathena"
+ },
+ "1049": {
+  "name": "NOVAEXPLOSING",
+  "src": "rathena"
+ },
+ "1050": {
+  "name": "GRAVITYCONTROL",
+  "src": "rathena"
+ },
+ "1051": {
+  "name": "XXX_EFST_WORLDSTORE_ACTIVE",
+  "src": "rathena"
+ },
+ "1052": {
+  "name": "WORLDSTORE_ITEMMOVEINFO_SENDCOMPLETE",
+  "src": "rathena"
+ },
+ "1053": {
+  "name": "SOULCOLLECT",
+  "src": "rathena"
+ },
+ "1054": {
+  "name": "SOULREAPER",
+  "src": "rathena"
+ },
+ "1055": {
+  "name": "SOULUNITY",
+  "src": "rathena"
+ },
+ "1056": {
+  "name": "SOULSHADOW",
+  "src": "rathena"
+ },
+ "1057": {
+  "name": "SOULFAIRY",
+  "src": "rathena"
+ },
+ "1058": {
+  "name": "SOULFALCON",
+  "src": "rathena"
+ },
+ "1059": {
+  "name": "SOULGOLEM",
+  "src": "rathena"
+ },
+ "1060": {
+  "name": "SOULDIVISION",
+  "src": "rathena"
+ },
+ "1061": {
+  "name": "SOULENERGY",
+  "src": "rathena"
+ },
+ "1062": {
+  "name": "USE_SKILL_SP_SPA",
+  "src": "rathena"
+ },
+ "1063": {
+  "name": "USE_SKILL_SP_SHA",
+  "src": "rathena"
+ },
+ "1064": {
+  "name": "SP_SHA",
+  "src": "rathena"
+ },
+ "1065": {
+  "name": "INFINITY_DRINK",
+  "src": "rathena"
+ },
+ "1066": {
+  "name": "ABYSS_001",
+  "src": "rathena"
+ },
+ "1067": {
+  "name": "ABYSS_002",
+  "src": "rathena"
+ },
+ "1068": {
+  "name": "ABYSS_003",
+  "src": "rathena"
+ },
+ "1069": {
+  "name": "ABYSS_004",
+  "src": "rathena"
+ },
+ "1070": {
+  "name": "ABYSS_005",
+  "src": "rathena"
+ },
+ "1071": {
+  "name": "ABYSS_006",
+  "src": "rathena"
+ },
+ "1072": {
+  "name": "ABYSS_007",
+  "src": "rathena"
+ },
+ "1073": {
+  "name": "ABYSS_008",
+  "src": "rathena"
+ },
+ "1075": {
+  "name": "REUSE_LIMIT_THM",
+  "src": "rathena"
+ },
+ "1076": {
+  "name": "REUSE_LIMIT_TLI",
+  "src": "rathena"
+ },
+ "1077": {
+  "name": "REUSE_LIMIT_TKC",
+  "src": "rathena"
+ },
+ "1078": {
+  "name": "REUSE_LIMIT_TRP",
+  "src": "rathena"
+ },
+ "1079": {
+  "name": "REUSE_LIMIT_TBG",
+  "src": "rathena"
+ },
+ "1080": {
+  "name": "REUSE_LIMIT_TBM",
+  "src": "rathena"
+ },
+ "1081": {
+  "name": "YGGDRASIL_BLESS",
+  "src": "rathena"
+ },
+ "1082": {
+  "name": "USE_SKILL_SP_SWHOO",
+  "src": "rathena"
+ },
+ "1083": {
+  "name": "HUNTING_EVENT",
+  "src": "rathena"
+ },
+ "1084": {
+  "name": "PERIOD_RECEIVEITEM_2ND",
+  "src": "rathena"
+ },
+ "1085": {
+  "name": "PERIOD_PLUSEXP_2ND",
+  "src": "rathena"
+ },
+ "1086": {
+  "name": "EXPDROPUP",
+  "src": "rathena"
+ },
+ "1087": {
+  "name": "TW_NEWYEAR_EVENT",
+  "src": "rathena"
+ },
+ "1088": {
+  "name": "ENSEMBLEFATIGUE",
+  "src": "rathena"
+ },
+ "1089": {
+  "name": "ADAPTATION",
+  "src": "rathena"
+ },
+ "1090": {
+  "name": "DANCINGLESSON",
+  "src": "rathena"
+ },
+ "1091": {
+  "name": "MUSICALLESSON",
+  "src": "rathena"
+ },
+ "1092": {
+  "name": "REUSE_LIMIT_RC",
+  "src": "rathena"
+ },
+ "1093": {
+  "name": "DANCINGLESSON_EQUIPPED",
+  "src": "rathena"
+ },
+ "1094": {
+  "name": "MUSICALLESSON_EQUIPPED",
+  "src": "rathena"
+ },
+ "1095": {
+  "name": "ANCILLA",
+  "src": "rathena"
+ },
+ "1096": {
+  "name": "REUSE_LIMIT_POTION_A",
+  "src": "rathena"
+ },
+ "1097": {
+  "name": "REUSE_LIMIT_POTION_B",
+  "src": "rathena"
+ },
+ "1098": {
+  "name": "REUSE_LIMIT_POTION_C",
+  "src": "rathena"
+ },
+ "1099": {
+  "name": "REUSE_LIMIT_POTION_D",
+  "src": "rathena"
+ },
+ "1100": {
+  "name": "REUSE_LIMIT_POTION_E",
+  "src": "rathena"
+ },
+ "1101": {
+  "name": "REUSE_LIMIT_POTION_F",
+  "src": "rathena"
+ },
+ "1102": {
+  "name": "BRAVESET",
+  "src": "rathena"
+ },
+ "1103": {
+  "name": "MACEMASTERY_EQUIPPED",
+  "src": "rathena"
+ },
+ "1104": {
+  "name": "FESTIVE_ENERGY",
+  "src": "rathena"
+ },
+ "1105": {
+  "name": "TEST_KR01",
+  "src": "rathena"
+ },
+ "1106": {
+  "name": "STARFISH_JP",
+  "src": "rathena"
+ },
+ "1107": {
+  "name": "WEAPONBLOCK_ON",
+  "src": "rathena"
+ },
+ "1108": {
+  "name": "CRI_DAMAGE",
+  "src": "rathena"
+ },
+ "1109": {
+  "name": "DEF_POWER",
+  "src": "rathena"
+ },
+ "1110": {
+  "name": "DEF_IGNORE",
+  "src": "rathena"
+ },
+ "1111": {
+  "name": "BOW_ATK_POWER",
+  "src": "rathena"
+ },
+ "1112": {
+  "name": "RED_ORG_POTION",
+  "src": "rathena"
+ },
+ "1113": {
+  "name": "CAST_TIME",
+  "src": "rathena"
+ },
+ "1114": {
+  "name": "BLADESTOPREADY",
+  "src": "rathena"
+ },
+ "1115": {
+  "name": "TELEPORT_BR",
+  "src": "rathena"
+ },
+ "1116": {
+  "name": "SA_WEAPON_PROPERTY",
+  "src": "rathena"
+ },
+ "1117": {
+  "name": "LEAPIMPAIRED",
+  "src": "rathena"
+ },
+ "1118": {
+  "name": "SENDING_ITEMLIST",
+  "src": "rathena"
+ },
+ "1119": {
+  "name": "EXCLUSIVE_RECEIVEITEM",
+  "src": "rathena"
+ },
+ "1120": {
+  "name": "EXCLUSIVE_PLUSEXP",
+  "src": "rathena"
+ },
+ "1121": {
+  "name": "ASSUMPTIO_BUFF",
+  "src": "rathena"
+ },
+ "1122": {
+  "name": "BASILICA_BUFF",
+  "src": "rathena"
+ },
+ "1123": {
+  "name": "OVERLAPEXPUP2",
+  "src": "rathena"
+ },
+ "1124": {
+  "name": "STOPMOVE_IMMEDIATELY",
+  "src": "rathena"
+ },
+ "1125": {
+  "name": "SOULCURSE",
+  "src": "rathena"
+ },
+ "1126": {
+  "name": "SOUND_OF_DESTRUCTION",
+  "src": "rathena"
+ },
+ "1127": {
+  "name": "DF_MANAPLUS",
+  "src": "rathena"
+ },
+ "1128": {
+  "name": "DF_FULLSWINGK",
+  "src": "rathena"
+ },
+ "1129": {
+  "name": "NV_BREAKTHROUGH",
+  "src": "rathena"
+ },
+ "1130": {
+  "name": "HELPANGEL",
+  "src": "rathena"
+ },
+ "1131": {
+  "name": "NV_TRANSCENDENCE",
+  "src": "rathena"
+ },
+ "1132": {
+  "name": "SWEETSFAIR_ATK",
+  "src": "rathena"
+ },
+ "1133": {
+  "name": "SWEETSFAIR_MATK",
+  "src": "rathena"
+ },
+ "1134": {
+  "name": "REUSE_SKILL",
+  "src": "rathena"
+ },
+ "1135": {
+  "name": "FLOWER_LEAF2",
+  "src": "rathena"
+ },
+ "1136": {
+  "name": "FLOWER_LEAF3",
+  "src": "rathena"
+ },
+ "1137": {
+  "name": "FLOWER_LEAF4",
+  "src": "rathena"
+ },
+ "1138": {
+  "name": "CHARM_BOOST",
+  "src": "rathena"
+ },
+ "1139": {
+  "name": "EARTHSHAKER",
+  "src": "rathena"
+ },
+ "1140": {
+  "name": "PERIOD_USE_WORLDMAP",
+  "src": "rathena"
+ },
+ "1141": {
+  "name": "MISTY_FROST",
+  "src": "rathena"
+ },
+ "1142": {
+  "name": "MAGIC_POISON",
+  "src": "rathena"
+ },
+ "1143": {
+  "name": "MOVE_AGIT",
+  "src": "rathena"
+ },
+ "1144": {
+  "name": "REUSE_JPNONLY_LIMIT_I",
+  "src": "rathena"
+ },
+ "1145": {
+  "name": "REUSE_JPNONLY_LIMIT_J",
+  "src": "rathena"
+ },
+ "1146": {
+  "name": "REUSE_JPNONLY_LIMIT_K",
+  "src": "rathena"
+ },
+ "1147": {
+  "name": "JPNONLY_TACTICS",
+  "src": "rathena"
+ },
+ "1148": {
+  "name": "PRISON",
+  "src": "rathena"
+ },
+ "1149": {
+  "name": "MADOGEAR_TYPE",
+  "src": "rathena"
+ },
+ "1150": {
+  "name": "DEADLY_DEFEASANCE",
+  "src": "rathena"
+ },
+ "1151": {
+  "name": "CLIMAX_DES_HU",
+  "src": "rathena"
+ },
+ "1152": {
+  "name": "CLIMAX",
+  "src": "rathena"
+ },
+ "1153": {
+  "name": "FEINTBOMB",
+  "src": "rathena"
+ },
+ "1154": {
+  "name": "LUXANIMA",
+  "src": "rathena"
+ },
+ "1155": {
+  "name": "BATH_FOAM_A",
+  "src": "rathena"
+ },
+ "1156": {
+  "name": "BATH_FOAM_B",
+  "src": "rathena"
+ },
+ "1157": {
+  "name": "BATH_FOAM_C",
+  "src": "rathena"
+ },
+ "1158": {
+  "name": "AROMA_OIL",
+  "src": "rathena"
+ },
+ "1159": {
+  "name": "REUSE_LIMIT_LUXANIMA",
+  "src": "rathena"
+ },
+ "1160": {
+  "name": "POWERFUL_FAITH",
+  "src": "rathena"
+ },
+ "1161": {
+  "name": "SINCERE_FAITH",
+  "src": "rathena"
+ },
+ "1162": {
+  "name": "FIRM_FAITH",
+  "src": "rathena"
+ },
+ "1163": {
+  "name": "AIRSHIP_PIPE",
+  "src": "rathena"
+ },
+ "1164": {
+  "name": "PIECES_OF_SHADOW",
+  "src": "rathena"
+ },
+ "1165": {
+  "name": "HELLS_PLANT_ARMOR",
+  "src": "rathena"
+ },
+ "1166": {
+  "name": "RELIEVE_DAMAGE",
+  "src": "rathena"
+ },
+ "1167": {
+  "name": "LOCKON_LASER",
+  "src": "rathena"
+ },
+ "1168": {
+  "name": "GRADE_ENCHANT_UI_OPEN",
+  "src": "rathena"
+ },
+ "1169": {
+  "name": "REF_T_POTION",
+  "src": "rathena"
+ },
+ "1170": {
+  "name": "ADD_ATK_DAMAGE",
+  "src": "rathena"
+ },
+ "1171": {
+  "name": "ADD_MATK_DAMAGE",
+  "src": "rathena"
+ },
+ "1172": {
+  "name": "SERVANTWEAPON",
+  "src": "rathena"
+ },
+ "1173": {
+  "name": "SERVANT_SIGN",
+  "src": "rathena"
+ },
+ "1174": {
+  "name": "CHARGINGPIERCE",
+  "src": "rathena"
+ },
+ "1175": {
+  "name": "CHARGINGPIERCE_COUNT",
+  "src": "rathena"
+ },
+ "1176": {
+  "name": "DRAGONIC_AURA",
+  "src": "rathena"
+ },
+ "1177": {
+  "name": "BIG_SCAR",
+  "src": "rathena"
+ },
+ "1178": {
+  "name": "VIGOR",
+  "src": "rathena"
+ },
+ "1179": {
+  "name": "WILL_OF_FAITH",
+  "src": "rathena"
+ },
+ "1180": {
+  "name": "PRESSURE",
+  "src": "rathena"
+ },
+ "1181": {
+  "name": "SA_DRAGONOLOGY",
+  "src": "rathena"
+ },
+ "1182": {
+  "name": "CLIMAX_EARTH",
+  "src": "rathena"
+ },
+ "1183": {
+  "name": "CLIMAX_BLOOM",
+  "src": "rathena"
+ },
+ "1184": {
+  "name": "CLIMAX_CRYIMP",
+  "src": "rathena"
+ },
+ "1185": {
+  "name": "MD_ME_POTION",
+  "src": "rathena"
+ },
+ "1186": {
+  "name": "MD_MA_POTION",
+  "src": "rathena"
+ },
+ "1187": {
+  "name": "MD_TA_POTION",
+  "src": "rathena"
+ },
+ "1188": {
+  "name": "MD_RA_POTION",
+  "src": "rathena"
+ },
+ "1189": {
+  "name": "REUSE_MEGAPHONE",
+  "src": "rathena"
+ },
+ "1190": {
+  "name": "HOLY_OIL",
+  "src": "rathena"
+ },
+ "1191": {
+  "name": "CRYSTAL_IMPACT",
+  "src": "rathena"
+ },
+ "1192": {
+  "name": "SHADOW_EXCEED",
+  "src": "rathena"
+ },
+ "1193": {
+  "name": "DANCING_KNIFE",
+  "src": "rathena"
+ },
+ "1194": {
+  "name": "POTENT_VENOM",
+  "src": "rathena"
+ },
+ "1195": {
+  "name": "SHADOW_SCAR",
+  "src": "rathena"
+ },
+ "1196": {
+  "name": "E_SLASH_COUNT",
+  "src": "rathena"
+ },
+ "1197": {
+  "name": "MEDIALE",
+  "src": "rathena"
+ },
+ "1198": {
+  "name": "A_VITA",
+  "src": "rathena"
+ },
+ "1199": {
+  "name": "A_TELUM",
+  "src": "rathena"
+ },
+ "1200": {
+  "name": "PRE_ACIES",
+  "src": "rathena"
+ },
+ "1201": {
+  "name": "COMPETENTIA",
+  "src": "rathena"
+ },
+ "1202": {
+  "name": "GUARD_STANCE",
+  "src": "rathena"
+ },
+ "1203": {
+  "name": "ATTACK_STANCE",
+  "src": "rathena"
+ },
+ "1204": {
+  "name": "GUARDIAN_S",
+  "src": "rathena"
+ },
+ "1205": {
+  "name": "HANDICAPSTATE_DEEPBLIND",
+  "src": "rathena"
+ },
+ "1206": {
+  "name": "HANDICAPSTATE_DEEPSILENCE",
+  "src": "rathena"
+ },
+ "1207": {
+  "name": "HANDICAPSTATE_LASSITUDE",
+  "src": "rathena"
+ },
+ "1208": {
+  "name": "HANDICAPSTATE_FROSTBITE",
+  "src": "rathena"
+ },
+ "1209": {
+  "name": "HANDICAPSTATE_SWOONING",
+  "src": "rathena"
+ },
+ "1210": {
+  "name": "HANDICAPSTATE_LIGHTNINGSTRIKE",
+  "src": "rathena"
+ },
+ "1211": {
+  "name": "HANDICAPSTATE_CRYSTALLIZATION",
+  "src": "rathena"
+ },
+ "1212": {
+  "name": "HANDICAPSTATE_CONFLAGRATION",
+  "src": "rathena"
+ },
+ "1213": {
+  "name": "HANDICAPSTATE_MISFORTUNE",
+  "src": "rathena"
+ },
+ "1214": {
+  "name": "HANDICAPSTATE_DEADLYPOISON",
+  "src": "rathena"
+ },
+ "1215": {
+  "name": "HANDICAPSTATE_DEPRESSION",
+  "src": "rathena"
+ },
+ "1216": {
+  "name": "HANDICAPSTATE_HOLYFLAME",
+  "src": "rathena"
+ },
+ "1217": {
+  "name": "REBOUND_S",
+  "src": "rathena"
+ },
+ "1218": {
+  "name": "SHIELD_MASTERY",
+  "src": "rathena"
+ },
+ "1219": {
+  "name": "SPEAR_SWORD_M",
+  "src": "rathena"
+ },
+ "1220": {
+  "name": "HOLY_S",
+  "src": "rathena"
+ },
+ "1221": {
+  "name": "ULTIMATE_S",
+  "src": "rathena"
+ },
+ "1222": {
+  "name": "SPEAR_SCAR",
+  "src": "rathena"
+ },
+ "1223": {
+  "name": "SHIELD_POWER",
+  "src": "rathena"
+ },
+ "1224": {
+  "name": "FIDUS_ANIMUS",
+  "src": "rathena"
+ },
+ "1225": {
+  "name": "MACE_BOOK_M",
+  "src": "rathena"
+ },
+ "1226": {
+  "name": "SHADOW_WEAPON",
+  "src": "rathena"
+ },
+ "1227": {
+  "name": "RELIGIO",
+  "src": "rathena"
+ },
+ "1228": {
+  "name": "BENEDICTUM",
+  "src": "rathena"
+ },
+ "1229": {
+  "name": "MVPCARD_KIEL",
+  "src": "rathena"
+ },
+ "1230": {
+  "name": "FIRST_BRAND",
+  "src": "rathena"
+ },
+ "1231": {
+  "name": "SECOND_BRAND",
+  "src": "rathena"
+ },
+ "1232": {
+  "name": "SECOND_JUDGE",
+  "src": "rathena"
+ },
+ "1233": {
+  "name": "THIRD_EXOR_FLAME",
+  "src": "rathena"
+ },
+ "1234": {
+  "name": "FIRST_FAITH_POWER",
+  "src": "rathena"
+ },
+ "1235": {
+  "name": "AXE_STOMP",
+  "src": "rathena"
+ },
+ "1236": {
+  "name": "A_MACHINE",
+  "src": "rathena"
+ },
+ "1237": {
+  "name": "D_MACHINE",
+  "src": "rathena"
+ },
+ "1238": {
+  "name": "MT_M_MACHINE_OPERATOR",
+  "src": "rathena"
+ },
+ "1239": {
+  "name": "TWOAXEDEF",
+  "src": "rathena"
+ },
+ "1240": {
+  "name": "DAGGER_AND_BOW_M",
+  "src": "rathena"
+ },
+ "1241": {
+  "name": "MAGIC_SWORD_M",
+  "src": "rathena"
+ },
+ "1242": {
+  "name": "SHADOW_STRIP",
+  "src": "rathena"
+ },
+ "1243": {
+  "name": "ABYSS_DAGGER",
+  "src": "rathena"
+ },
+ "1244": {
+  "name": "ABYSSFORCEWEAPON",
+  "src": "rathena"
+ },
+ "1245": {
+  "name": "ABYSS_SLAYER",
+  "src": "rathena"
+ },
+ "1246": {
+  "name": "TWOHANDDEF",
+  "src": "rathena"
+ },
+ "1247": {
+  "name": "PROTECTSHADOWEQUIP",
+  "src": "rathena"
+ },
+ "1248": {
+  "name": "RESEARCHREPORT",
+  "src": "rathena"
+ },
+ "1249": {
+  "name": "BO_HELL_DUSTY",
+  "src": "rathena"
+ },
+ "1250": {
+  "name": "WINDSIGN",
+  "src": "rathena"
+ },
+ "1251": {
+  "name": "CRESCIVEBOLT",
+  "src": "rathena"
+ },
+ "1252": {
+  "name": "CALAMITYGALE",
+  "src": "rathena"
+ },
+ "1253": {
+  "name": "CRESCIVEBOLT3",
+  "src": "rathena"
+ },
+ "1254": {
+  "name": "STAGE_MANNER",
+  "src": "rathena"
+ },
+ "1255": {
+  "name": "RETROSPECTION",
+  "src": "rathena"
+ },
+ "1256": {
+  "name": "MYSTIC_SYMPHONY",
+  "src": "rathena"
+ },
+ "1257": {
+  "name": "KVASIR_SONATA",
+  "src": "rathena"
+ },
+ "1258": {
+  "name": "SOUNDBLEND",
+  "src": "rathena"
+ },
+ "1259": {
+  "name": "GEF_NOCTURN",
+  "src": "rathena"
+ },
+ "1260": {
+  "name": "AIN_RHAPSODY",
+  "src": "rathena"
+ },
+ "1261": {
+  "name": "MUSICAL_INTERLUDE",
+  "src": "rathena"
+ },
+ "1262": {
+  "name": "JAWAII_SERENADE",
+  "src": "rathena"
+ },
+ "1263": {
+  "name": "PRON_MARCH",
+  "src": "rathena"
+ },
+ "1264": {
+  "name": "ROSEBLOSSOM",
+  "src": "rathena"
+ },
+ "1265": {
+  "name": "BO_BIONIC_PHARMACY_OPERATOR",
+  "src": "rathena"
+ },
+ "1266": {
+  "name": "ACIDIFIED_ZONE_WATER",
+  "src": "rathena"
+ },
+ "1267": {
+  "name": "ACIDIFIED_ZONE_GROUND",
+  "src": "rathena"
+ },
+ "1268": {
+  "name": "ACIDIFIED_ZONE_WIND",
+  "src": "rathena"
+ },
+ "1269": {
+  "name": "ACIDIFIED_ZONE_FIRE",
+  "src": "rathena"
+ },
+ "1270": {
+  "name": "MAGIC_BOOK_M",
+  "src": "rathena"
+ },
+ "1271": {
+  "name": "SPELL_ENCHANTING",
+  "src": "rathena"
+ },
+ "1272": {
+  "name": "SUMMON_ELEMENTAL_ARDOR",
+  "src": "rathena"
+ },
+ "1273": {
+  "name": "SUMMON_ELEMENTAL_DILUVIO",
+  "src": "rathena"
+ },
+ "1274": {
+  "name": "SUMMON_ELEMENTAL_PROCELLA",
+  "src": "rathena"
+ },
+ "1275": {
+  "name": "SUMMON_ELEMENTAL_TERREMOTUS",
+  "src": "rathena"
+ },
+ "1276": {
+  "name": "SUMMON_ELEMENTAL_SERPENS",
+  "src": "rathena"
+ },
+ "1277": {
+  "name": "FLAMETECHNIC",
+  "src": "rathena"
+ },
+ "1278": {
+  "name": "FLAMETECHNIC_OPTION",
+  "src": "rathena"
+ },
+ "1279": {
+  "name": "FLAMEARMOR",
+  "src": "rathena"
+ },
+ "1280": {
+  "name": "FLAMEARMOR_OPTION",
+  "src": "rathena"
+ },
+ "1281": {
+  "name": "COLD_FORCE",
+  "src": "rathena"
+ },
+ "1282": {
+  "name": "COLD_FORCE_OPTION",
+  "src": "rathena"
+ },
+ "1283": {
+  "name": "CRYSTAL_ARMOR",
+  "src": "rathena"
+ },
+ "1284": {
+  "name": "CRYSTAL_ARMOR_OPTION",
+  "src": "rathena"
+ },
+ "1285": {
+  "name": "GRACE_BREEZE",
+  "src": "rathena"
+ },
+ "1286": {
+  "name": "GRACE_BREEZE_OPTION",
+  "src": "rathena"
+ },
+ "1287": {
+  "name": "EYES_OF_STORM",
+  "src": "rathena"
+ },
+ "1288": {
+  "name": "EYES_OF_STORM_OPTION",
+  "src": "rathena"
+ },
+ "1289": {
+  "name": "EARTH_CARE",
+  "src": "rathena"
+ },
+ "1290": {
+  "name": "EARTH_CARE_OPTION",
+  "src": "rathena"
+ },
+ "1291": {
+  "name": "STRONG_PROTECTION",
+  "src": "rathena"
+ },
+ "1292": {
+  "name": "STRONG_PROTECTION_OPTION",
+  "src": "rathena"
+ },
+ "1293": {
+  "name": "DEEP_POISONING",
+  "src": "rathena"
+ },
+ "1294": {
+  "name": "DEEP_POISONING_OPTION",
+  "src": "rathena"
+ },
+ "1295": {
+  "name": "POISON_SHIELD",
+  "src": "rathena"
+ },
+ "1296": {
+  "name": "POISON_SHIELD_OPTION",
+  "src": "rathena"
+ },
+ "1297": {
+  "name": "ABR_BATTLE_WARIOR",
+  "src": "rathena"
+ },
+ "1298": {
+  "name": "ABR_DUAL_CANNON",
+  "src": "rathena"
+ },
+ "1299": {
+  "name": "ABR_MOTHER_NET",
+  "src": "rathena"
+ },
+ "1300": {
+  "name": "ABR_INFINITY",
+  "src": "rathena"
+ },
+ "1301": {
+  "name": "ELEMENTAL_VEIL",
+  "src": "rathena"
+ },
+ "1302": {
+  "name": "RENOVATIO_EXT",
+  "src": "rathena"
+ },
+ "1303": {
+  "name": "HOMUN_TIME",
+  "src": "rathena"
+ },
+ "1304": {
+  "name": "POWER_ACCELERATION",
+  "src": "rathena"
+ },
+ "1305": {
+  "name": "MAX_HP_SP_AVOID",
+  "src": "rathena"
+ },
+ "1306": {
+  "name": "ADD_ALL_STATE",
+  "src": "rathena"
+ },
+ "1307": {
+  "name": "AID_PERIOD_POWER_ACCELERATION",
+  "src": "rathena"
+ },
+ "1308": {
+  "name": "AID_PERIOD_MAX_HP_SP_AVOID",
+  "src": "rathena"
+ },
+ "1309": {
+  "name": "AID_PERIOD_ADD_ALL_STATE",
+  "src": "rathena"
+ },
+ "1310": {
+  "name": "POISON_MIST",
+  "src": "rathena"
+ },
+ "1311": {
+  "name": "HACKANDSLASHER",
+  "src": "rathena"
+ },
+ "1312": {
+  "name": "GET_CNT_UNREAD_RETURN_RODEX_CHARDB",
+  "src": "rathena"
+ },
+ "1313": {
+  "name": "STONE_WALL",
+  "src": "rathena"
+ },
+ "1314": {
+  "name": "REUSE_LIMIT_I",
+  "src": "rathena"
+ },
+ "1315": {
+  "name": "OVERBRANDREADY",
+  "src": "rathena"
+ },
+ "1316": {
+  "name": "SHIELDSPELL",
+  "src": "rathena"
+ },
+ "1317": {
+  "name": "AUTOSHADOWSPELL_CHECK2",
+  "src": "rathena"
+ },
+ "1318": {
+  "name": "CLOUD_POISON",
+  "src": "rathena"
+ },
+ "1319": {
+  "name": "SPORE_EXPLOSION_DEBUFF",
+  "src": "rathena"
+ },
+ "1321": {
+  "name": "DEFSCROLL",
+  "src": "rathena"
+ },
+ "1326": {
+  "name": "MASSIVE_F_BLASTER",
+  "src": "rathena"
+ },
+ "1330": {
+  "name": "NOEQUIPWEAPON2",
+  "src": "rathena"
+ },
+ "1331": {
+  "name": "NOEQUIPARMOR2",
+  "src": "rathena"
+ },
+ "1332": {
+  "name": "NOEQUIPSHIELD2",
+  "src": "rathena"
+ },
+ "1333": {
+  "name": "NOEQUIPSHOES2",
+  "src": "rathena"
+ },
+ "1334": {
+  "name": "NOEQUIPPENDANT2",
+  "src": "rathena"
+ },
+ "1335": {
+  "name": "NOEQUIPEARING2",
+  "src": "rathena"
+ },
+ "1336": {
+  "name": "NOEQUIPFULL2",
+  "src": "rathena"
+ },
+ "1337": {
+  "name": "CURSE_R_CUBE",
+  "src": "rathena"
+ },
+ "1338": {
+  "name": "CURSE_B_CUBE",
+  "src": "rathena"
+ },
+ "1339": {
+  "name": "KILLING_AURA",
+  "src": "rathena"
+ },
+ "1341": {
+  "name": "TOXIN_OF_MANDARA",
+  "src": "rathena"
+ },
+ "1342": {
+  "name": "GOLDENE_TONE",
+  "src": "rathena"
+ },
+ "1343": {
+  "name": "TEMPERING",
+  "src": "rathena"
+ },
+ "1344": {
+  "name": "NW_P_F_I",
+  "src": "rathena"
+ },
+ "1345": {
+  "name": "INTENSIVE_AIM",
+  "src": "rathena"
+ },
+ "1346": {
+  "name": "INTENSIVE_AIM_COUNT",
+  "src": "rathena"
+ },
+ "1347": {
+  "name": "GRENADE_FRAGMENT_1",
+  "src": "rathena"
+ },
+ "1348": {
+  "name": "GRENADE_FRAGMENT_2",
+  "src": "rathena"
+ },
+ "1349": {
+  "name": "GRENADE_FRAGMENT_3",
+  "src": "rathena"
+ },
+ "1350": {
+  "name": "GRENADE_FRAGMENT_4",
+  "src": "rathena"
+ },
+ "1351": {
+  "name": "GRENADE_FRAGMENT_5",
+  "src": "rathena"
+ },
+ "1352": {
+  "name": "GRENADE_FRAGMENT_6",
+  "src": "rathena"
+ },
+ "1353": {
+  "name": "AUTO_FIRING_LAUNCHEREFST",
+  "src": "rathena"
+ },
+ "1354": {
+  "name": "HIDDEN_CARD",
+  "src": "rathena"
+ },
+ "1355": {
+  "name": "NW_GRENADE_MASTERY",
+  "src": "rathena"
+ },
+ "1356": {
+  "name": "TALISMAN_OF_PROTECTION",
+  "src": "rathena"
+ },
+ "1357": {
+  "name": "TALISMAN_OF_WARRIOR",
+  "src": "rathena"
+ },
+ "1358": {
+  "name": "TALISMAN_OF_MAGICIAN",
+  "src": "rathena"
+ },
+ "1359": {
+  "name": "TALISMAN_OF_FIVE_ELEMENTS",
+  "src": "rathena"
+ },
+ "1360": {
+  "name": "T_FIRST_GOD",
+  "src": "rathena"
+ },
+ "1361": {
+  "name": "T_SECOND_GOD",
+  "src": "rathena"
+ },
+ "1362": {
+  "name": "T_THIRD_GOD",
+  "src": "rathena"
+ },
+ "1363": {
+  "name": "T_FOURTH_GOD",
+  "src": "rathena"
+ },
+ "1364": {
+  "name": "T_FIVETH_GOD",
+  "src": "rathena"
+ },
+ "1365": {
+  "name": "HEAVEN_AND_EARTH",
+  "src": "rathena"
+ },
+ "1366": {
+  "name": "HOGOGONG",
+  "src": "rathena"
+ },
+ "1367": {
+  "name": "MARINE_FESTIVAL",
+  "src": "rathena"
+ },
+ "1368": {
+  "name": "SANDY_FESTIVAL",
+  "src": "rathena"
+ },
+ "1369": {
+  "name": "KI_SUL_RAMPAGE",
+  "src": "rathena"
+ },
+ "1370": {
+  "name": "COLORS_OF_HYUN_ROK_1",
+  "src": "rathena"
+ },
+ "1371": {
+  "name": "COLORS_OF_HYUN_ROK_2",
+  "src": "rathena"
+ },
+ "1372": {
+  "name": "COLORS_OF_HYUN_ROK_3",
+  "src": "rathena"
+ },
+ "1373": {
+  "name": "COLORS_OF_HYUN_ROK_4",
+  "src": "rathena"
+ },
+ "1374": {
+  "name": "COLORS_OF_HYUN_ROK_5",
+  "src": "rathena"
+ },
+ "1375": {
+  "name": "COLORS_OF_HYUN_ROK_6",
+  "src": "rathena"
+ },
+ "1376": {
+  "name": "COLORS_OF_HYUN_ROK_BUFF",
+  "src": "rathena"
+ },
+ "1377": {
+  "name": "TEMPORARY_COMMUNION",
+  "src": "rathena"
+ },
+ "1378": {
+  "name": "BLESSING_OF_M_CREATURES",
+  "src": "rathena"
+ },
+ "1379": {
+  "name": "BLESSING_OF_M_C_DEBUFF",
+  "src": "rathena"
+ },
+ "1380": {
+  "name": "SHIELDCHAINRUSH",
+  "src": "rathena"
+ },
+ "1381": {
+  "name": "MISTYFROST",
+  "src": "rathena"
+ },
+ "1382": {
+  "name": "GROUNDGRAVITY",
+  "src": "rathena"
+ },
+ "1383": {
+  "name": "BREAKINGLIMIT",
+  "src": "rathena"
+ },
+ "1384": {
+  "name": "RULEBREAK",
+  "src": "rathena"
+ },
+ "1385": {
+  "name": "RISING_SUN",
+  "src": "rathena"
+ },
+ "1386": {
+  "name": "NOON_SUN",
+  "src": "rathena"
+ },
+ "1387": {
+  "name": "SUNSET_SUN",
+  "src": "rathena"
+ },
+ "1388": {
+  "name": "RISING_MOON",
+  "src": "rathena"
+ },
+ "1389": {
+  "name": "MIDNIGHT_MOON",
+  "src": "rathena"
+ },
+ "1390": {
+  "name": "DAWN_MOON",
+  "src": "rathena"
+ },
+ "1391": {
+  "name": "STAR_BURST",
+  "src": "rathena"
+ },
+ "1392": {
+  "name": "SKY_ENCHANT",
+  "src": "rathena"
+ },
+ "1393": {
+  "name": "SHADOW_CLOCK",
+  "src": "rathena"
+ },
+ "1394": {
+  "name": "SHINKIROU_CALL",
+  "src": "rathena"
+ },
+ "1395": {
+  "name": "NIGHTMARE",
+  "src": "rathena"
+ },
+ "1396": {
+  "name": "NOODLE_FES_1",
+  "src": "rathena"
+ },
+ "1397": {
+  "name": "NOODLE_FES_2",
+  "src": "rathena"
+ },
+ "1398": {
+  "name": "NOODLE_FES_3",
+  "src": "rathena"
+ },
+ "1399": {
+  "name": "NOODLE_FES_4",
+  "src": "rathena"
+ },
+ "1400": {
+  "name": "NOODLE_FES_5",
+  "src": "rathena"
+ },
+ "1402": {
+  "name": "RUSH_QUAKE1",
+  "src": "rathena"
+ },
+ "1403": {
+  "name": "RUSH_QUAKE2",
+  "src": "rathena"
+ },
+ "1415": {
+  "name": "SBUNSHIN",
+  "src": "rathena"
+ },
+ "1418": {
+  "name": "MTP_W_POTION_100",
+  "src": "rathena"
+ },
+ "1420": {
+  "name": "CHANGE_SIZE",
+  "src": "rathena"
+ },
+ "1421": {
+  "name": "CHANGE_SIZE_MONSTER",
+  "src": "rathena"
+ },
+ "1422": {
+  "name": "SHOW_EFFECT1",
+  "src": "rathena"
+ },
+ "1423": {
+  "name": "SHOW_EFFECT2",
+  "src": "rathena"
+ },
+ "1424": {
+  "name": "SHOW_EFFECT3",
+  "src": "rathena"
+ },
+ "1425": {
+  "name": "VR_SPEED",
+  "src": "rathena"
+ },
+ "1426": {
+  "name": "VR_ASPD",
+  "src": "rathena"
+ },
+ "1427": {
+  "name": "VR_MHP",
+  "src": "rathena"
+ },
+ "1428": {
+  "name": "VR_MSP",
+  "src": "rathena"
+ },
+ "1429": {
+  "name": "VR_HIT",
+  "src": "rathena"
+ },
+ "1430": {
+  "name": "VR_DEF",
+  "src": "rathena"
+ },
+ "1431": {
+  "name": "VR_MDEF",
+  "src": "rathena"
+ },
+ "1432": {
+  "name": "VR_BOOK001",
+  "src": "rathena"
+ },
+ "1433": {
+  "name": "VR_BOOK002",
+  "src": "rathena"
+ },
+ "1434": {
+  "name": "VR_BOOK003",
+  "src": "rathena"
+ },
+ "1435": {
+  "name": "VR_BOOK004",
+  "src": "rathena"
+ },
+ "1436": {
+  "name": "REUSE_LIMIT_VR_BOOK",
+  "src": "rathena"
+ },
+ "1439": {
+  "name": "VR_BOOK005",
+  "src": "rathena"
+ },
+ "1440": {
+  "name": "VR_BOOK006",
+  "src": "rathena"
+ },
+ "1441": {
+  "name": "VR_BOOK007",
+  "src": "rathena"
+ },
+ "1442": {
+  "name": "VR_BOOK008",
+  "src": "rathena"
+ },
+ "1443": {
+  "name": "VR_BOOK009",
+  "src": "rathena"
+ },
+ "1444": {
+  "name": "ALL_T_STAT",
+  "src": "rathena"
+ },
+ "1445": {
+  "name": "P_ATK_PLUS",
+  "src": "rathena"
+ },
+ "1446": {
+  "name": "S_MATK_PLUS",
+  "src": "rathena"
+ },
+ "1447": {
+  "name": "C_RATE_PLUS",
+  "src": "rathena"
+ },
+ "1448": {
+  "name": "RESIST_PLUS",
+  "src": "rathena"
+ },
+ "1449": {
+  "name": "PVP_DUN_BUFF",
+  "src": "rathena"
+ },
+ "1453": {
+  "name": "TARGET_MARKER",
+  "src": "rathena"
+ },
+ "1454": {
+  "name": "BLOCK_SEAL",
+  "src": "rathena"
+ },
+ "1455": {
+  "name": "FROST_STORM",
+  "src": "rathena"
+ },
+ "1456": {
+  "name": "GROGGY",
+  "src": "rathena"
+ },
+ "1457": {
+  "name": "WARM_SHIELD",
+  "src": "rathena"
+ },
+ "1459": {
+  "name": "CONTENTS_1",
+  "src": "rathena"
+ },
+ "1460": {
+  "name": "CONTENTS_2",
+  "src": "rathena"
+ },
+ "1461": {
+  "name": "CONTENTS_3",
+  "src": "rathena"
+ },
+ "1462": {
+  "name": "CONTENTS_4",
+  "src": "rathena"
+ },
+ "1463": {
+  "name": "CONTENTS_5",
+  "src": "rathena"
+ },
+ "1464": {
+  "name": "CONTENTS_6",
+  "src": "rathena"
+ },
+ "1465": {
+  "name": "CONTENTS_7",
+  "src": "rathena"
+ },
+ "1466": {
+  "name": "CONTENTS_8",
+  "src": "rathena"
+ },
+ "1467": {
+  "name": "CONTENTS_9",
+  "src": "rathena"
+ },
+ "1468": {
+  "name": "CONTENTS_10",
+  "src": "rathena"
+ },
+ "1469": {
+  "name": "CONTENTS_11",
+  "src": "rathena"
+ },
+ "1470": {
+  "name": "CONTENTS_12",
+  "src": "rathena"
+ },
+ "1471": {
+  "name": "CONTENTS_13",
+  "src": "rathena"
+ },
+ "1472": {
+  "name": "CONTENTS_14",
+  "src": "rathena"
+ },
+ "1473": {
+  "name": "CONTENTS_15",
+  "src": "rathena"
+ },
+ "1474": {
+  "name": "CONTENTS_16",
+  "src": "rathena"
+ },
+ "1475": {
+  "name": "CONTENTS_17",
+  "src": "rathena"
+ },
+ "1476": {
+  "name": "CONTENTS_18",
+  "src": "rathena"
+ },
+ "1477": {
+  "name": "CONTENTS_19",
+  "src": "rathena"
+ },
+ "1478": {
+  "name": "CONTENTS_20",
+  "src": "rathena"
+ },
+ "1479": {
+  "name": "CONTENTS_21",
+  "src": "rathena"
+ },
+ "1480": {
+  "name": "CONTENTS_22",
+  "src": "rathena"
+ },
+ "1481": {
+  "name": "CONTENTS_23",
+  "src": "rathena"
+ },
+ "1482": {
+  "name": "CONTENTS_24",
+  "src": "rathena"
+ },
+ "1483": {
+  "name": "CONTENTS_25",
+  "src": "rathena"
+ },
+ "1484": {
+  "name": "CONTENTS_26",
+  "src": "rathena"
+ },
+ "1485": {
+  "name": "CONTENTS_27",
+  "src": "rathena"
+ },
+ "1486": {
+  "name": "CONTENTS_28",
+  "src": "rathena"
+ },
+ "1487": {
+  "name": "CONTENTS_29",
+  "src": "rathena"
+ },
+ "1488": {
+  "name": "CONTENTS_30",
+  "src": "rathena"
+ },
+ "1489": {
+  "name": "CONTENTS_31",
+  "src": "rathena"
+ },
+ "1490": {
+  "name": "CONTENTS_32",
+  "src": "rathena"
+ },
+ "1491": {
+  "name": "CONTENTS_33",
+  "src": "rathena"
+ },
+ "1492": {
+  "name": "CONTENTS_34",
+  "src": "rathena"
+ },
+ "1493": {
+  "name": "CONTENTS_35",
+  "src": "rathena"
+ },
+ "1494": {
+  "name": "CONTENTS_36",
+  "src": "rathena"
+ },
+ "1495": {
+  "name": "CONTENTS_37",
+  "src": "rathena"
+ },
+ "1496": {
+  "name": "CONTENTS_38",
+  "src": "rathena"
+ },
+ "1497": {
+  "name": "CONTENTS_39",
+  "src": "rathena"
+ },
+ "1498": {
+  "name": "CONTENTS_40",
+  "src": "rathena"
+ },
+ "1499": {
+  "name": "CONTENTS_41",
+  "src": "rathena"
+ },
+ "1500": {
+  "name": "CONTENTS_42",
+  "src": "rathena"
+ },
+ "1501": {
+  "name": "CONTENTS_43",
+  "src": "rathena"
+ },
+ "1502": {
+  "name": "CONTENTS_44",
+  "src": "rathena"
+ },
+ "1509": {
+  "name": "C_BUFF_1",
+  "src": "rathena"
+ },
+ "1510": {
+  "name": "C_BUFF_2",
+  "src": "rathena"
+ },
+ "1511": {
+  "name": "C_BUFF_3",
+  "src": "rathena"
+ },
+ "1512": {
+  "name": "C_BUFF_4",
+  "src": "rathena"
+ },
+ "1513": {
+  "name": "C_BUFF_5",
+  "src": "rathena"
+ },
+ "1514": {
+  "name": "C_BUFF_6",
+  "src": "rathena"
+ },
+ "1515": {
+  "name": "C_BUFF_7",
+  "src": "rathena"
+ },
+ "1516": {
+  "name": "C_BUFF_8",
+  "src": "rathena"
+ },
+ "1517": {
+  "name": "C_BUFF_9",
+  "src": "rathena"
+ },
+ "1560": {
+  "name": "CHASING",
+  "src": "rathena"
+ },
+ "1665": {
+  "name": "MYSTERY_POWDER",
+  "src": "rathena"
+ },
+ "1666": {
+  "name": "WILD_WALK",
+  "src": "rathena"
+ },
+ "1667": {
+  "name": "FIRE_CHARM_POWER",
+  "src": "rathena"
+ },
+ "1668": {
+  "name": "WATER_CHARM_POWER",
+  "src": "rathena"
+ },
+ "1669": {
+  "name": "WIND_CHARM_POWER",
+  "src": "rathena"
+ },
+ "1670": {
+  "name": "GROUND_CHARM_POWER",
+  "src": "rathena"
+ },
+ "1671": {
+  "name": "OVERCOMING_CRISIS",
+  "src": "rathena"
+ },
+ "1688": {
+  "name": "BLOCK",
+  "src": "rathena"
+ },
+ "1689": {
+  "name": "MAX",
+  "src": "rathena"
+ }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "path": "PROJECT_AUDIT.md",
+    "status": "added"
+  },
+  {
+    "path": "README.md",
+    "status": "modified"
+  },
+  {
+    "path": "requirements-replay.txt",
+    "status": "added"
+  },
+  {
+    "path": "rrf.py",
+    "status": "modified"
+  },
+  {
+    "path": "RUNNING_KO.md",
+    "status": "added"
+  },
+  {
+    "path": "run_replay.bat",
+    "status": "added"
+  },
+  {
+    "path": "analyzer/framing.py",
+    "status": "added"
+  },
+  {
+    "path": "analyzer/normalizer.py",
+    "status": "modified"
+  },
+  {
+    "path": "analyzer/packets.py",
+    "status": "modified"
+  },
+  {
+    "path": "config/settings.py",
+    "status": "modified"
+  },
+  {
+    "path": "live/engine.py",
+    "status": "modified"
+  },
+  {
+    "path": "live/journal.py",
+    "status": "added"
+  },
+  {
+    "path": "live/reader.py",
+    "status": "added"
+  },
+  {
+    "path": "live/replay_engine.py",
+    "status": "added"
+  },
+  {
+    "path": "live/replay_link.py",
+    "status": "modified"
+  },
+  {
+    "path": "live/sequencer.py",
+    "status": "added"
+  },
+  {
+    "path": "live/simulator.py",
+    "status": "added"
+  },
+  {
+    "path": "live/state.py",
+    "status": "added"
+  },
+  {
+    "path": "services/replay_service.py",
+    "status": "modified"
+  },
+  {
+    "path": "tests/helpers.py",
+    "status": "modified"
+  },
+  {
+    "path": "tests/test_replay_incremental.py",
+    "status": "added"
+  },
+  {
+    "path": "tests/test_replay_ui.py",
+    "status": "added"
+  },
+  {
+    "path": "ui/live_hud.py",
+    "status": "modified"
+  },
+  {
+    "path": "ui/main_window.py",
+    "status": "modified"
+  },
+  {
+    "path": "ui/settings_dialog.py",
+    "status": "modified"
+  },
+  {
+    "path": "analyzer/analyzers/combat.py",
+    "status": "modified"
+  },
+  {
+    "path": "analyzer/analyzers/monster.py",
+    "status": "modified"
+  },
+  {
+    "path": "ui/pages/live_page.py",
+    "status": "modified"
+  },
+  {
+    "path": "ui/pages/navigator_page.py",
+    "status": "modified"
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "runs": 100,
+  "equal": true,
+  "last": {
+    "equal": true,
+    "metrics": {
+      "damage": {
+        "live": 2634642,
+        "final": 2634642,
+        "equal": true,
+        "match_percent": 100.0
+      },
+      "kills": {
+        "live": 84,
+        "final": 84,
+        "equal": true,
+        "match_percent": 100.0
+      },
+      "skills": {
+        "live": {
+          "26": {
+            "casts": 6,
+            "hits": 0,
+            "uses": 6
+          },
+          "2327": {
+            "casts": 58,
+            "hits": 142,
+            "uses": 58
+          },
+          "264": {
+            "casts": 56,
+            "hits": 0,
+            "uses": 56
+          },
+          "29": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          },
+          "34": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          },
+          "2338": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          }
+        },
+        "final": {
+          "2327": {
+            "casts": 58,
+            "hits": 142,
+            "uses": 58
+          },
+          "264": {
+            "casts": 56,
+            "hits": 0,
+            "uses": 56
+          },
+          "26": {
+            "casts": 6,
+            "hits": 0,
+            "uses": 6
+          },
+          "29": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          },
+          "34": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          },
+          "2338": {
+            "casts": 1,
+            "hits": 0,
+            "uses": 1
+          }
+        },
+        "equal": true
+      },
+      "base_exp": {
+        "live": 0,
+        "final": 0,
+        "equal": true,
+        "match_percent": 100.0
+      },
+      "job_exp": {
+        "live": 0,
+        "final": 0,
+        "equal": true,
+        "match_percent": 100.0
+      },
+      "zeny": {
+        "live": 0,
+        "final": 0,
+        "equal": true,
+        "match_percent": 100.0
+      },
+      "loot": {
+        "live": {},
+        "final": {},
+        "equal": true
+      },
+      "buff_ms": {
+        "live": {
+          "46": 18197,
+          "12": 52592,
+          "10": 52287,
+          "86": 49042,
+          "410": 49042
+        },
+        "final": {
+          "12": 52592,
+          "10": 52287,
+          "86": 49042,
+          "410": 49042,
+          "46": 18197
+        },
+        "equal": true
+      }
+    },
+    "bytes_read": 130980,
+    "header_bytes_read": 54432,
+    "file_bytes": 130980,
+    "packets": 2506,
+    "pending": 0,
+    "late": 6,
+    "unknown": {
+      "2459": 7,
+      "470": 7,
+      "271": 1,
+      "565": 1,
+      "669": 1,
+      "272": 16,
+      "127": 10,
+      "456": 6,
+      "327": 6,
+      "189": 6,
+      "321": 76,
+      "190": 36,
+      "553": 6,
+      "471": 66,
+      "2843": 6,
+      "3003": 6,
+      "2608": 6,
+      "737": 178,
+      "464": 12,
+      "2258": 56,
+      "2814": 84,
+      "2781": 20,
+      "2864": 14,
+      "161": 2,
+      "157": 5,
+      "1085": 1,
+      "411": 1,
+      "318": 3,
+      "511": 1
+    }
+  }
+}
