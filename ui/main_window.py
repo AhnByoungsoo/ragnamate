@@ -1380,11 +1380,11 @@ class MainWindow(QMainWindow):
     def _queue_sound(self, threshold):
         """"대기열이 N 이하입니다" 음성 파일. 없으면 한 번 만들고, 못 만들면 기본 알림음('')."""
         from core.queue_watch import message
-        path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_%d.wav' % threshold)
+        path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_fast_%d.wav' % threshold)
         if not os.path.isfile(path):
             try:
                 from utilities import voice
-                voice.speak_to_wav(message(threshold), path)
+                voice.speak_to_wav(message(threshold), path, rate=4)       # 순번이 빨리 줄어든다 — 빠르게 읽는다
             except Exception as e:
                 log.warning('대기열 음성을 만들지 못했습니다: %s', e)
                 return ''

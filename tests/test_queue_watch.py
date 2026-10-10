@@ -43,6 +43,32 @@ class StateTest(unittest.TestCase):
 
 
 class WatchTest(unittest.TestCase):
+    def test_estimates_between_updates_and_alerts_before_the_next_one(self):
+        now = [100.0]
+        w = QueueWatch(clock=lambda: now[0])
+        q = lambda at, n: dict(name=NAME, position=n, at=at)
+        self.assertIsNone(w.check(q(34700, 18), 10))         # 소식 하나로는 빠르기를 모른다
+        now[0] += 2.9
+        self.assertIsNone(w.check(q(37600, 14), 10))         # 2.9초에 4칸 = 초당 1.38칸
+        now[0] += 2.0
+        self.assertAlmostEqual(w.estimate(), 14 - 4 / 2.9 * 2.0, places=3)
+        self.assertIsNone(w.check(q(37600, 14), 10))         # 지금쯤 11.2번째
+        now[0] += 0.9
+        self.assertEqual(w.check(q(37600, 14), 10),          # 다음 소식(10번째)이 오기 전에 알린다
+                         '대기열이 10 이하입니다 (바곳의 연구실 · 마지막 확인 14번째, 지금쯤 10번째로 계산)')
+        now[0] += 0.1
+        self.assertIsNone(w.check(q(40500, 10), 10))         # 진짜 소식이 와도 다시 알리지 않는다
+
+    def test_estimate_stops_after_one_update_gap(self):
+        now = [0.0]
+        w = QueueWatch(clock=lambda: now[0])
+        w.check(dict(name=NAME, position=30, at=0), 10)
+        now[0] = 3.0
+        w.check(dict(name=NAME, position=26, at=3000), 10)
+        now[0] = 60.0                                        # 소식이 끊겼다 — 줄어들고 있다고 넘겨짚지 않는다
+        self.assertEqual(w.estimate(), 22)
+        self.assertIsNone(w.check(dict(name=NAME, position=26, at=3000), 10))
+
     def test_fires_once_when_crossing_and_again_for_a_new_queue(self):
         w = QueueWatch()
         q = lambda n: dict(name=NAME, position=n)
