@@ -374,6 +374,9 @@ class PacketNormalizer:
             elif h == 0x02b4:
                 add(ReplayEvent(t, E.QUEST_REMOVE, player, None, cur_map, data=dict(quest=f['quest']), raw_packet=idx,
                                 confidence=conf))
+            elif h in (0x02cb, 0x02cc, 0x02cd):
+                add(ReplayEvent(t, E.INSTANCE_READY if h == 0x02cd else E.INSTANCE_QUEUE, player, None, cur_map,
+                                data=dict(f), raw_packet=idx, confidence=conf))
             elif h in (0x0131, 0x0814):
                 add(ReplayEvent(t, E.STORE_SIGN, f['aid'], None, cur_map,
                                 data=dict(title=f['title'], kind='sale' if h == 0x0131 else 'buy'), raw_packet=idx,

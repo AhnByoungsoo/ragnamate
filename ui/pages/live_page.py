@@ -171,6 +171,16 @@ class LivePage(QWidget):
         self.b_overlay.setPopupMode(QToolButton.InstantPopup)
         self.b_overlay.setMenu(self.app.overlay_menu(self.b_overlay))
         top.addWidget(self.b_overlay)
+        self.b_queue = QPushButton()
+        self.b_queue.setCheckable(True)
+        self.b_queue.setChecked(bool(self.app.s.get('queue_alert')))
+        self.b_queue.setToolTip('인던 대기 순번이 기준 이하로 내려오면 소리와 음성으로 알립니다. 리플레이 녹화가 켜져 있어야 '
+                                '순번을 읽습니다. 우클릭으로 기준을 바꿉니다.')
+        self.b_queue.toggled.connect(self.toggle_queue_alert)
+        self.b_queue.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.b_queue.customContextMenuRequested.connect(lambda _p: self.ask_queue_threshold())
+        self._label_queue()
+        top.addWidget(self.b_queue)
         self.b_mute = QPushButton('알림 음소거')
         self.b_mute.setCheckable(True)
         self.b_mute.toggled.connect(self.toggle_mute)
@@ -428,6 +438,34 @@ class LivePage(QWidget):
                 ' · 값 모름 %d종은 뺌' % t['unpriced'] if t['unpriced'] else ''))
         return True
 
+    def _label_queue(self, queue=None):
+        text = '대기열 알림 %d 이하' % self.app.s['queue_alert_at']
+        if queue:
+            text += ' · 지금 %d' % queue['position']
+        self.b_queue.setText(text + (' ✓' if self.b_queue.isChecked() else ''))
+
+    def toggle_queue_alert(self, on):
+        self.app.s['queue_alert'] = bool(on)
+        self.app._save_settings()
+        self._label_queue()
+        self._prepare_queue_sound()
+
+    def _prepare_queue_sound(self):
+        """알릴 때 늦지 않게 음성 파일을 미리 만들어 둔다."""
+        if self.app.s['queue_alert']:
+            import threading
+            threading.Thread(target=self.app._queue_sound, args=(self.app.s['queue_alert_at'],), daemon=True).start()
+
+    def ask_queue_threshold(self):
+        from PySide6.QtWidgets import QInputDialog
+        value, ok = QInputDialog.getInt(self, '대기열 알림', '대기 순번이 몇 이하일 때 알릴까요?',
+                                        self.app.s['queue_alert_at'], 1, 999)
+        if ok:
+            self.app.s['queue_alert_at'] = value
+            self.app._save_settings()
+            self._label_queue()
+            self._prepare_queue_sound()
+
     def _tracking_line(self, rp):
         """퀘스트 사냥 수 · 재사용 대기 · 대상 HP · 드랍 — 전부 리플레이 패킷으로 따라간 값(●)."""
         parts = []
@@ -439,6 +477,9 @@ class LivePage(QWidget):
             parts.append('퀘스트 ' + ' · '.join('%s %d/%d' % (
                 title(q['quest']) or '퀘스트 %s' % q['quest'], sum(g['count'] or 0 for g in q['goals']),
                 sum(g['need'] or 0 for g in q['goals'])) for q in active[:3]))
+        self._label_queue(rp.get('queue'))
+        if rp.get('queue'):
+            parts.append('인던 대기 %s %d번째' % (rp['queue']['name'], rp['queue']['position']))
         cools = rp.get('cooldowns') or []
         if cools:
             parts.append('재사용 대기 ' + ' · '.join('%s %d초' % (

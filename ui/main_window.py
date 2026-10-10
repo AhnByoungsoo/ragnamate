@@ -1280,6 +1280,7 @@ class MainWindow(QMainWindow):
         vals = snap.get('values', {})
         rp = snap.get('replay_live') or {}
         self._feed_loot(rp)
+        self._check_queue(rp)
         if rp.get('stage') == 'CONFIRMED':
             vals = dict(vals)
             for key in ('HP', 'SP', 'AP'):
@@ -1365,6 +1366,29 @@ class MainWindow(QMainWindow):
             from ui.loot_alert import LootAlert
             self.loot_alert = LootAlert(self.s, pricer, self.item_db.name, self._jackpot, self)
         self.loot_alert.feed(rp)
+
+    def _check_queue(self, rp):
+        """인던 대기 순번이 기준 이하로 내려오면 한 번 알린다(소리 + 음성)."""
+        if getattr(self, 'queue_watch', None) is None:
+            from core.queue_watch import QueueWatch
+            self.queue_watch = QueueWatch()
+        threshold = int(self.s['queue_alert_at'])
+        text = self.queue_watch.check(rp.get('queue') if self.s['queue_alert'] else None, threshold)
+        if text:
+            self.alerts.fire(AlertRule('queue', text, sound=self._queue_sound(threshold)))
+
+    def _queue_sound(self, threshold):
+        """"대기열이 N 이하입니다" 음성 파일. 없으면 한 번 만들고, 못 만들면 기본 알림음('')."""
+        from core.queue_watch import message
+        path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_%d.wav' % threshold)
+        if not os.path.isfile(path):
+            try:
+                from utilities import voice
+                voice.speak_to_wav(message(threshold), path)
+            except Exception as e:
+                log.warning('대기열 음성을 만들지 못했습니다: %s', e)
+                return ''
+        return path
 
     def _jackpot(self, text, sound):
         self.alerts.fire(AlertRule('jackpot', text, sound=sound))

@@ -223,6 +223,18 @@ def d_quest_delete(p):    # 0x02b4 (6): 퀘스트.L
     return dict(quest=struct.unpack_from('<I', p, 2)[0])
 
 
+def d_instance_queue(p):  # 0x02cb (65): 인던 이름.61 대기 순번.W
+    return dict(name=_cstr(p[2:63]), position=struct.unpack_from('<H', p, 63)[0])
+
+
+def d_instance_position(p):   # 0x02cc (4): 대기 순번.W
+    return dict(name='', position=struct.unpack_from('<H', p, 2)[0])
+
+
+def d_instance_ready(p):  # 0x02cd (71): 인던 이름.61 시각.L 시각.L
+    return dict(name=_cstr(p[2:63]))
+
+
 def d_store_sign(p):      # 0x0131 (86) 판매 노점 / 0x0814 (86) 구매 노점: 주인.L 상점명.80
     return dict(aid=struct.unpack_from('<I', p, 2)[0], title=_cstr(p[6:86]))
 
@@ -310,6 +322,11 @@ _DEFS = [
     PacketDef(0x0afe, 'ZC_UPDATE_MISSION_HUNT_EX', None, d_quest_hunt, True, '2,582건 · 잡은 수가 1씩 오름'),
     PacketDef(0x08fe, 'ZC_HUNTING_QUEST_INFO', None, d_quest_hunt_info, True, '9건'),
     PacketDef(0x02b4, 'ZC_DEL_QUEST', 6, d_quest_delete, True, '12건'),
+    PacketDef(0x02cb, 'ZC_MEMORIALDUNGEON_SUBSCRIPTION_INFO', 65, d_instance_queue, True,
+              "2건 · '바곳의 연구실' 대기 순번 105 → 101"),
+    PacketDef(0x02cc, 'ZC_MEMORIALDUNGEON_SUBSCRIPTION_NOTIFY', 4, d_instance_position, False,
+              '표본 0건 — OpenKore·rAthena 정의(순번 갱신)'),
+    PacketDef(0x02cd, 'ZC_MEMORIALDUNGEON_INFO', 71, d_instance_ready, True, '2건 · 인던 이름이 읽힘'),
     PacketDef(0x0131, 'ZC_STORE_ENTRY', 86, d_store_sign, True, '291건 상점명이 읽힘'),
     PacketDef(0x0814, 'ZC_BUYING_STORE_ENTRY', 86, d_store_sign, True, '14건 상점명이 읽힘'),
     PacketDef(0x0b64, 'ZC_SEARCH_STORE_INFO_ACK', None, d_store_search, True,

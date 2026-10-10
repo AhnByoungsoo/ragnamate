@@ -55,6 +55,8 @@ class EventType:
     QUEST_ADD = 'QUEST_ADD'            # 퀘스트 받음: quest, goals[{mob_id, name, count}]
     QUEST_PROGRESS = 'QUEST_PROGRESS'  # 사냥 수: quest, need, count (+ ident 또는 mob_id)
     QUEST_REMOVE = 'QUEST_REMOVE'      # 퀘스트 끝/삭제: quest
+    INSTANCE_QUEUE = 'INSTANCE_QUEUE'  # 인던 대기 순번: name(없을 수 있음), position
+    INSTANCE_READY = 'INSTANCE_READY'  # 인던이 열림(대기 끝): name
     STORE_SIGN = 'STORE_SIGN'          # 주변 노점 간판: title, kind('sale'|'buy')
     STORE_SEARCH = 'STORE_SEARCH'      # 게임 안 노점 검색 결과: rows[{item_id, price, amount, shop, refine, cards}]
     STORE_ITEMS = 'STORE_ITEMS'        # 열어 본 노점의 물건: rows[{item_id, price, amount, refine, cards}]

@@ -78,6 +78,7 @@ class GameStateReducer:
         self.cooldowns = {}                  # 스킬 → dict(ready_at, total_ms) 서버가 알려 준 재사용 대기
         self.monster_hp = {}                 # 몬스터 → HP %(5% 단위)
         self.quest_events = []               # 퀘스트 받음/진행/끝 이벤트(진행 상황은 view 에서 계산)
+        self.queue = None                    # 인던 대기 중이면 dict(name, position, at)
         self.skill_fails = Counter()         # 스킬 → 실패 횟수
         self.zeny_start = self.zeny = start_zeny
         self.base_exp = self.job_exp = 0
@@ -219,6 +220,10 @@ class GameStateReducer:
             self.monster_hp[e.actor_id] = d['hp_pct']
         elif typ in (E.QUEST_ADD, E.QUEST_PROGRESS, E.QUEST_REMOVE):
             self.quest_events.append(e)
+        elif typ == E.INSTANCE_QUEUE:                # 순번만 온 갱신은 이름을 이어 쓴다
+            self.queue = dict(name=d['name'] or (self.queue or {}).get('name', ''), position=d['position'], at=t)
+        elif typ == E.INSTANCE_READY:
+            self.queue = None
         elif typ == E.ZENY_FLOW and e.actor_id == self.player:
             self.flow_seq += 1
             self.flows.append(dict(seq=self.flow_seq, at=t, amount=d['amount'], kind=d['kind']))
@@ -306,6 +311,7 @@ class GameStateReducer:
                               for k, c in self.cooldowns.items() if c['ready_at'] - self.clock > 1000),
                              key=lambda c: c['remain_ms']),
             target_hp=self.monster_hp.get(self.target),
+            queue=dict(self.queue) if self.queue else None,
             quests=[dict(quest=q['quest'], removed=q['removed'], updates=q['updates'], at_ms=q['at_ms'], goals=q['goals'])
                     for q in tracking.quest_state(self.quest_events).values()],
             ledger=dict(items=dict(self.item_gains), income=dict(self.income), spent=self.spent,
