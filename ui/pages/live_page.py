@@ -328,8 +328,10 @@ class LivePage(QWidget):
             self.mode.setText('LIVE OFF')
             self._mode_color('off')
             self.info.setText('Live 모드가 꺼져 있습니다. [Live 켜기/끄기]로 시작하세요.')
+            self._label_queue()
             return
         snap = eng.snapshot()
+        self._replay_active = bool(snap.get('replay_active'))
         s = snap.get('session') or {}
         st = 'PAUSED' if s.get('state') == 'PAUSED' else snap['state']
         self.mode.setText(STATE_TEXT.get(st, st))
@@ -445,9 +447,19 @@ class LivePage(QWidget):
 
     def _label_queue(self, queue=None):
         text = '대기열 알림'
+        if not self.b_queue.isChecked():
+            self.b_queue.setText(text)
+            return
+        # 켜 둔 동안에는 순번을 읽고 있는지 버튼에서 바로 보이게 한다
         if queue:
-            text += ' · 지금 %d' % queue['position']
-        self.b_queue.setText(text + (' ✓' if self.b_queue.isChecked() else ''))
+            state = '지금 %d' % queue['position']
+        elif self.app.live is None:
+            state = 'Live 꺼짐'
+        elif not getattr(self, '_replay_active', False):
+            state = '리플레이 녹화 필요'
+        else:
+            state = '대기 없음'
+        self.b_queue.setText('%s ✓ · %s' % (text, state))
 
     def toggle_queue_alert(self, on):
         self.app.s['queue_alert'] = bool(on)
