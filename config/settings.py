@@ -66,7 +66,7 @@ DEFAULTS = {
     'overcharge_rate': 24,                     # 상점에 팔 때 오버차지 %(Lv10 = 24, 스킬 없음 = 0) — 획득 표의 '상점가'
     'overcharge_auto': True,                   # 리플레이의 스킬 목록에서 오버챠지 레벨을 읽어 위 값을 맞춘다
     'overcharge_seen': {},                     # {캐릭터: 오버챠지 레벨} 리플레이에서 읽은 것(가장 높은 레벨을 쓴다)
-    'queue_alert': False, 'queue_alert_at': 10,     # 인던 대기 순번이 이 값 이하가 되면 알림(Live 화면의 [대기열 알림])
+    'queue_alert': False, 'queue_alert_at': 15,     # 인던 대기 순번이 이 값 이하가 되면 알림(Live 화면의 [대기열 알림])
     'drop_alert': True,                        # 고가 아이템이 바닥에 떨어졌을 때(줍기 전) 알림 — 기준은 jackpot_min_price
     'hud_preset': 'hunt',                      # compact | hunt | status | detailed
     'hud_scale': 1.0,
