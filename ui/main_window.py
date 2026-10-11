@@ -1372,7 +1372,7 @@ class MainWindow(QMainWindow):
         if getattr(self, 'queue_watch', None) is None:
             from core.queue_watch import QueueWatch
             self.queue_watch = QueueWatch()
-        threshold = int(self.s['queue_alert_at'])
+        threshold = int(self.s['queue_alert_below'])
         text = self.queue_watch.check(rp.get('queue') if self.s['queue_alert'] else None, threshold)
         if text:
             self.alerts.fire(AlertRule('queue', text, sound=self._queue_sound(threshold)))
