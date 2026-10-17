@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "note": "레벨업 코치 코스. 레벨 숫자는 영상 제작자의 '추천 구간'이지 입장 제한이 아니다. check: seen = 라그메이트 작업 중 영상 화면의 요약표를 직접 읽어 확인, doc = 첨부 조사 문서(라그메이트_레벨업모드_분석과설계.md)에서 옮김·미재확인, chapter = 영상 설명의 챕터 목록. 맵 좌표가 없는 단계는 네비를 만들지 않는다.",
+  "sources": {
+    "A": {"url": "https://www.youtube.com/watch?v=ViAbcE1j3UI", "title": "라그나로크 1레벨~250레벨 초광속 레벨업 코스(황제육성,럭셔리육성)", "author": "곰곰2Q", "published": "2026-09-30"},
+    "B": {"url": "https://www.youtube.com/watch?v=KD8OpTchrZo", "title": "라그나로크 온라인 1레벨~200레벨 사냥터 가이드(부스터 프로모션 기준)", "author": "곰곰2Q", "published": "2026-09-15"},
+    "C": {"url": "https://www.youtube.com/watch?v=O7heJECryw0", "title": "라그나로크 주력 카드파밍 사냥터 가이드(200레벨~250레벨)", "author": "곰곰2Q", "published": "2026-09-16"},
+    "N6931": {"url": "https://ro.gnjoy.com/news/notice/View.asp?BBSMode=10001&curpage=1&seq=6931", "title": "공식 공지 — 일루전 오브 루안다 업데이트(입구 beach_dun2 248 254, 레벨제한 160)", "author": "그라비티", "published": "2018-04-17"}
+  },
+  "navi": {
+    "luanda_entrance": {"map": "beach_dun2", "x": 248, "y": 254, "label": "코모도 북쪽 동굴 루안다의 신비한 토템", "src": "N6931", "note": "2018년 공지 좌표 — 지금 클라이언트에서 다시 확인 필요"}
+  },
+  "routes": {
+    "fast_skip": {
+      "title": "초고속 · 에피소드/챕터 생략",
+      "summary": "에피소드·챕터 퀘스트를 하지 않는 기준. 레벨업 티켓·파티 사냥은 이 코스에도 있다.",
+      "max_level": 250,
+      "steps": [
+        {"id": "fs_001", "min": 1, "max": 114, "kind": "HUNT", "title": "미로떨", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_115", "min": 115, "kind": "HUNT", "title": "미로 또는 강구", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_150", "min": 150, "kind": "HUNT", "title": "일루전 — 페이욘·얼음·게펜·심해·테디베어·구양궁", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_160", "min": 160, "kind": "HUNT", "title": "일루전 루안다 · 트윈스", "src": "A", "t": 1845, "check": "seen", "navi": "luanda_entrance"},
+        {"id": "fs_165", "min": 165, "max": 169, "kind": "TICKET", "title": "레벨업 티켓 사용", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_170", "min": 170, "kind": "HUNT", "title": "라비린스", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_175", "min": 175, "max": 179, "kind": "QUEST", "title": "노그로드 · 미로 낙단퀘", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_175t", "min": 175, "max": 179, "kind": "TICKET", "title": "레벨업 티켓으로 180까지만 맞추기", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_180", "min": 180, "max": 189, "kind": "QUEST", "title": "아인베흐 일퀘·낙퀘 · 심해2 일퀘·환영퀘 · 타나토스 일퀘", "note": "레벨업 티켓은 남은 수량에 맞춰 경험치를 조절하고, 나머지 티켓으로 190 맞추기", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_190", "min": 190, "max": 199, "kind": "QUEST", "title": "고대 오딘 · 휘겔 어비스 4층퀘 · 낙단퀘 · 마력발전소", "note": "타나토스 11~12층 잡몹을 잡거나, 각팟이 있으면 심해2 졸업", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "fs_4th", "min": 190, "max": 209, "kind": "JOB", "title": "4차 전직 → 타나토스 11~12층에서 주스킬 배울 때까지 잡경험치", "level_note": "영상 표에 레벨 표기 없음 — 190 다음·210 앞 순서", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_airship", "min": 190, "max": 209, "kind": "QUEST", "title": "비공정 추락지 (약 40분)", "level_note": "영상 표에 레벨 표기 없음 — 190 다음·210 앞 순서", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_210", "min": 210, "max": 214, "kind": "HUNT", "title": "니플헤임 (각팟 · 솔플)", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_215", "min": 215, "max": 219, "kind": "HUNT", "title": "아미키티아 연구소 1층", "party": "파티가 있다면 파티", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_220", "min": 220, "max": 229, "kind": "HUNT", "title": "가라앉은 탑", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_230", "min": 230, "max": 236, "kind": "HUNT", "title": "아미키티아 연구소 2층", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_237", "min": 237, "max": 239, "kind": "TICKET", "title": "레벨업 티켓으로 240까지", "src": "A", "t": 2030, "check": "seen"},
+        {"id": "fs_240", "min": 240, "max": 250, "kind": "HUNT", "title": "바이오스피어 혹한", "party": "파티", "src": "A", "t": 2030, "check": "seen"}
+      ]
+    },
+    "fast_ticket": {
+      "title": "초고속 · 에피소드/챕터 클리어 티켓 사용",
+      "summary": "에피소드·챕터 클리어 티켓과 부스터 경험치 수령을 쓰는 기준. 190까지는 생략 코스 표와 같은 줄이 이어진다(175~180 줄 일치 확인).",
+      "max_level": 250,
+      "steps": [
+        {"id": "ft_001", "min": 1, "max": 114, "kind": "HUNT", "title": "미로떨", "level_note": "앞부분은 생략 코스 표에서 읽은 내용", "src": "A", "t": 0, "check": "seen"},
+        {"id": "ft_115", "min": 115, "max": 149, "kind": "HUNT", "title": "미로 또는 강구", "level_note": "앞부분은 생략 코스 표에서 읽은 내용", "src": "A", "t": 0, "check": "seen"},
+        {"id": "ft_150", "min": 150, "max": 159, "kind": "HUNT", "title": "일루전 — 페이욘·얼음·게펜·심해·테디베어·구양궁", "level_note": "앞부분은 생략 코스 표에서 읽은 내용", "src": "A", "t": 0, "check": "seen"},
+        {"id": "ft_160", "min": 160, "max": 164, "kind": "HUNT", "title": "일루전 루안다 · 트윈스", "src": "A", "t": 749, "check": "doc", "navi": "luanda_entrance"},
+        {"id": "ft_165", "min": 165, "max": 169, "kind": "TICKET", "title": "레벨업 티켓 사용", "level_note": "앞부분은 생략 코스 표에서 읽은 내용", "src": "A", "t": 0, "check": "seen"},
+        {"id": "ft_170", "min": 170, "max": 174, "kind": "HUNT", "title": "라비린스", "level_note": "앞부분은 생략 코스 표에서 읽은 내용", "src": "A", "t": 0, "check": "seen"},
+        {"id": "ft_175", "min": 175, "max": 179, "kind": "TICKET", "title": "레벨업 티켓으로 180까지만 맞추기", "src": "A", "t": 1000, "check": "seen"},
+        {"id": "ft_180", "min": 180, "max": 189, "kind": "QUEST", "title": "아인베흐 일퀘·낙퀘 · 심해2 일퀘·환영퀘 · 타나토스 일퀘", "src": "A", "t": 1000, "check": "seen"},
+        {"id": "ft_190", "min": 190, "max": 199, "kind": "QUEST", "title": "고대 오딘 · 휘겔 어비스 4층퀘 · 낙단퀘 · 마력발전소", "level_note": "생략 코스 표에서 읽은 내용", "src": "A", "t": 1845, "check": "seen"},
+        {"id": "ft_airship", "min": 190, "max": 219, "kind": "QUEST", "title": "비공정 추락지 (약 40분)", "level_note": "영상 표에 레벨 표기 없음 — 220 앞 순서", "src": "A", "t": 1500, "check": "seen"},
+        {"id": "ft_ep18", "min": 190, "max": 219, "kind": "TICKET", "title": "챕터1 클리어 티켓 · 에피소드18 클리어 티켓 사용 → 부스터 터콜에서 에피18 경험치 수령", "level_note": "영상 표에 레벨 표기 없음 — 220 앞 순서", "src": "A", "t": 1500, "check": "seen"},
+        {"id": "ft_brimir", "min": 210, "max": 219, "kind": "HUNT", "title": "220이 안 되면 브리미르 1층", "level_note": "영상 표의 '220 미달되면' — 시작 레벨은 표에 없음", "src": "A", "t": 1500, "check": "seen"},
+        {"id": "ft_220", "min": 220, "max": 229, "kind": "HUNT", "title": "가라앉은 탑에서 230 달성", "src": "A", "t": 1570, "check": "seen"},
+        {"id": "ft_230", "min": 230, "max": 236, "kind": "QUEST", "title": "챕터2 진행", "src": "A", "t": 1570, "check": "seen"},
+        {"id": "ft_ep21", "min": 230, "max": 239, "kind": "TICKET", "title": "에피소드 19·20·21 클리어 티켓 사용 → 부스터 터콜 경험치 수령", "level_note": "영상 표에 레벨 표기 없음 — 230 다음 순서", "src": "A", "t": 1640, "check": "seen"},
+        {"id": "ft_237", "min": 237, "max": 239, "kind": "TICKET", "title": "237레벨 레벨업 티켓 사용 잊지 말기", "src": "A", "t": 1640, "check": "seen"},
+        {"id": "ft_240", "min": 240, "max": 250, "kind": "HUNT", "title": "요르스칼프 1층 닥사 (일퀘 · 주퀘)", "src": "A", "t": 1790, "check": "seen"}
+      ]
+    },
+    "farm": {
+      "title": "파밍 병행 · 1~200 부스터 육성 → 200~250 카드 파밍",
+      "summary": "1~200은 부스터 프로모션 기준 육성 영상, 200~250은 카드 파밍 사냥터 영상. 1~100은 영상 챕터만 있어 사냥터는 영상에서 확인해야 한다.",
+      "max_level": 250,
+      "steps": [
+        {"id": "fm_001", "min": 1, "max": 29, "kind": "GUIDE", "title": "영상 챕터 '1레벨' — 사냥터는 영상에서 확인", "src": "B", "t": 0, "check": "chapter"},
+        {"id": "fm_030", "min": 30, "max": 38, "kind": "GUIDE", "title": "영상 챕터 '30레벨' — 사냥터는 영상에서 확인", "src": "B", "t": 471, "check": "chapter"},
+        {"id": "fm_039", "min": 39, "max": 70, "kind": "GUIDE", "title": "영상 챕터 '39레벨' — 사냥터는 영상에서 확인", "src": "B", "t": 525, "check": "chapter"},
+        {"id": "fm_2nd", "min": 39, "max": 70, "kind": "JOB", "title": "영상 챕터 '2차전직'", "level_note": "레벨 표기 없음 — 39레벨 챕터 다음 순서", "src": "B", "t": 758, "check": "chapter"},
+        {"id": "fm_071", "min": 71, "max": 89, "kind": "GUIDE", "title": "영상 챕터 '71레벨' — 사냥터는 영상에서 확인", "src": "B", "t": 936, "check": "chapter"},
+        {"id": "fm_090", "min": 90, "max": 99, "kind": "GUIDE", "title": "영상 챕터 '90레벨' — 사냥터는 영상에서 확인", "src": "B", "t": 1028, "check": "chapter"},
+        {"id": "fm_trans", "min": 90, "max": 99, "kind": "JOB", "title": "영상 챕터 '전승' → '전승1차전직' → '전승2차전직' → '3차전직'", "level_note": "레벨 표기 없음 — 90레벨 챕터 다음 순서", "src": "B", "t": 1263, "check": "chapter"},
+        {"id": "fm_100", "min": 100, "max": 109, "kind": "HUNT", "title": "일루전 페이욘 (문라이트)", "src": "B", "t": 1668, "check": "doc"},
+        {"id": "fm_110", "min": 110, "max": 119, "kind": "QUEST", "title": "에피소드 17.1", "src": "B", "t": 1668, "check": "doc"},
+        {"id": "fm_120", "min": 120, "max": 129, "kind": "QUEST", "title": "낙원단 게시판 퀘스트", "src": "B", "t": 1668, "check": "doc"},
+        {"id": "fm_130q", "min": 130, "max": 139, "kind": "QUEST", "title": "에피소드 17.2 · 낙원단 퀘스트 / 모로크 현신", "src": "B", "t": 1926, "check": "doc"},
+        {"id": "fm_130", "min": 130, "max": 139, "kind": "HUNT", "title": "일루전 프로즌 · 뱀파이어", "src": "B", "t": 2187, "check": "doc"},
+        {"id": "fm_140", "min": 140, "max": 149, "kind": "HUNT", "title": "일루전 언더워터 (심해 1)", "src": "B", "t": 2187, "check": "doc"},
+        {"id": "fm_150", "min": 150, "max": 159, "kind": "HUNT", "title": "일루전 테디베어", "src": "B", "t": 2187, "check": "doc"},
+        {"id": "fm_160c", "min": 160, "max": 164, "kind": "CLAIM", "title": "에피소드 17.2를 깼다면 160레벨 경험치 수령", "src": "B", "t": 2544, "check": "doc"},
+        {"id": "fm_160", "min": 160, "max": 179, "kind": "HUNT", "title": "일루전 루안다 · 트윈스", "src": "B", "t": 2741, "check": "doc", "navi": "luanda_entrance"},
+        {"id": "fm_165", "min": 165, "max": 169, "kind": "TICKET", "title": "165레벨 레벨업 티켓 사용", "src": "B", "t": 2741, "check": "doc"},
+        {"id": "fm_180", "min": 180, "max": 199, "kind": "QUEST", "title": "아인베흐 3층 · 타나토스 9~12층 퀘스트 · 일루전 언더워터 심해 2층", "src": "B", "t": 2978, "check": "doc"},
+        {"id": "fm_200", "min": 200, "max": 207, "kind": "PREPARE", "title": "심해 2 파티 또는 타나토스에서 주요 스킬 준비", "src": "C", "t": 60, "check": "doc"},
+        {"id": "fm_208", "min": 208, "max": 214, "kind": "FARM", "title": "불의 고리", "src": "C", "t": 132, "check": "doc"},
+        {"id": "fm_210w", "min": 210, "max": 214, "kind": "PREPARE", "title": "210 달성 후 글레이시아 무기 준비", "src": "C", "t": 132, "check": "doc"},
+        {"id": "fm_212", "min": 212, "max": 218, "kind": "FARM", "title": "파괴된 게펜 필드", "src": "C", "t": 132, "check": "doc"},
+        {"id": "fm_213", "min": 213, "max": 218, "kind": "FARM", "title": "파괴된 베루스", "src": "C", "t": 264, "check": "doc"},
+        {"id": "fm_215q", "min": 215, "max": 216, "kind": "QUEST", "title": "에피소드 20 진행", "src": "C", "t": 336, "check": "doc"},
+        {"id": "fm_217", "min": 217, "max": 223, "kind": "FARM", "title": "꼬뽀 (영상 표기 약칭)", "src": "C", "t": 336, "check": "doc"},
+        {"id": "fm_217b", "min": 217, "max": 227, "kind": "FARM", "title": "브리미르 1층", "src": "C", "t": 336, "check": "doc"},
+        {"id": "fm_233", "min": 233, "max": 239, "kind": "FARM", "title": "솟아오른 대지 북부", "src": "C", "t": 661, "check": "doc"},
+        {"id": "fm_235", "min": 235, "max": 243, "kind": "FARM", "title": "솟아오른 대지 남부", "src": "C", "t": 661, "check": "doc"},
+        {"id": "fm_236", "min": 236, "max": 242, "kind": "FARM", "title": "파이어클로", "src": "C", "t": 661, "check": "doc"},
+        {"id": "fm_237", "min": 237, "max": 243, "kind": "FARM", "title": "라그스루트", "src": "C", "t": 661, "check": "doc"},
+        {"id": "fm_239", "min": 239, "max": 245, "kind": "FARM", "title": "기믈레 1층", "src": "C", "t": 926, "check": "doc"},
+        {"id": "fm_242", "min": 242, "max": 248, "kind": "FARM", "title": "기믈레 2층", "src": "C", "t": 926, "check": "doc"},
+        {"id": "fm_243", "min": 243, "max": 245, "kind": "FARM", "title": "브리미르 2층", "src": "C", "t": 926, "check": "doc"}
+      ]
+    }
+  }
+}

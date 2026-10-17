@@ -1,0 +1,86 @@
+"""레벨업 코치: 코스 자료 검사, 레벨 → 지금 할 일·대안·다음, 지금 레벨의 근거."""
+import unittest
+
+import helpers  # noqa: F401  (sys.path 설정)
+
+from leveling.course import Courses, current_level  # noqa: E402
+
+C = Courses()
+
+
+class DataTest(unittest.TestCase):
+    def test_every_step_is_well_formed(self):
+        ids = set()
+        for key, route in C.routes.items():
+            for s in route['steps']:
+                self.assertNotIn(s.id, ids)
+                ids.add(s.id)
+                self.assertLessEqual(s.min, s.max, s.id)
+                self.assertIn(s.check, ('seen', 'doc', 'chapter'), s.id)
+                self.assertTrue(s.video_url.startswith('https://www.youtube.com/watch?v='), s.id)
+
+    def test_only_sourced_coordinates_become_navi(self):
+        navi = {s.id: s.navi_text for r in C.routes.values() for s in r['steps'] if s.navi}
+        self.assertEqual(set(navi.values()), {'/navi beach_dun2 248/254'})          # 공식 공지의 루안다 입구뿐
+        self.assertEqual(set(navi), {'fs_160', 'ft_160', 'fm_160'})
+
+
+class AdviceTest(unittest.TestCase):
+    def titles(self, route, level):
+        a = C.advise(route, level)
+        return [s.title for s in a.now], a.next.title if a.next else None
+
+    def test_boundaries_of_the_skip_route(self):
+        self.assertEqual(self.titles('fast_skip', 209)[1], '니플헤임 (각팟 · 솔플)')
+        self.assertEqual(self.titles('fast_skip', 210)[0], ['니플헤임 (각팟 · 솔플)'])
+        self.assertEqual(self.titles('fast_skip', 236)[0], ['아미키티아 연구소 2층'])
+        self.assertEqual(self.titles('fast_skip', 237)[0], ['레벨업 티켓으로 240까지'])
+        self.assertEqual(self.titles('fast_skip', 240), (['바이오스피어 혹한'], None))
+        self.assertEqual(self.titles('fast_skip', 160)[0], ['일루전 루안다 · 트윈스'])      # 다음 시작(165) 앞까지
+
+    def test_overlapping_farm_ranges_stay_as_alternatives(self):
+        now, _ = self.titles('farm', 217)
+        self.assertEqual(now, ['파괴된 게펜 필드', '파괴된 베루스', '꼬뽀 (영상 표기 약칭)', '브리미르 1층'])
+        self.assertIn('브리미르 1층', self.titles('farm', 227)[0])               # 양끝 포함
+
+    def test_gap_in_the_data_is_said_not_filled(self):
+        now, nxt = self.titles('farm', 230)
+        self.assertEqual((now, nxt), ([], '솟아오른 대지 북부'))
+
+    def test_beyond_the_data(self):
+        self.assertTrue(C.advise('farm', 251).out_of_range)
+        self.assertIsNone(C.advise('farm', None).level)
+
+
+class LevelSourceTest(unittest.TestCase):
+    def test_level_up_seen_in_replay_beats_the_recording_start(self):
+        self.assertEqual(current_level(dict(level=223, base_level_now=226)), (226, '리플레이 레벨업 기록'))
+        self.assertEqual(current_level(dict(level=223)), (223, '리플레이 녹화 시작 레벨'))
+        self.assertEqual(current_level(dict(level=223, base_level_now=226), manual=230), (230, '직접 입력'))
+        self.assertEqual(current_level(None), (None, ''))
+
+    def test_saved_location_becomes_navi(self):
+        c = Courses(user_navi={'fs_210': dict(map='niflheim', x=200, y=180, label='직접 저장')})
+        step = next(s for s in c.routes['fast_skip']['steps'] if s.id == 'fs_210')
+        self.assertEqual(step.navi_text, '/navi niflheim 200/180')
+
+
+@unittest.skipUnless(helpers.sample('321321.rrf'), '리플레이 표본 없음')
+class ReplayLevelTest(unittest.TestCase):
+    def test_level_ups_in_a_real_replay_reach_the_live_state(self):
+        from analyzer.normalizer import normalize
+        from live.state import GameStateReducer
+        from rrf import Replay
+        path = helpers.sample('321321.rrf')
+        pr = normalize(Replay(path), path)
+        s = GameStateReducer(pr.player_aid)
+        ups = []
+        for e in pr.events:
+            s.apply(e)
+            if e.event_type == 'LEVEL_CHANGE' and e.data['kind'] == 'base':
+                ups.append(e.data['level'])
+        self.assertEqual((pr.base_level, ups, s.view()['base_level_now']), (223, [224, 225, 226], 226))
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -79,6 +79,7 @@ class GameStateReducer:
         self.monster_hp = {}                 # 몬스터 → HP %(5% 단위)
         self.quest_events = []               # 퀘스트 받음/진행/끝 이벤트(진행 상황은 view 에서 계산)
         self.queue = None                    # 인던 대기 중이면 dict(name, position, at)
+        self.levels = {}                     # 'base'|'job' → dict(level, at) 녹화 중에 바뀐 레벨(시작 레벨은 메타데이터)
         self.skill_fails = Counter()         # 스킬 → 실패 횟수
         self.zeny_start = self.zeny = start_zeny
         self.base_exp = self.job_exp = 0
@@ -220,6 +221,8 @@ class GameStateReducer:
             self.monster_hp[e.actor_id] = d['hp_pct']
         elif typ in (E.QUEST_ADD, E.QUEST_PROGRESS, E.QUEST_REMOVE):
             self.quest_events.append(e)
+        elif typ == E.LEVEL_CHANGE and e.actor_id == self.player:
+            self.levels[d['kind']] = dict(level=d['level'], at=t)
         elif typ == E.INSTANCE_QUEUE:                # 순번만 온 갱신은 이름을 이어 쓴다
             self.queue = dict(name=d['name'] or (self.queue or {}).get('name', ''), position=d['position'], at=t)
         elif typ == E.INSTANCE_READY:
@@ -312,6 +315,9 @@ class GameStateReducer:
                              key=lambda c: c['remain_ms']),
             target_hp=self.monster_hp.get(self.target),
             queue=dict(self.queue) if self.queue else None,
+            # 'level'은 녹화 시작 때 값(메타데이터)이 덮으므로 따로 둔다
+            base_level_now=(self.levels.get('base') or {}).get('level'),
+            job_level_now=(self.levels.get('job') or {}).get('level'),
             quests=[dict(quest=q['quest'], removed=q['removed'], updates=q['updates'], at_ms=q['at_ms'], goals=q['goals'])
                     for q in tracking.quest_state(self.quest_events).values()],
             ledger=dict(items=dict(self.item_gains), income=dict(self.income), spent=self.spent,

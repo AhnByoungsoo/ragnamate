@@ -20,6 +20,9 @@ VANISH_DEAD = 1
 # 0x00b0 varID (샘플 검증: 5=현재HP(6초 주기 회복), 6=최대HP(맵 로딩 시 장비 반영으로 단계 상승),
 # 7=현재SP(스킬 사용 시 감소), 8=최대SP, 24/25=무게, 0x00b1 20=Zeny(메타데이터 Zeny와 일치))
 VAR_HP, VAR_MAXHP, VAR_SP, VAR_MAXSP, VAR_WEIGHT, VAR_ZENY = 5, 6, 7, 8, 24, 20
+# 0x00b0 11=Base 레벨, 55=Job 레벨 (샘플 검증: 6개 파일의 Base 레벨업 8번이 모두 '녹화 시작 레벨 + 1'씩 이어짐 —
+# 154→155, 190→191, 207→208, 208→209, 223→224→225→226. Job 레벨도 1씩 오름)
+VAR_BASE_LEVEL, VAR_JOB_LEVEL = 11, 55
 # ZC_NOTIFY_ACT3 action (샘플 관측: 2=앉기). 피해 관련 값은 rAthena 문서 기준
 ACT_DAMAGE = {0: 'normal', 4: 'endure', 8: 'multi', 9: 'multi_endure', 10: 'critical', 11: 'lucky_dodge',
               13: 'multi_critical'}
@@ -409,7 +412,11 @@ class PacketNormalizer:
                 et = {(0x00b0, VAR_HP): E.HP_CHANGE, (0x00b0, VAR_MAXHP): E.HP_CHANGE,
                       (0x00b0, VAR_SP): E.SP_CHANGE, (0x00b0, VAR_MAXSP): E.SP_CHANGE,
                       (0x00b0, VAR_WEIGHT): E.WEIGHT_CHANGE, (0x00b1, VAR_ZENY): E.ZENY_CHANGE}.get((h, var))
-                if et:
+                if (h, var) in ((0x00b0, VAR_BASE_LEVEL), (0x00b0, VAR_JOB_LEVEL)):
+                    add(ReplayEvent(t, E.LEVEL_CHANGE, player, None, cur_map,
+                                    data=dict(kind='base' if var == VAR_BASE_LEVEL else 'job', level=val),
+                                    raw_packet=idx, confidence=conf))
+                elif et:
                     key = 'max' if var in (VAR_MAXHP, VAR_MAXSP) else 'value'
                     add(ReplayEvent(t, et, player, None, cur_map, data={key: val, 'var': var}, raw_packet=idx,
                                     confidence=conf))

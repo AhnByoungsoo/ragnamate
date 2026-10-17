@@ -146,6 +146,7 @@ class MainWindow(QMainWindow):
         apply_aliases(self.guides.repo)
         self.guides.search_engine.build()
         self.nav_overlay = None
+        self._replay_levels = None               # 마지막으로 분석한 리플레이의 레벨(레벨업 코치)
         self.live = None
         self.hud = None
         self._last_state = None
@@ -440,6 +441,7 @@ class MainWindow(QMainWindow):
                                  ('창고 시세', 'storage', self.toggle_storage_overlay),
                                  ('Navigator', 'nav', lambda: self.toggle_overlay(self.navigator_page))):
             m.addAction('%s  (%s)' % (label, hk.get(key, '-')), slot)
+        m.addAction('레벨업 코치', self.toggle_leveling)
         m.addSeparator()
         m.addAction('창고 슬롯 시세 켜기/끄기  (%s)' % hk.get('storage_grid', 'Ctrl+Alt+G'), self.toggle_storage_grid)
         m.addAction('창고 슬롯 배치 설정…', self.configure_storage_grid)
@@ -597,6 +599,9 @@ class MainWindow(QMainWindow):
         except Exception:
             log.exception('효과 후보 학습 실패')
         self._learn_from_replay(res.parsed)
+        ups = [e.data['level'] for e in res.parsed.events
+               if e.event_type == 'LEVEL_CHANGE' and e.data['kind'] == 'base' and e.actor_id == res.parsed.player_aid]
+        self._replay_levels = dict(level=res.parsed.base_level, base_level_now=ups[-1] if ups else None)
         if os.path.exists(res.path):
             self._watch_seen = (res.path, os.path.getmtime(res.path))
         self.replay_page.set_result(res)
@@ -1150,6 +1155,17 @@ class MainWindow(QMainWindow):
                          popup=cfg.get('popup', bool(self.s.get('buff_windows_popup', False))))
         self.alerts.fire(rule)
 
+    def toggle_leveling(self):
+        """레벨업 코치 오버레이. 레벨은 LIVE 리플레이(레벨업 기록) → 마지막으로 분석한 리플레이 순으로 읽는다."""
+        if getattr(self, 'leveling_overlay', None) is None:
+            from ui.leveling_overlay import LevelingOverlay
+            self.leveling_overlay = LevelingOverlay(self.s, self._save_settings, self.status)
+        ov = self.leveling_overlay
+        ov.setVisible(not ov.isVisible())
+        if ov.isVisible():
+            rp = ((self.live.snapshot() or {}).get('replay_live') if self.live else None) or self._replay_levels
+            ov.update_from(rp)
+
     def toggle_buff_overlay(self):
         from ui.buff_overlay import BuffOverlay
         if self.buff_overlay is None:
@@ -1281,6 +1297,8 @@ class MainWindow(QMainWindow):
         rp = snap.get('replay_live') or {}
         self._feed_loot(rp)
         self._check_queue(rp)
+        if rp and getattr(self, 'leveling_overlay', None) is not None and self.leveling_overlay.isVisible():
+            self.leveling_overlay.update_from(rp)
         if rp.get('stage') == 'CONFIRMED':
             vals = dict(vals)
             for key in ('HP', 'SP', 'AP'):
