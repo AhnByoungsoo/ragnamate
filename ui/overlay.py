@@ -14,14 +14,14 @@ from ui import overlay_styles
 class OverlayWindow(QWidget):
     """Buff Timer / Status / Storage 등에서 재사용할 Overlay 기본 창."""
 
-    def __init__(self, settings, key, title=''):
+    def __init__(self, settings, key, title='', opacity=0.9):
         super().__init__(None, Qt.Tool | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.s, self.key = settings, key
         self.setAttribute(Qt.WA_TranslucentBackground, False)
         self.setWindowTitle(title)
         self._drag = None
         cfg = (settings.get('overlays') or {}).get(key, {})
-        self.setWindowOpacity(cfg.get('opacity', 0.9))
+        self.setWindowOpacity(cfg.get('opacity', opacity))
         if cfg.get('pos'):
             self.move(QPoint(*cfg['pos']))
         self.locked = bool(cfg.get('locked', False))

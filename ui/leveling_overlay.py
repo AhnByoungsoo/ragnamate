@@ -22,7 +22,8 @@ class LevelingOverlay(OverlayWindow):
 
     def __init__(self, settings, save, notify=lambda msg: None, alert=None):
         """save(): 설정 저장 · notify(글): 상태 알림 · alert(글, 음성 글): 소리·음성까지 내는 알림."""
-        super().__init__(settings, 'leveling', '레벨업 코치')
+        # 글이 많은 창이라 기본은 불투명: 반투명 창은 Windows가 ClearType을 꺼서 게임 위에서 글자가 흐려진다
+        super().__init__(settings, 'leveling', '레벨업 코치', opacity=1.0)
         self.save_settings, self.notify = save, notify
         self.alert = alert or (lambda text, speak: notify(text))
         self.rp, self.primary_id, self.level = {}, None, None
@@ -30,12 +31,13 @@ class LevelingOverlay(OverlayWindow):
         self.screen_update.connect(self.on_screen)
         self.setStyleSheet(
             'QWidget#lvRoot { background: #14171D; border: 1px solid #35598C; border-radius: 10px; }'
-            'QLabel { color: #E6E9EF; background: transparent; font-size: 12px; }'
-            'QLabel#t { color: #9ECBFF; font-weight: 700; font-size: 13px; }'
-            'QLabel#lv { color: #FFD479; font-weight: 700; font-size: 13px; }'
-            'QLabel#now { background: #1D3A2C; border-left: 3px solid #4CC38A; border-radius: 6px; padding: 6px 8px;'
-            ' color: #FFFFFF; font-size: 13px; }'
-            'QLabel#sub { color: #AAB2C0; } QLabel#src { color: #6F7888; font-size: 11px; }'
+            'QLabel { color: #EEF1F5; background: transparent; font-size: 13px; }'
+            'QLabel#t { color: #9ECBFF; font-weight: 700; font-size: 14px; }'
+            'QLabel#lv { color: #FFD479; font-weight: 700; font-size: 15px; }'
+            'QLabel#stage { color: #D5DBE4; font-size: 13px; }'
+            'QLabel#now { background: #1D3A2C; border-left: 3px solid #4CC38A; border-radius: 6px; padding: 7px 9px;'
+            ' color: #FFFFFF; font-size: 14px; }'
+            'QLabel#sub { color: #D0D6DF; } QLabel#src { color: #98A2B3; font-size: 12px; }'
             'QPushButton { background: #1F242D; color: #E6E9EF; border: 1px solid #343B48; border-radius: 6px;'
             ' padding: 3px 8px; font-size: 12px; } QPushButton:hover { border-color: #4B84C8; }'
             'QPushButton:disabled { color: #5A6170; } QPushButton#x { border: 0; background: transparent; color: #8E97A8; }'
@@ -69,12 +71,15 @@ class LevelingOverlay(OverlayWindow):
         lv = QHBoxLayout()
         self.lv = QLabel()
         self.lv.setObjectName('lv')
+        self.stage = QLabel()                     # 구간 안 위치: 'Lv.160~164 중 4/5 · 다음 단계까지 2'
+        self.stage.setObjectName('stage')
         b_level = QPushButton('레벨 수정')
         b_level.setToolTip('화면·리플레이에서 레벨을 읽지 못할 때 쓸 레벨입니다. 자동으로 읽히면 그 값을 씁니다.')
         b_level.clicked.connect(self.ask_level)
         lv.addWidget(self.lv, 1)
         lv.addWidget(b_level)
         v.addLayout(lv)
+        v.addWidget(self.stage)
         self.now = QLabel()
         self.now.setObjectName('now')
         self.now.setWordWrap(True)
@@ -160,9 +165,12 @@ class LevelingOverlay(OverlayWindow):
         stage = ''
         if p and level:                            # 이 구간에서 어디쯤인지: 'Lv.160~164 중 3/5 · 다음 단계까지 2'
             left = p.max + 1 - level
-            stage = ' · %s 중 %d/%d%s' % (_range(p), level - p.min + 1, p.max - p.min + 1,
-                                          ' · 다음 단계까지 %d' % left if a.next and left > 0 else '')
-        self.lv.setText(('Lv.%d · %s%s' % (level, why, stage) if level else '레벨 모름 — 게임 기본정보 창을 펼쳐 두세요') + hint)
+            stage = '%s 중 %d/%d%s' % (_range(p), level - p.min + 1, p.max - p.min + 1,
+                                       ' · 다음 단계까지 %d레벨' % left if a.next and left > 0 else '')
+        self.lv.setText('Lv.%d · %s' % (level, why) if level else '레벨 모름')
+        notes = [x for x in (stage, hint[3:]) if x] if level else ['게임 기본정보 창을 펼쳐 두세요', hint[3:]]
+        self.stage.setText(' · '.join(x for x in notes if x))
+        self.stage.setVisible(bool(self.stage.text()))
         if level is None:
             self.now.setText('레벨을 알면 맞는 사냥터를 보여 줍니다.')
         elif a.out_of_range:
