@@ -16,7 +16,7 @@ class DataTest(unittest.TestCase):
                 self.assertNotIn(s.id, ids)
                 ids.add(s.id)
                 self.assertLessEqual(s.min, s.max, s.id)
-                self.assertIn(s.check, ('seen', 'doc', 'chapter'), s.id)
+                self.assertIn(s.check, ('sheet', 'seen', 'doc', 'chapter'), s.id)
                 self.assertTrue(s.video_url.startswith('https://www.youtube.com/watch?v='), s.id)
 
     def test_only_sourced_coordinates_become_navi(self):
@@ -31,12 +31,29 @@ class AdviceTest(unittest.TestCase):
         return [s.title for s in a.now], a.next.title if a.next else None
 
     def test_boundaries_of_the_skip_route(self):
-        self.assertEqual(self.titles('fast_skip', 209)[1], '니플헤임 (각팟 · 솔플)')
-        self.assertEqual(self.titles('fast_skip', 210)[0], ['니플헤임 (각팟 · 솔플)'])
+        self.assertEqual(self.titles('fast_skip', 209)[1], '니플헤임 던전 1층')
+        self.assertEqual(self.titles('fast_skip', 210)[0], ['니플헤임 던전 1층'])
         self.assertEqual(self.titles('fast_skip', 236)[0], ['아미키티아 연구소 2층'])
-        self.assertEqual(self.titles('fast_skip', 237)[0], ['레벨업 티켓으로 240까지'])
-        self.assertEqual(self.titles('fast_skip', 240), (['바이오스피어 혹한'], None))
-        self.assertEqual(self.titles('fast_skip', 160)[0], ['일루전 루안다 · 트윈스'])      # 다음 시작(165) 앞까지
+        self.assertEqual(self.titles('fast_skip', 237)[0], ['레벨업 티켓 3장'])
+        self.assertEqual(self.titles('fast_skip', 240), (['바이오스피어 혹한 / 화염'], None))
+        self.assertEqual(self.titles('fast_skip', 160)[0], ['일루전 루안다 → 트윈스'])
+        self.assertIn('일루전 구양궁', self.titles('fast_skip', 155)[0])                   # 생략 코스는 EP17 단계 없음
+
+    def test_ticket_route_follows_the_sheet(self):
+        self.assertIn('일루전 구양궁 + EP17 보상', self.titles('fast_ticket', 155)[0])
+        self.assertEqual(self.titles('fast_ticket', 200)[0], ['4차 전직 → 주력 스킬·장비', '비공정 추락지 [40분]'])
+        self.assertEqual(self.titles('fast_ticket', 237)[0], ['레벨업 티켓 3장'])
+
+    def test_optional_illusions_come_after_the_recommended_ones(self):
+        now, _ = self.titles('fast_ticket', 147)
+        self.assertEqual(now[0], '미로 / 얼어붙은 꼬리(강구)')                  # 145~149는 아직 강구가 '지금'
+        self.assertEqual(now[1:4], ['③ 일루전 게펜', '④ 일루전 심해 상층', '⑤ 일루전 테디베어'])
+        self.assertEqual(now[4:], ['① 일루전 페이욘 [선택]', '② 일루전 얼음 동굴 [선택]'])
+
+    def test_todo_is_split_into_ordered_steps(self):
+        step = C.advise('fast_ticket', 165).now[0]
+        self.assertEqual((step.kind, step.time_label), ('TICKET', '13:44'))
+        self.assertEqual(C.advise('fast_ticket', 160).now[0].todo[-1], '일루전 트윈스 100마리 토벌')
 
     def test_overlapping_farm_ranges_stay_as_alternatives(self):
         now, _ = self.titles('farm', 217)

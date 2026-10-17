@@ -96,11 +96,21 @@ class LevelingOverlay(OverlayWindow):
         self.more.setTextFormat(Qt.RichText)
         self.more.linkActivated.connect(self._link)
         v.addWidget(self.more)
+        self.b_prep = QPushButton('준비·재료 보기')
+        self.b_prep.setObjectName('x')
+        self.b_prep.setCheckable(True)
+        self.b_prep.toggled.connect(lambda _on: self.refresh())
+        v.addWidget(self.b_prep, 0, Qt.AlignLeft)
+        self.prep = QLabel()                       # 코스 시작 전 준비 · 재료 체크(접었다 폈다)
+        self.prep.setObjectName('sub')
+        self.prep.setWordWrap(True)
+        self.prep.setTextFormat(Qt.RichText)
+        v.addWidget(self.prep)
         self.src = QLabel()
         self.src.setObjectName('src')
         self.src.setWordWrap(True)
         v.addWidget(self.src)
-        self.setFixedWidth(380)
+        self.setFixedWidth(420)
         self.advice = None
         self.refresh()
 
@@ -146,8 +156,13 @@ class LevelingOverlay(OverlayWindow):
         self._level_jump(level)
         self.advice = a = self.courses.advise(self._key(), level)
         hint = ' · %s' % self.screen_status if self.screen_status and self.screen_status != '화면 인식' else ''
-        self.lv.setText(('Lv.%d · %s' % (level, why) if level else '레벨 모름 — 게임 기본정보 창을 펼쳐 두세요') + hint)
         p = self._primary()
+        stage = ''
+        if p and level:                            # 이 구간에서 어디쯤인지: 'Lv.160~164 중 3/5 · 다음 단계까지 2'
+            left = p.max + 1 - level
+            stage = ' · %s 중 %d/%d%s' % (_range(p), level - p.min + 1, p.max - p.min + 1,
+                                          ' · 다음 단계까지 %d' % left if a.next and left > 0 else '')
+        self.lv.setText(('Lv.%d · %s%s' % (level, why, stage) if level else '레벨 모름 — 게임 기본정보 창을 펼쳐 두세요') + hint)
         if level is None:
             self.now.setText('레벨을 알면 맞는 사냥터를 보여 줍니다.')
         elif a.out_of_range:
@@ -156,24 +171,35 @@ class LevelingOverlay(OverlayWindow):
         elif p is None:
             self.now.setText('이 레벨 구간은 코스 자료가 없습니다. 아래 다음 자료나 영상을 확인하세요.')
         else:
-            lines = ['<b>[%s] %s</b>  <span style="color:#AAB2C0">%s</span>'
-                     % (KIND_LABEL.get(p.kind, p.kind), html.escape(p.title), _range(p))]
-            for extra in (p.party and '파티: ' + p.party, p.note, p.level_note):
+            lines = ['<b>[%s] %s</b>' % (KIND_LABEL.get(p.kind, p.kind), html.escape(p.title))]
+            todo = p.todo
+            if len(todo) > 1:                      # 'A → B → C' 를 순서 번호로
+                lines += ['<span style="color:#C9D1DC">%d. %s</span>' % (i, html.escape(t)) for i, t in enumerate(todo, 1)]
+            elif todo:
+                lines.append('<span style="color:#C9D1DC">%s</span>' % html.escape(todo[0]))
+            for extra in (p.party and '파티: ' + p.party, p.level_note):
                 if extra:
-                    lines.append('<span style="color:#C9D1DC">· %s</span>' % html.escape(extra))
+                    lines.append('<span style="color:#FFD479">· %s</span>' % html.escape(extra))
             self.now.setText('<br>'.join(lines))
         self.b_navi.setEnabled(bool(p and p.navi))
         self.b_navi.setToolTip(('%s 복사 — 게임 채팅창에 붙여 넣으세요.%s' % (p.navi_text, ' (%s)' % p.navi['note']
                                 if p.navi.get('note') else '')) if p and p.navi else '이 단계는 좌표 자료가 없습니다.')
         self.b_video.setEnabled(bool(p))
+        self.b_video.setText('영상 %s' % p.time_label if p else '영상 근거')
+        r = self.courses.routes[self._key()]
+        prep = [x for x in (r.get('prep'), r.get('materials')) if x]
+        self.b_prep.setVisible(bool(prep))
+        self.b_prep.setText('준비·재료 %s' % ('접기' if self.b_prep.isChecked() else '보기'))
+        self.prep.setText('<br>'.join(html.escape(x) for x in prep))
+        self.prep.setVisible(bool(prep) and self.b_prep.isChecked())
         here = self.rp.get('map') and '@' not in str(self.rp.get('map')) and self.rp.get('position')
         self.b_here.setEnabled(bool(p and here))
         parts = []
-        for s in (a.now[1:3] if a.now else []):
+        for s in (a.now[1:5] if a.now else []):
             parts.append('대안: [%s] %s %s · %s' % (KIND_LABEL.get(s.kind, s.kind), html.escape(s.title), _range(s),
                                                   self._links(s)))
-        if len(a.now) > 3:
-            parts.append('그 밖에 %d개 — 영상에서 확인' % (len(a.now) - 3))
+        if len(a.now) > 5:
+            parts.append('그 밖에 %d개 — 영상에서 확인' % (len(a.now) - 5))
         if a.next:
             parts.append('다음: %s %s · %s' % (_range(a.next), html.escape(a.next.title), self._links(a.next)))
         self.more.setText('<br>'.join(parts))
@@ -185,7 +211,7 @@ class LevelingOverlay(OverlayWindow):
 
     @staticmethod
     def _links(s):
-        out = ['<a href="video:%s" style="color:#8FC2FF">영상</a>' % s.id]
+        out = ['<a href="video:%s" style="color:#8FC2FF">영상 %s</a>' % (s.id, s.time_label)]
         if s.navi:
             out.append('<a href="navi:%s" style="color:#FFD479">네비</a>' % s.id)
         return ' '.join(out)

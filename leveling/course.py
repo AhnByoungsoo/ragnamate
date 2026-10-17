@@ -13,7 +13,7 @@ from navigator.models import navi_command
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'leveling', 'routes_kr.json')
 KIND_LABEL = {'HUNT': '사냥', 'FARM': '파밍', 'QUEST': '퀘스트', 'TICKET': '티켓', 'JOB': '전직', 'CLAIM': '보상 수령',
               'PREPARE': '준비', 'GUIDE': '영상 챕터'}
-CHECK_LABEL = {'seen': '영상 표 확인', 'doc': '조사 문서 · 미재확인', 'chapter': '영상 챕터'}
+CHECK_LABEL = {'sheet': '영상 전체 자막 정리표', 'seen': '영상 표 확인', 'doc': '조사 문서 · 미재확인', 'chapter': '영상 챕터'}
 
 
 @dataclass
@@ -30,6 +30,16 @@ class Step:
     level_note: str = ''
     party: str = ''
     navi: Optional[dict] = None
+    optional: bool = False                        # [선택] 단계 — 같은 구간의 다른 단계 뒤에 대안으로
+
+    @property
+    def time_label(self):
+        return '%d:%02d' % divmod(self.t, 60)
+
+    @property
+    def todo(self):
+        """할 일을 순서대로 나눈 목록('A → B → C')."""
+        return [p.strip() for p in self.note.split(' → ') if p.strip()] if self.note else []
 
     @property
     def video_url(self):
@@ -66,9 +76,9 @@ class Courses:
                 navi = user_navi.get(s['id']) or shared.get(s.get('navi') or '')
                 steps.append(Step(s['id'], s['min'], hi, s['kind'], s['title'], self.sources[s['src']], s.get('t', 0),
                                   s['check'], s.get('note', ''), s.get('level_note', ''), s.get('party', ''),
-                                  dict(navi) if navi else None))
-            self.routes[key] = dict(title=route['title'], summary=route.get('summary', ''),
-                                    max_level=route['max_level'], steps=steps)
+                                  dict(navi) if navi else None, bool(s.get('optional'))))
+            self.routes[key] = dict(title=route['title'], summary=route.get('summary', ''), prep=route.get('prep', ''),
+                                    materials=route.get('materials', ''), max_level=route['max_level'], steps=steps)
 
     def advise(self, route, level):
         r = self.routes[route]
@@ -76,7 +86,7 @@ class Courses:
             return Advice(None)
         if level > r['max_level']:
             return Advice(level, out_of_range=True)
-        now = [s for s in r['steps'] if s.min <= level <= s.max]
+        now = sorted((s for s in r['steps'] if s.min <= level <= s.max), key=lambda s: s.optional)
         later = [s for s in r['steps'] if s.min > level]
         return Advice(level, now, min(later, key=lambda s: s.min) if later else None)
 
