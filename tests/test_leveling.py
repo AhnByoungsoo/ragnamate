@@ -56,13 +56,69 @@ class LevelSourceTest(unittest.TestCase):
     def test_level_up_seen_in_replay_beats_the_recording_start(self):
         self.assertEqual(current_level(dict(level=223, base_level_now=226)), (226, '리플레이 레벨업 기록'))
         self.assertEqual(current_level(dict(level=223)), (223, '리플레이 녹화 시작 레벨'))
-        self.assertEqual(current_level(dict(level=223, base_level_now=226), manual=230), (230, '직접 입력'))
+        self.assertEqual(current_level(dict(level=223, base_level_now=226), manual=230),     # 직접 값은 덮지 않는다
+                         (226, '리플레이 레벨업 기록'))
+        self.assertEqual(current_level(None, manual=230), (230, '직접 입력'))
+        self.assertEqual(current_level(dict(level=223), manual=10, screen=115), (115, '화면 인식'))
         self.assertEqual(current_level(None), (None, ''))
 
     def test_saved_location_becomes_navi(self):
         c = Courses(user_navi={'fs_210': dict(map='niflheim', x=200, y=180, label='직접 저장')})
         step = next(s for s in c.routes['fast_skip']['steps'] if s.id == 'fs_210')
         self.assertEqual(step.navi_text, '/navi niflheim 200/180')
+
+
+class FakeOcr:
+    """창 전체(1.5배)·작은 자리(2배)에 각각 정해 둔 글을 돌려준다."""
+
+    def __init__(self):
+        self.full, self.small, self.calls = [], [], []
+
+    def recognize(self, img, scale=1.0):
+        from live.ocr import OcrLine
+        self.calls.append(scale)
+        return [OcrLine(t, 1.0, (16, 86, 64, 8)) for t in (self.full if scale == 1.5 else self.small)]
+
+
+class ScreenLevelTest(unittest.TestCase):
+    def test_parse_handles_what_windows_ocr_returned_on_the_real_screen(self):
+        from live.level_watch import parse_level
+        for text, want in (('Base Lv. 115', 115), ('Base 115', 115), ('Base 나,. 115', 115), ('Job Lv. 26', None),
+                           ('Base Lv. 999', None), ('6시 싸요', None)):
+            self.assertEqual(parse_level(text), want, text)
+
+    def test_locate_once_then_read_the_small_spot_and_confirm_on_two_equal_reads(self):
+        import numpy as np
+        from live.level_watch import LevelWatcher
+        ocr = FakeOcr()
+        w = LevelWatcher(lambda d: None, ocr=ocr)
+        img = np.zeros((200, 300, 3), np.uint8)
+        ocr.full = ['기본정보', 'Base Lv. 115', 'Job Lv. 26']
+        self.assertEqual(w.observe(1, img, now=0), (None, '화면 인식'))       # 한 번 읽음 — 아직 확정 전
+        ocr.small = ['Base 115']
+        self.assertEqual(w.observe(1, img, now=1), (115, '화면 인식'))        # 같은 숫자 두 번 → 확정
+        self.assertEqual(ocr.calls, [1.5, 2.0])                               # 전체는 처음 한 번만
+        ocr.small = ['Base 178']                                              # 한 번 잘못 읽음
+        self.assertEqual(w.observe(1, img, now=2)[0], 115)
+        ocr.small = ['Base 116']
+        w.observe(1, img, now=3)
+        self.assertEqual(w.observe(1, img, now=4)[0], 116)
+
+    def test_hidden_window_keeps_the_last_level_and_says_why(self):
+        import numpy as np
+        from live.level_watch import LevelWatcher
+        ocr = FakeOcr()
+        w = LevelWatcher(lambda d: None, ocr=ocr)
+        img = np.zeros((200, 300, 3), np.uint8)
+        ocr.full, ocr.small = ['Base Lv. 115'], ['Base 115']
+        w.observe(1, img, now=0)
+        w.observe(1, img, now=1)
+        ocr.full, ocr.small = [], []
+        level, status = w.observe(1, img, now=2)
+        self.assertEqual(level, 115)
+        self.assertIn('찾지 못함', status)
+        w.observe(1, img, now=3)
+        self.assertEqual(ocr.calls.count(1.5), 1)                             # 전체 다시 찾기는 5초에 한 번까지
 
 
 @unittest.skipUnless(helpers.sample('321321.rrf'), '리플레이 표본 없음')

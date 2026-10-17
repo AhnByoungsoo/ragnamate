@@ -81,13 +81,17 @@ class Courses:
         return Advice(level, now, min(later, key=lambda s: s.min) if later else None)
 
 
-def current_level(rp, manual=0):
-    """(레벨, 근거 글). manual > 0 이면 직접 정한 값. 리플레이의 레벨업 기록 > 녹화 시작 레벨."""
-    if manual:
-        return int(manual), '직접 입력'
+def current_level(rp, manual=0, screen=None):
+    """(레벨, 근거 글). 화면에서 읽은 레벨 > 리플레이 레벨업 기록 > 녹화 시작 레벨 > 직접 정한 값.
+
+    직접 정한 값은 자동으로 알 수 없을 때만 쓴다(자동 인식을 덮어쓰지 않는다)."""
+    if screen:
+        return int(screen), '화면 인식'
     rp = rp or {}
     if rp.get('base_level_now'):
         return rp['base_level_now'], '리플레이 레벨업 기록'
     if rp.get('level'):
         return rp['level'], '리플레이 녹화 시작 레벨'
+    if manual:
+        return int(manual), '직접 입력'
     return None, ''

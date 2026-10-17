@@ -5,7 +5,7 @@
 """
 import html
 
-from PySide6.QtCore import Qt, QUrl
+from PySide6.QtCore import Qt, QUrl, Signal
 from PySide6.QtGui import QDesktopServices, QGuiApplication
 from PySide6.QtWidgets import QComboBox, QHBoxLayout, QInputDialog, QLabel, QPushButton, QVBoxLayout, QWidget
 
@@ -18,11 +18,16 @@ def _range(s):
 
 
 class LevelingOverlay(OverlayWindow):
-    def __init__(self, settings, save, notify=lambda msg: None):
-        """save(): 설정 저장 · notify(글): 코스가 바뀌었을 때 알림."""
+    screen_update = Signal(object)                 # 화면 레벨 감시 스레드 → 화면: dict(hwnd, level, status)
+
+    def __init__(self, settings, save, notify=lambda msg: None, alert=None):
+        """save(): 설정 저장 · notify(글): 상태 알림 · alert(글, 음성 글): 소리·음성까지 내는 알림."""
         super().__init__(settings, 'leveling', '레벨업 코치')
         self.save_settings, self.notify = save, notify
+        self.alert = alert or (lambda text, speak: notify(text))
         self.rp, self.primary_id, self.level = {}, None, None
+        self.screen, self.screen_status = None, ''
+        self.screen_update.connect(self.on_screen)
         self.setStyleSheet(
             'QWidget#lvRoot { background: #14171D; border: 1px solid #35598C; border-radius: 10px; }'
             'QLabel { color: #E6E9EF; background: transparent; font-size: 12px; }'
@@ -65,7 +70,7 @@ class LevelingOverlay(OverlayWindow):
         self.lv = QLabel()
         self.lv.setObjectName('lv')
         b_level = QPushButton('레벨 수정')
-        b_level.setToolTip('레벨을 직접 정합니다. 0으로 두면 리플레이에서 읽은 레벨을 씁니다.')
+        b_level.setToolTip('화면·리플레이에서 레벨을 읽지 못할 때 쓸 레벨입니다. 자동으로 읽히면 그 값을 씁니다.')
         b_level.clicked.connect(self.ask_level)
         lv.addWidget(self.lv, 1)
         lv.addWidget(b_level)
@@ -120,8 +125,12 @@ class LevelingOverlay(OverlayWindow):
         self.rp = rp or {}
         self.refresh()
 
+    def on_screen(self, d):
+        self.screen, self.screen_status = d.get('level'), d.get('status', '')
+        self.refresh()
+
     def ask_level(self):
-        value, ok = QInputDialog.getInt(self, '레벨 수정', 'Base 레벨 (0 = 리플레이에서 읽기)',
+        value, ok = QInputDialog.getInt(self, '레벨 수정', '자동으로 읽지 못할 때 쓸 Base 레벨 (0 = 쓰지 않음)',
                                         int(self.s.get('leveling_manual_level') or 0), 0, 999)
         if ok:
             self.s['leveling_manual_level'] = value
@@ -130,9 +139,14 @@ class LevelingOverlay(OverlayWindow):
 
     # ------------------------------------------------------------------ 화면
     def refresh(self):
-        level, why = current_level(self.rp, self.s.get('leveling_manual_level') or 0)
+        level, why = current_level(self.rp, self.s.get('leveling_manual_level') or 0, self.screen)
+        if why != getattr(self, '_why', why):          # 레벨을 읽는 곳이 바뀐 것(직접 입력 → 화면 등)은 알릴 일이 아니다
+            self.primary_id, self.level = None, None
+        self._why = why
+        self._level_jump(level)
         self.advice = a = self.courses.advise(self._key(), level)
-        self.lv.setText('Lv.%d · %s' % (level, why) if level else '레벨 모름 — 리플레이 녹화를 켜거나 [레벨 수정]')
+        hint = ' · %s' % self.screen_status if self.screen_status and self.screen_status != '화면 인식' else ''
+        self.lv.setText(('Lv.%d · %s' % (level, why) if level else '레벨 모름 — 게임 기본정보 창을 펼쳐 두세요') + hint)
         p = self._primary()
         if level is None:
             self.now.setText('레벨을 알면 맞는 사냥터를 보여 줍니다.')
@@ -177,11 +191,22 @@ class LevelingOverlay(OverlayWindow):
         return ' '.join(out)
 
     def _announce(self, p):
-        """레벨이 올라 '지금 할 일'이 바뀌면 한 번 알린다(처음 열 때·코스를 바꿀 때는 조용히)."""
+        """레벨이 올라 '지금 할 일'이 바뀌면 한 번 알린다(처음 열 때·코스를 바꿀 때는 조용히).
+        레벨업 티켓을 쓸 차례면 음성으로 알린다."""
         pid = p.id if p else None
         if self.primary_id is not None and pid and pid != self.primary_id:
-            self.notify('레벨업 코치: 다음 코스 — %s' % p.title)
+            if p.kind == 'TICKET':
+                self.alert('레벨업 티켓 사용할 차례: %s (%s)' % (p.title, _range(p)), '레벨업 티켓을 사용하세요')
+            else:
+                self.alert('레벨업 코치: 다음 코스 — %s' % p.title, '다음 사냥터로 이동하세요')
         self.primary_id = pid or self.primary_id
+
+    def _level_jump(self, level):
+        """레벨이 한 번에 2 이상 오르면 레벨업 티켓을 쓴 것으로 보고 알린다(사냥으로는 한 번에 1씩 오른다)."""
+        if level and self.level and level - self.level >= 2:
+            self.notify('레벨업 티켓 사용 확인: Lv.%d → Lv.%d' % (self.level, level))
+        if level:
+            self.level = level
 
     # ------------------------------------------------------------------ 버튼
     def _link(self, href):

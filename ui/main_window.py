@@ -1158,13 +1158,30 @@ class MainWindow(QMainWindow):
     def toggle_leveling(self):
         """레벨업 코치 오버레이. 레벨은 LIVE 리플레이(레벨업 기록) → 마지막으로 분석한 리플레이 순으로 읽는다."""
         if getattr(self, 'leveling_overlay', None) is None:
+            from live.level_watch import LevelWatcher
             from ui.leveling_overlay import LevelingOverlay
-            self.leveling_overlay = LevelingOverlay(self.s, self._save_settings, self.status)
+            self.leveling_overlay = ov = LevelingOverlay(self.s, self._save_settings, self.status, self._leveling_alert)
+            self.level_watch = LevelWatcher(ov.screen_update.emit,
+                                            self.s.get('live_process_names') or ('Ragexe.exe', 'Ragnarok.exe'),
+                                            active=ov.isVisible).start()
         ov = self.leveling_overlay
         ov.setVisible(not ov.isVisible())
         if ov.isVisible():
             rp = ((self.live.snapshot() or {}).get('replay_live') if self.live else None) or self._replay_levels
             ov.update_from(rp)
+
+    def _leveling_alert(self, text, speak):
+        """레벨업 코치 알림: 글 + 음성(처음 한 번 만들어 data/sounds 에 둔다, 못 만들면 기본 알림음)."""
+        import hashlib
+        path = os.path.join(BASE_DIR, 'data', 'sounds', 'leveling_%s.wav' % hashlib.md5(speak.encode('utf-8')).hexdigest()[:10])
+        if not os.path.isfile(path):
+            try:
+                from utilities import voice
+                voice.speak_to_wav(speak, path, rate=2)
+            except Exception as e:
+                log.warning('레벨업 코치 음성을 만들지 못했습니다: %s', e)
+                path = ''
+        self.alerts.fire(AlertRule('leveling', text, sound=path))
 
     def toggle_buff_overlay(self):
         from ui.buff_overlay import BuffOverlay
@@ -1529,6 +1546,8 @@ class MainWindow(QMainWindow):
             self.loot_alert.stop()
         if getattr(self, 'bulk_prices', None) is not None:
             self.bulk_prices.stop()
+        if getattr(self, 'level_watch', None) is not None:
+            self.level_watch.stop()
         if getattr(self, 'catalog_icons', None) is not None:
             self.catalog_icons.stop()
         if getattr(self, '_loot_icons', None) is not None:
