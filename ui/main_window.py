@@ -1423,10 +1423,12 @@ class MainWindow(QMainWindow):
             self._queue_fire(text, threshold)
 
     def _queue_fire(self, text, threshold):
-        if self.s.get('queue_leave_copy') and self.s.get('queue_leave_command'):
-            QApplication.clipboard().setText(self.s['queue_leave_command'])    # 붙여 넣기는 사용자가
-            text += ' — %s 복사됨: 게임에서 Enter → Ctrl+V → Enter' % self.s['queue_leave_command']
+        if self._leave_key():
+            text += ' — 지금 %s (파티 탈퇴)' % self._leave_key()
         self.alerts.fire(AlertRule('queue', text, sound=self._queue_sound(threshold)))
+
+    def _leave_key(self):
+        return (self.s.get('queue_leave_key') or '') if self.s.get('queue_leave_hint') else ''
 
     def _on_queue_screen(self, hwnd, state):
         """메모리얼 던전 창에서 읽은 대기 순위 → 기준 이하 알림, '입장 가능' 알림."""
@@ -1455,11 +1457,14 @@ class MainWindow(QMainWindow):
     def _queue_sound(self, threshold):
         """"대기열이 N 이하입니다" 음성 파일. 없으면 한 번 만들고, 못 만들면 기본 알림음('')."""
         from core.queue_watch import message
-        path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_fast_%d.wav' % threshold)
+        key = self._leave_key()
+        speak = message(threshold) + (', %s 누르세요' % key.replace('Alt', '알트').replace('+', ' ') if key else '')
+        path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_fast_%d%s.wav'
+                            % (threshold, '_' + key.replace('+', '').lower() if key else ''))
         if not os.path.isfile(path):
             try:
                 from utilities import voice
-                voice.speak_to_wav(message(threshold), path, rate=4)       # 순번이 빨리 줄어든다 — 빠르게 읽는다
+                voice.speak_to_wav(speak, path, rate=4)                    # 순번이 빨리 줄어든다 — 빠르게 읽는다
             except Exception as e:
                 log.warning('대기열 음성을 만들지 못했습니다: %s', e)
                 return ''

@@ -186,13 +186,14 @@ class LivePage(QWidget):
         self.queue_below.setCurrentIndex(max(0, self.queue_below.findData(int(self.app.s['queue_alert_below']))))
         self.queue_below.currentIndexChanged.connect(lambda _i: self.set_queue_threshold(self.queue_below.currentData()))
         top.addWidget(self.queue_below)
-        self.queue_leave = QCheckBox('탈퇴 명령 복사')
-        self.queue_leave.setToolTip('알릴 때 파티 탈퇴 명령(%s)을 클립보드에 넣어 둡니다. 게임 채팅창에서 Enter → Ctrl+V → Enter. '
-                                    '게임에 직접 입력하지는 않습니다. 명령 글은 설정 파일의 queue_leave_command 에서 바꿉니다.'
-                                    % self.app.s['queue_leave_command'])
-        self.queue_leave.setChecked(bool(self.app.s.get('queue_leave_copy')))
-        self.queue_leave.toggled.connect(lambda on: (self.app.s.__setitem__('queue_leave_copy', bool(on)),
-                                                     self.app._save_settings()))
+        key = self.app.s['queue_leave_key']
+        self.queue_leave = QCheckBox('탈퇴 %s 안내' % key)
+        self.queue_leave.setToolTip('알릴 때 "%s 누르세요"를 글과 음성으로 함께 알립니다. 게임 매크로 창(Alt+M)의 %s 칸에 '
+                                    '파티 탈퇴 명령을 넣어 두면, 알림을 듣고 %s 한 번으로 탈퇴합니다. 키는 직접 누릅니다 — '
+                                    '프로그램이 게임에 입력하지는 않습니다.' % (key, key, key))
+        self.queue_leave.setChecked(bool(self.app.s.get('queue_leave_hint')))
+        self.queue_leave.toggled.connect(lambda on: (self.app.s.__setitem__('queue_leave_hint', bool(on)),
+                                                     self.app._save_settings(), self._prepare_queue_sound()))
         top.addWidget(self.queue_leave)
         self._label_queue()
         self.b_mute = QPushButton('알림 음소거')
