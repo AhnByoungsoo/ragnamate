@@ -9,7 +9,7 @@ from contextlib import closing
 import cv2
 from PySide6.QtCore import QPoint, QRect, Qt, QTimer
 from PySide6.QtGui import QColor, QImage, QPainter, QPen, QPixmap
-from PySide6.QtWidgets import (QComboBox, QDialog, QDialogButtonBox, QGridLayout, QHBoxLayout, QInputDialog, QLabel,
+from PySide6.QtWidgets import (QCheckBox, QComboBox, QDialog, QDialogButtonBox, QGridLayout, QHBoxLayout, QInputDialog, QLabel,
                                QMessageBox, QPlainTextEdit, QPushButton, QSplitter, QTabWidget, QToolButton,
                                QVBoxLayout, QWidget)
 
@@ -174,8 +174,9 @@ class LivePage(QWidget):
         self.b_queue = QPushButton()
         self.b_queue.setCheckable(True)
         self.b_queue.setChecked(bool(self.app.s.get('queue_alert')))
-        self.b_queue.setToolTip('인던 대기 순번이 기준 이하로 내려오면 소리와 음성으로 알립니다. 리플레이 녹화가 켜져 있어야 '
-                                '순번을 읽습니다. 기준은 오른쪽 목록에서 고릅니다.')
+        self.b_queue.setToolTip('게임 화면의 메모리얼 던전 창에서 대기 순위를 읽어, 기준 이하가 되면 소리와 음성으로 알립니다. '
+                                '맨 앞이 아닌 배럭 창도 읽습니다(창이 최소화돼 있으면 못 읽음). 입장 가능해지면 한 번 더 알립니다. '
+                                '기준은 오른쪽 목록에서 고릅니다.')
         self.b_queue.toggled.connect(self.toggle_queue_alert)
         top.addWidget(self.b_queue)
         self.queue_below = QComboBox()
@@ -185,6 +186,14 @@ class LivePage(QWidget):
         self.queue_below.setCurrentIndex(max(0, self.queue_below.findData(int(self.app.s['queue_alert_below']))))
         self.queue_below.currentIndexChanged.connect(lambda _i: self.set_queue_threshold(self.queue_below.currentData()))
         top.addWidget(self.queue_below)
+        self.queue_leave = QCheckBox('탈퇴 명령 복사')
+        self.queue_leave.setToolTip('알릴 때 파티 탈퇴 명령(%s)을 클립보드에 넣어 둡니다. 게임 채팅창에서 Enter → Ctrl+V → Enter. '
+                                    '게임에 직접 입력하지는 않습니다. 명령 글은 설정 파일의 queue_leave_command 에서 바꿉니다.'
+                                    % self.app.s['queue_leave_command'])
+        self.queue_leave.setChecked(bool(self.app.s.get('queue_leave_copy')))
+        self.queue_leave.toggled.connect(lambda on: (self.app.s.__setitem__('queue_leave_copy', bool(on)),
+                                                     self.app._save_settings()))
+        top.addWidget(self.queue_leave)
         self._label_queue()
         self.b_mute = QPushButton('알림 음소거')
         self.b_mute.setCheckable(True)
@@ -450,13 +459,13 @@ class LivePage(QWidget):
         if not self.b_queue.isChecked():
             self.b_queue.setText(text)
             return
-        # 켜 둔 동안에는 순번을 읽고 있는지 버튼에서 바로 보이게 한다
-        if queue:
-            state = '지금 %d' % queue['position']
-        elif self.app.live is None:
-            state = 'Live 꺼짐'
-        elif not getattr(self, '_replay_active', False):
-            state = '리플레이 녹화 필요'
+        # 켜 둔 동안에는 순번을 읽고 있는지 버튼에서 바로 보이게 한다. 화면(메모리얼 던전 창)이 리플레이보다 빠르다
+        screen = sorted((getattr(self.app, 'queue_screen_states', None) or {}).values(),
+                        key=lambda s: (not s['ready'], s['position']))
+        if screen:
+            state = '입장 가능' if screen[0]['ready'] else '지금 %d' % screen[0]['position']
+        elif queue:
+            state = '지금 %d (리플레이)' % queue['position']
         else:
             state = '대기 없음'
         self.b_queue.setText('%s ✓ · %s' % (text, state))

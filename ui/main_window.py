@@ -116,6 +116,8 @@ class Card(QFrame):
 
 
 class MainWindow(QMainWindow):
+    queue_screen_update = Signal(object, object)       # 메모리얼 던전 창 감시 스레드 → 화면: (게임 창, 상태)
+
     def __init__(self, settings, initial_replay=None):
         super().__init__()
         self.s = settings
@@ -492,6 +494,12 @@ class MainWindow(QMainWindow):
     # ------------------------------------------------------------- 흐름
     def startup(self):
         QTimer.singleShot(4000, self.updates.check)             # 새 버전이 있으면 받을지 묻는다
+        from live.queue_screen import QueueScreenWatcher
+        self.queue_screen_states, self.queue_screen_watch = {}, {}
+        self.queue_screen_update.connect(self._on_queue_screen)
+        self.queue_screen = QueueScreenWatcher(self.queue_screen_update.emit,
+                                               self.s.get('live_process_names') or ('Ragexe.exe', 'Ragnarok.exe'),
+                                               active=lambda: bool(self.s.get('queue_alert'))).start()
         from services.catalog_icons import CatalogIconFetcher
         self.catalog_icons = CatalogIconFetcher(os.path.join(BASE_DIR, 'data'))
         self.catalog_icons.start()                              # 없는 스킬·상태 아이콘을 뒤에서 받는다
@@ -1408,9 +1416,41 @@ class MainWindow(QMainWindow):
             from core.queue_watch import QueueWatch
             self.queue_watch = QueueWatch()
         threshold = int(self.s['queue_alert_below'])
+        if getattr(self, 'queue_screen_states', None):           # 화면에서 읽고 있으면 그쪽이 더 빠르다 — 겹쳐 알리지 않는다
+            return
         text = self.queue_watch.check(rp.get('queue') if self.s['queue_alert'] else None, threshold)
         if text:
-            self.alerts.fire(AlertRule('queue', text, sound=self._queue_sound(threshold)))
+            self._queue_fire(text, threshold)
+
+    def _queue_fire(self, text, threshold):
+        if self.s.get('queue_leave_copy') and self.s.get('queue_leave_command'):
+            QApplication.clipboard().setText(self.s['queue_leave_command'])    # 붙여 넣기는 사용자가
+            text += ' — %s 복사됨: 게임에서 Enter → Ctrl+V → Enter' % self.s['queue_leave_command']
+        self.alerts.fire(AlertRule('queue', text, sound=self._queue_sound(threshold)))
+
+    def _on_queue_screen(self, hwnd, state):
+        """메모리얼 던전 창에서 읽은 대기 순위 → 기준 이하 알림, '입장 가능' 알림."""
+        from core.queue_watch import QueueWatch
+        before = self.queue_screen_states.get(hwnd)
+        if state is None:
+            self.queue_screen_states.pop(hwnd, None)
+            self.queue_screen_watch.pop(hwnd, None)
+        else:
+            self.queue_screen_states[hwnd] = state
+        self.live_page._label_queue()
+        if state is None or not self.s['queue_alert']:
+            return
+        if state['ready']:
+            if not (before or {}).get('ready'):
+                self._leveling_alert('메모리얼 던전 입장 가능%s' % (': ' + state['name'] if state['name'] else ''),
+                                     '메모리얼 던전 입장 가능합니다')
+            return
+        watch = self.queue_screen_watch.setdefault(hwnd, QueueWatch())
+        threshold = int(self.s['queue_alert_below'])
+        import time
+        text = watch.check(dict(name='', position=state['position'], at=int(time.monotonic() * 1000)), threshold)
+        if text:
+            self._queue_fire(text, threshold)
 
     def _queue_sound(self, threshold):
         """"대기열이 N 이하입니다" 음성 파일. 없으면 한 번 만들고, 못 만들면 기본 알림음('')."""
@@ -1548,6 +1588,8 @@ class MainWindow(QMainWindow):
             self.bulk_prices.stop()
         if getattr(self, 'level_watch', None) is not None:
             self.level_watch.stop()
+        if getattr(self, 'queue_screen', None) is not None:
+            self.queue_screen.stop()
         if getattr(self, 'catalog_icons', None) is not None:
             self.catalog_icons.stop()
         if getattr(self, '_loot_icons', None) is not None:
