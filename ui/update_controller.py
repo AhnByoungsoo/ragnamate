@@ -78,12 +78,13 @@ class UpdateController(QObject):
         self.restart()
 
     def restart(self):
-        import __main__
-        handle = getattr(__main__, '_INSTANCE', None)             # '이미 실행 중' 잠금을 풀어야 새로 켜진다
-        if handle and os.name == 'nt':
-            import ctypes
-            ctypes.windll.kernel32.CloseHandle(ctypes.c_void_p(handle))
-            __main__._INSTANCE = None
+        # '이미 실행 중' 잠금을 풀어야 새로 켜진다. main.py 를 바로 실행했으면 __main__, 다른 곳에서 불렀으면 main 모듈에 있다
+        for mod in {m for m in (sys.modules.get('__main__'), sys.modules.get('main')) if m is not None}:
+            handle = getattr(mod, '_INSTANCE', None)
+            if handle and os.name == 'nt':
+                import ctypes
+                ctypes.windll.kernel32.CloseHandle(ctypes.c_void_p(handle))
+                mod._INSTANCE = None
         subprocess.Popen([sys.executable] + sys.argv, cwd=self.root)
         self.window.close()
         QApplication.quit()
