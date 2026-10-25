@@ -540,7 +540,7 @@ class MainWindow(QMainWindow):
             log.exception('설정 저장 실패')
             self.statusBar().showMessage('설정 저장 실패 (logs 참고)', 5000)
 
-    def _run(self, fn, on_done, label):
+    def _run(self, fn, on_done, label, on_error=None):
         if self.busy:
             self.statusBar().showMessage('이전 작업이 진행 중입니다.', 3000)
             return
@@ -551,7 +551,7 @@ class MainWindow(QMainWindow):
         t = Task(fn)
         t.signals.progress.connect(self._on_progress)
         t.signals.done.connect(lambda r: (self._finish(), on_done(r)))
-        t.signals.error.connect(lambda msg: (self._finish(), self._error(label + ' 실패', msg)))
+        t.signals.error.connect(lambda msg: (self._finish(), (on_error or (lambda m: self._error(label + ' 실패', m)))(msg)))
         t.setAutoDelete(False)
         self._task = t   # 작업이 끝날 때까지 시그널 객체 유지
         self.pool.start(t)
@@ -599,9 +599,19 @@ class MainWindow(QMainWindow):
             if not self.item_db.items:
                 self.item_db.load()
             return self.analysis.analyze_file(path, stage=lambda i, _label: progress(i, len(STAGES) - 1))
-        self._run(work, self._on_analysis, 'Replay 분석 중: %s' % os.path.basename(path))
+        self._run(work, self._on_analysis, 'Replay 분석 중: %s' % os.path.basename(path),
+                  on_error=lambda msg: self._load_failed(path, msg))
         if self.busy:
             self._stage_names = STAGES
+
+    def _load_failed(self, path, msg):
+        """아직 녹화 중인 리플레이(패킷 기록 없음)는 오류 창 대신 기다렸다가 다시 읽는다."""
+        if '패킷 기록이 아직 없습니다' in msg or 'Invalid packet container' in msg:     # 녹화 중·덜 써진 파일
+            self._pending_watch, self._pending_size = path, None
+            self.status('녹화 중인 Replay입니다 — 녹화가 끝나면 자동으로 다시 읽습니다: %s' % os.path.basename(path), 10000)
+            QTimer.singleShot(5000, self._analyze_when_stable)
+            return
+        self._error('Replay 분석 중: %s 실패' % os.path.basename(path), msg)
 
     def _on_analysis(self, res):
         """한 번의 파싱 결과로 창고 분석 + Replay 분석 화면을 모두 갱신."""
