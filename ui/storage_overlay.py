@@ -157,7 +157,9 @@ class StorageOverlay(OverlayWindow):
         self._fit_width()
         self._reload()
 
-    def _save(self):
+    def _save(self, **kv):
+        if kv:                                   # 위치·고정·투명도는 공용 오버레이 저장(덮어써서 '위치 고정'이 오류 났었다)
+            return super()._save(**kv)
         try:
             self.s.save()
         except Exception:
