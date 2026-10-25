@@ -19,6 +19,15 @@ MAX_LEVEL = 300
 LOCATE_EVERY = 5.0
 
 
+def character_name(lines, base_box):
+    """기본정보 창 맨 위 줄(캐릭터 이름). 'Base Lv' 줄 위 90px 안, 왼쪽 끝이 비슷한 줄 중 가장 위.
+    실제 화면: 이름 y=22, 직업 y=36, HP 53, SP 67, Base Lv 86 (x 10~16)."""
+    bx, by = base_box[0], base_box[1]
+    above = [l for l in lines if by - 90 <= l.box[1] < by - 8 and abs(l.box[0] - bx) <= 20
+             and not re.search(r'(?i)\b(hp|sp|lv|weight)\b|%|기본정', l.text) and l.text.strip()]   # 창 제목 '기본정보'는 뺀다
+    return min(above, key=lambda l: l.box[1]).text.strip() if above else ''
+
+
 def parse_level(text):
     """'Base Lv. 115' · 'Base 115' · 'Base 나,. 115'(작게 읽힌 Lv.) → 115. 못 찾으면 None."""
     m = LEVEL.search(text or '')
@@ -42,6 +51,8 @@ class LevelWatcher:
         self.levels = {}                     # hwnd → 확정한 레벨
         self._located_at = {}
         self._last = None
+        self.name = ''                       # 마지막으로 찾은 기본정보 창의 캐릭터 이름
+        self.names = {}                      # hwnd → 캐릭터 이름(창 위치를 찾을 때 함께 읽음)
 
     def start(self):
         if self.ocr is None:
@@ -75,9 +86,11 @@ class LevelWatcher:
     # ------------------------------------------------------------------ 읽기
     def locate(self, img):
         """창 전체에서 'Base Lv' 줄을 찾는다 → (자리, 레벨) 또는 (None, None)."""
-        for line in self.ocr.recognize(img, 1.5):
+        lines = self.ocr.recognize(img, 1.5)
+        for line in lines:
             level = parse_level(line.text)
             if level and re.match(r'(?i)\s*base', line.text):
+                self.name = character_name(lines, line.box)
                 return line.box, level
         return None, None
 
@@ -97,6 +110,7 @@ class LevelWatcher:
             box, level = self.locate(img)
             if box:
                 self.boxes[hwnd] = box
+                self.names[hwnd] = self.name
         if level is None:
             return self.levels.get(hwnd), '기본정보 창의 Base Lv를 찾지 못함 (창을 펼쳐 두세요)'
         if self._raw.get(hwnd) == level:     # 연달아 같은 숫자 → 확정
@@ -115,7 +129,8 @@ class LevelWatcher:
         if img is None:
             return
         level, status = self.observe(win.hwnd, img)
-        state = (win.hwnd, level, status)
+        name = self.names.get(win.hwnd, '')
+        state = (win.hwnd, level, status, name)
         if state != self._last:
             self._last = state
-            self.on_update(dict(hwnd=win.hwnd, level=level, status=status))
+            self.on_update(dict(hwnd=win.hwnd, level=level, status=status, character=name))

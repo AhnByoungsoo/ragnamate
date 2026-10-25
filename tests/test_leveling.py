@@ -57,12 +57,21 @@ class AdviceTest(unittest.TestCase):
 
     def test_overlapping_farm_ranges_stay_as_alternatives(self):
         now, _ = self.titles('farm', 217)
-        self.assertEqual(now, ['파괴된 게펜 필드', '파괴된 베루스', '꼬뽀 (영상 표기 약칭)', '브리미르 1층'])
+        self.assertEqual(now, ['파괴된 게펜 필드', '파괴된 베루스', '꼬뽀', '브리미르 1층'])
         self.assertIn('브리미르 1층', self.titles('farm', 227)[0])               # 양끝 포함
 
-    def test_gap_in_the_data_is_said_not_filled(self):
-        now, nxt = self.titles('farm', 230)
-        self.assertEqual((now, nxt), ([], '솟아오른 대지 북부'))
+    def test_farm_gap_is_filled_from_the_video_table(self):
+        now, nxt = self.titles('farm', 230)                                   # 예전 자료(조사 문서)에는 없던 구간
+        self.assertEqual(now, ['파이어코튼', '불소', '얼음가시'])
+        self.assertEqual(nxt, '나른이')
+        self.assertTrue(all(s.check == 'seen' for s in C.routes['farm']['steps']))   # 파밍 코스 전부 화면에서 읽음
+
+    def test_farm_low_levels_follow_the_booster_video_table(self):
+        self.assertEqual(self.titles('farm', 60)[0], ['탐루안(73)'])
+        self.assertEqual(self.titles('farm', 87)[0], ['레벨업 티켓 3장'])
+        self.assertEqual(self.titles('farm', 185)[0][0], '아인베흐 3층(일퀘·낙단퀘 받기)')
+        self.assertIn('레벨업 티켓으로 190 달성', self.titles('farm', 185)[0])
+        self.assertEqual([s for s in range(1, 251) if not C.advise('farm', s).now], [])   # 1~250 빈 레벨 없음
 
     def test_beyond_the_data(self):
         self.assertTrue(C.advise('farm', 251).out_of_range)
@@ -136,6 +145,39 @@ class ScreenLevelTest(unittest.TestCase):
         self.assertIn('찾지 못함', status)
         w.observe(1, img, now=3)
         self.assertEqual(ocr.calls.count(1.5), 1)                             # 전체 다시 찾기는 5초에 한 번까지
+
+
+class CharacterTest(unittest.TestCase):
+    def test_name_is_the_top_line_of_the_info_window(self):
+        from live.level_watch import character_name
+        from live.ocr import OcrLine
+        # 2026-10-17 실제 화면에서 읽힌 기본정보 창 줄과 위치 그대로
+        real = [('기본정', (17, 1, 34, 12)), ('일산상인뱸스요', (10, 22, 82, 11)), ('Genetic', (10, 36, 41, 10)),
+                ('HP 100%', (16, 53, 184, 8)), ('SP 100%', (16, 67, 184, 9)), ('Base Lv. 115', (16, 86, 64, 8)),
+                ('Job Lv. 26', (16, 98, 50, 8)), ('6시 싸요', (416, 256, 44, 11))]
+        lines = [OcrLine(t, 1.0, b) for t, b in real]
+        self.assertEqual(character_name(lines, (16, 86, 64, 8)), '일산상인뱸스요')
+
+    def test_route_is_remembered_per_character(self):
+        import os
+        os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
+        from PySide6.QtWidgets import QApplication
+        QApplication.instance() or QApplication([])
+        from ui.leveling_overlay import LevelingOverlay
+        s = dict(leveling_route='fast_ticket', leveling_routes={}, leveling_manual_level=0, leveling_navi={}, overlays={})
+        said = []
+        ov = LevelingOverlay(s, lambda: None, said.append, lambda t, v: said.append(t))
+        ov.on_screen(dict(level=163, status='화면 인식', character='본캐'))
+        ov.route.setCurrentIndex(ov.route.findData('farm'))                    # 본캐는 파밍
+        ov.on_screen(dict(level=200, status='화면 인식', character='배럭1'))
+        ov.route.setCurrentIndex(ov.route.findData('fast_skip'))               # 배럭1은 생략 코스
+        ov.on_screen(dict(level=163, status='화면 인식', character='본캐'))
+        self.assertEqual(ov._key(), 'farm')
+        self.assertIn('본캐', ov.lv.text())
+        ov.on_screen(dict(level=200, status='화면 인식', character='배럭1'))
+        self.assertEqual(ov._key(), 'fast_skip')
+        self.assertEqual(s['leveling_routes'], {'본캐': 'farm', '배럭1': 'fast_skip'})
+        self.assertEqual(said, [])                                              # 캐릭터를 바꾼 것은 알릴 일이 아니다
 
 
 @unittest.skipUnless(helpers.sample('321321.rrf'), '리플레이 표본 없음')

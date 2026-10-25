@@ -610,120 +610,220 @@
   },
   "farm": {
    "title": "파밍 병행 · 1~200 부스터 육성 → 200~250 카드 파밍",
-   "summary": "1~200은 부스터 프로모션 기준 육성 영상, 200~250은 카드 파밍 사냥터 영상. 1~100은 영상 챕터만 있어 사냥터는 영상에서 확인해야 한다.",
+   "summary": "1~199는 부스터 프로모션 기준 육성 영상, 200~250은 카드 파밍 사냥터 영상 — 둘 다 영상 요약표를 화면에서 직접 읽은 것. 레벨은 추천 구간이고 서로 겹친다. 전승 뒤에는 1레벨부터 같은 순서.",
    "max_level": 250,
    "steps": [
     {
-     "id": "fm_001",
+     "id": "fb_001",
      "min": 1,
      "max": 29,
-     "kind": "GUIDE",
-     "title": "영상 챕터 '1레벨' — 사냥터는 영상에서 확인",
+     "kind": "HUNT",
+     "title": "노비스: 이즈 퀘스트 후 앞마당",
      "src": "B",
-     "t": 0,
-     "check": "chapter"
+     "t": 240,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 30레벨 챕터 앞 순서"
     },
     {
-     "id": "fm_030",
+     "id": "fb_hornet",
+     "min": 1,
+     "max": 29,
+     "kind": "HUNT",
+     "title": "1차 전직 후 ~ 호넷(11)",
+     "src": "B",
+     "t": 300,
+     "check": "seen",
+     "note": "젤로피 100개 모을 때까지는 하긴 함",
+     "level_note": "영상 표에 레벨 표기 없음 — 30레벨 챕터 앞 순서 · 괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
+    },
+    {
+     "id": "fb_spore",
+     "min": 1,
+     "max": 29,
+     "kind": "HUNT",
+     "title": "포이즌 스포아(26)",
+     "src": "B",
+     "t": 440,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 30레벨 챕터 앞 순서 · 괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
+    },
+    {
+     "id": "fb_orc",
      "min": 30,
      "max": 38,
-     "kind": "GUIDE",
-     "title": "영상 챕터 '30레벨' — 사냥터는 영상에서 확인",
+     "kind": "HUNT",
+     "title": "오크 레이디·워리어(45)",
      "src": "B",
-     "t": 471,
-     "check": "chapter"
+     "t": 480,
+     "check": "seen",
+     "level_note": "30레벨 챕터 구간, 레벨 표기 없음 · 괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
     },
     {
-     "id": "fm_039",
+     "id": "fb_039",
      "min": 39,
-     "max": 70,
-     "kind": "GUIDE",
-     "title": "영상 챕터 '39레벨' — 사냥터는 영상에서 확인",
-     "src": "B",
-     "t": 525,
-     "check": "chapter"
-    },
-    {
-     "id": "fm_2nd",
-     "min": 39,
-     "max": 70,
+     "max": 47,
      "kind": "JOB",
-     "title": "영상 챕터 '2차전직'",
-     "level_note": "레벨 표기 없음 — 39레벨 챕터 다음 순서",
+     "title": "39~ 전직 · 제노크(54)",
      "src": "B",
-     "t": 758,
-     "check": "chapter"
+     "t": 560,
+     "check": "seen",
+     "level_note": "괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
     },
     {
-     "id": "fm_071",
+     "id": "fb_045",
+     "min": 45,
+     "max": 51,
+     "kind": "HUNT",
+     "title": "해달(48)",
+     "src": "B",
+     "t": 560,
+     "check": "seen",
+     "level_note": "괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
+    },
+    {
+     "id": "fb_048",
+     "min": 48,
+     "max": 57,
+     "kind": "JOB",
+     "title": "48~ 전직 · 호드",
+     "src": "B",
+     "t": 700,
+     "check": "seen"
+    },
+    {
+     "id": "fb_2nd",
+     "min": 48,
+     "max": 57,
+     "kind": "JOB",
+     "title": "2차 전직 후 스킬 몇 개 찍고 바로 사냥",
+     "src": "B",
+     "t": 900,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 58 앞 순서"
+    },
+    {
+     "id": "fb_058",
+     "min": 58,
+     "max": 70,
+     "kind": "HUNT",
+     "title": "탐루안(73)",
+     "src": "B",
+     "t": 840,
+     "check": "seen",
+     "level_note": "괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
+    },
+    {
+     "id": "fb_071",
      "min": 71,
+     "max": 86,
+     "kind": "HUNT",
+     "title": "쁘띠",
+     "src": "B",
+     "t": 940,
+     "check": "seen"
+    },
+    {
+     "id": "fb_087",
+     "min": 87,
      "max": 89,
-     "kind": "GUIDE",
-     "title": "영상 챕터 '71레벨' — 사냥터는 영상에서 확인",
+     "kind": "TICKET",
+     "title": "레벨업 티켓 3장",
      "src": "B",
-     "t": 936,
-     "check": "chapter"
+     "t": 940,
+     "check": "seen"
     },
     {
-     "id": "fm_090",
+     "id": "fb_090",
      "min": 90,
-     "max": 99,
-     "kind": "GUIDE",
-     "title": "영상 챕터 '90레벨' — 사냥터는 영상에서 확인",
+     "max": 95,
+     "kind": "HUNT",
+     "title": "데저트울프(토벌단)",
      "src": "B",
-     "t": 1028,
-     "check": "chapter"
+     "t": 980,
+     "check": "seen"
     },
     {
-     "id": "fm_trans",
-     "min": 90,
+     "id": "fb_096",
+     "min": 96,
+     "max": 98,
+     "kind": "TICKET",
+     "title": "레벨업 티켓 3장",
+     "src": "B",
+     "t": 1150,
+     "check": "seen"
+    },
+    {
+     "id": "fb_099",
+     "min": 99,
      "max": 99,
      "kind": "JOB",
-     "title": "영상 챕터 '전승' → '전승1차전직' → '전승2차전직' → '3차전직'",
-     "level_note": "레벨 표기 없음 — 90레벨 챕터 다음 순서",
+     "title": "99 달성 후 유노에서 전승",
      "src": "B",
-     "t": 1263,
-     "check": "chapter"
+     "t": 1280,
+     "check": "seen",
+     "note": "전승 뒤에는 1레벨부터 위와 같은 순서로 다시(영상 표가 처음부터 다시 나옴)"
     },
     {
      "id": "fm_100",
      "min": 100,
      "max": 109,
      "kind": "HUNT",
-     "title": "일루전 페이욘 (문라이트)",
+     "title": "일루전 페이욘(문라이트)",
      "src": "B",
-     "t": 1668,
-     "check": "doc"
+     "t": 1700,
+     "check": "seen"
     },
     {
      "id": "fm_110",
      "min": 110,
      "max": 119,
      "kind": "QUEST",
-     "title": "에피소드 17.1",
+     "title": "에피소드 17.1 진행",
      "src": "B",
-     "t": 1668,
-     "check": "doc"
+     "t": 1700,
+     "check": "seen"
     },
     {
      "id": "fm_120",
      "min": 120,
      "max": 129,
      "kind": "QUEST",
-     "title": "낙원단 게시판 퀘스트",
+     "title": "낙원단 게시판 120 퀘스트",
      "src": "B",
-     "t": 1668,
-     "check": "doc"
+     "t": 1700,
+     "check": "seen"
+    },
+    {
+     "id": "fm_122",
+     "min": 122,
+     "max": 128,
+     "kind": "HUNT",
+     "title": "엥컨토(125)",
+     "src": "B",
+     "t": 1820,
+     "check": "seen",
+     "level_note": "괄호 숫자는 영상 표기 그대로(몬스터 레벨로 보임)"
+    },
+    {
+     "id": "fm_130a",
+     "min": 130,
+     "max": 139,
+     "kind": "QUEST",
+     "title": "에피소드 17.2",
+     "src": "B",
+     "t": 1820,
+     "check": "seen",
+     "level_note": "에피소드 17.1을 깼다면"
     },
     {
      "id": "fm_130q",
      "min": 130,
      "max": 139,
      "kind": "QUEST",
-     "title": "에피소드 17.2 · 낙원단 퀘스트 / 모로크 현신",
+     "title": "낙원단 퀘스트 또는 모로크 현신",
      "src": "B",
-     "t": 1926,
-     "check": "doc"
+     "t": 1980,
+     "check": "seen"
     },
     {
      "id": "fm_130",
@@ -732,18 +832,18 @@
      "kind": "HUNT",
      "title": "일루전 프로즌 · 뱀파이어",
      "src": "B",
-     "t": 2187,
-     "check": "doc"
+     "t": 1980,
+     "check": "seen"
     },
     {
      "id": "fm_140",
      "min": 140,
      "max": 149,
      "kind": "HUNT",
-     "title": "일루전 언더워터 (심해 1)",
+     "title": "일루전 언더워터(심해 1)",
      "src": "B",
-     "t": 2187,
-     "check": "doc"
+     "t": 2260,
+     "check": "seen"
     },
     {
      "id": "fm_150",
@@ -752,59 +852,198 @@
      "kind": "HUNT",
      "title": "일루전 테디베어",
      "src": "B",
-     "t": 2187,
-     "check": "doc"
+     "t": 2260,
+     "check": "seen"
+    },
+    {
+     "id": "fm_150b",
+     "min": 150,
+     "max": 159,
+     "kind": "HUNT",
+     "title": "일루전 구양궁",
+     "src": "B",
+     "t": 2420,
+     "check": "seen",
+     "note": "닥사는 양거촌 화속성 추천"
     },
     {
      "id": "fm_160c",
      "min": 160,
      "max": 164,
      "kind": "CLAIM",
-     "title": "에피소드 17.2를 깼다면 160레벨 경험치 수령",
+     "title": "에피소드 17.2를 깼다면 부스터콜 부르자마자 경험치",
      "src": "B",
-     "t": 2544,
-     "check": "doc"
+     "t": 2600,
+     "check": "seen",
+     "note": "교범 주의"
     },
     {
      "id": "fm_160",
      "min": 160,
-     "max": 179,
+     "max": 164,
      "kind": "HUNT",
-     "title": "일루전 루안다 · 트윈스",
+     "title": "일루전 루안다",
      "src": "B",
-     "t": 2741,
-     "check": "doc",
+     "t": 2690,
+     "check": "seen",
      "navi": "luanda_entrance"
+    },
+    {
+     "id": "fm_160b",
+     "min": 160,
+     "max": 164,
+     "kind": "HUNT",
+     "title": "일루전 트윈스(개미) — 화속성",
+     "src": "B",
+     "t": 2690,
+     "check": "seen"
     },
     {
      "id": "fm_165",
      "min": 165,
      "max": 169,
      "kind": "TICKET",
-     "title": "165레벨 레벨업 티켓 사용",
+     "title": "레벨업 티켓 5장",
      "src": "B",
-     "t": 2741,
-     "check": "doc"
+     "t": 2690,
+     "check": "seen"
     },
     {
-     "id": "fm_180",
-     "min": 180,
-     "max": 199,
+     "id": "fm_170q",
+     "min": 170,
+     "max": 174,
      "kind": "QUEST",
-     "title": "아인베흐 3층 · 타나토스 9~12층 퀘스트 · 일루전 언더워터 심해 2층",
+     "title": "에피소드 18 진행",
      "src": "B",
-     "t": 2978,
-     "check": "doc"
+     "t": 2745,
+     "check": "seen"
+    },
+    {
+     "id": "fm_170",
+     "min": 170,
+     "max": 179,
+     "kind": "HUNT",
+     "title": "일루전 라비린스(미궁숲)",
+     "src": "B",
+     "t": 2780,
+     "check": "seen",
+     "note": "파티가 있거나 몹이 많으면 180까지, 둘 다 별로면 낙원단 퀘스트 받고 이동"
+    },
+    {
+     "id": "fm_175",
+     "min": 175,
+     "max": 179,
+     "kind": "HUNT",
+     "title": "노그로드 3층",
+     "src": "B",
+     "t": 2950,
+     "check": "seen"
+    },
+    {
+     "id": "fm_180c",
+     "min": 180,
+     "max": 184,
+     "kind": "CLAIM",
+     "title": "부스터콜 부르면 경험치 바로",
+     "src": "B",
+     "t": 2987,
+     "check": "seen",
+     "note": "에피를 깼다면 이때 교범 상태 유지하기"
+    },
+    {
+     "id": "fm_180a",
+     "min": 180,
+     "max": 189,
+     "kind": "QUEST",
+     "title": "아인베흐 3층(일퀘·낙단퀘 받기)",
+     "src": "B",
+     "t": 3080,
+     "check": "seen"
+    },
+    {
+     "id": "fm_180b",
+     "min": 180,
+     "max": 189,
+     "kind": "QUEST",
+     "title": "타나토스 9~12층 퀘스트",
+     "src": "B",
+     "t": 3080,
+     "check": "seen"
+    },
+    {
+     "id": "fm_180d",
+     "min": 180,
+     "max": 189,
+     "kind": "HUNT",
+     "title": "일루전 언더워터(심해 2층)",
+     "src": "B",
+     "t": 3220,
+     "check": "seen",
+     "note": "파티가 있는지 확인하고 파티"
+    },
+    {
+     "id": "fm_185",
+     "min": 185,
+     "max": 189,
+     "kind": "TICKET",
+     "title": "레벨업 티켓으로 190 달성",
+     "src": "B",
+     "t": 3390,
+     "check": "seen"
+    },
+    {
+     "id": "fm_190",
+     "min": 190,
+     "max": 199,
+     "kind": "FARM",
+     "title": "카드 파밍",
+     "src": "B",
+     "t": 3390,
+     "check": "seen",
+     "level_note": "영상 표의 마지막 줄 \"(카드파밍)\" — 200부터는 파밍 영상 표"
     },
     {
      "id": "fm_200",
      "min": 200,
-     "max": 207,
+     "max": 209,
      "kind": "PREPARE",
-     "title": "심해 2 파티 또는 타나토스에서 주요 스킬 준비",
+     "title": "심해 2 파티나 타나토스에서 10~30분 사냥",
      "src": "C",
-     "t": 60,
-     "check": "doc"
+     "t": 40,
+     "check": "seen",
+     "note": "잡경험치가 좋아 주력 스킬을 배우기 좋다"
+    },
+    {
+     "id": "fm_ep19",
+     "min": 200,
+     "max": 209,
+     "kind": "QUEST",
+     "title": "에피소드 19 메인 퀘스트만",
+     "src": "C",
+     "t": 72,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 200 다음·210 앞 순서"
+    },
+    {
+     "id": "fm_ch1",
+     "min": 200,
+     "max": 209,
+     "kind": "QUEST",
+     "title": "챕터 1",
+     "src": "C",
+     "t": 72,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 200 다음·210 앞 순서"
+    },
+    {
+     "id": "fm_210w",
+     "min": 210,
+     "max": 214,
+     "kind": "PREPARE",
+     "title": "210 달성 후 글레이시아 무기 맞추기",
+     "src": "C",
+     "t": 112,
+     "check": "seen"
     },
     {
      "id": "fm_208",
@@ -813,18 +1052,8 @@
      "kind": "FARM",
      "title": "불의 고리",
      "src": "C",
-     "t": 132,
-     "check": "doc"
-    },
-    {
-     "id": "fm_210w",
-     "min": 210,
-     "max": 214,
-     "kind": "PREPARE",
-     "title": "210 달성 후 글레이시아 무기 준비",
-     "src": "C",
-     "t": 132,
-     "check": "doc"
+     "t": 140,
+     "check": "seen"
     },
     {
      "id": "fm_212",
@@ -833,8 +1062,8 @@
      "kind": "FARM",
      "title": "파괴된 게펜 필드",
      "src": "C",
-     "t": 132,
-     "check": "doc"
+     "t": 140,
+     "check": "seen"
     },
     {
      "id": "fm_213",
@@ -843,8 +1072,8 @@
      "kind": "FARM",
      "title": "파괴된 베루스",
      "src": "C",
-     "t": 264,
-     "check": "doc"
+     "t": 234,
+     "check": "seen"
     },
     {
      "id": "fm_215q",
@@ -853,18 +1082,19 @@
      "kind": "QUEST",
      "title": "에피소드 20 진행",
      "src": "C",
-     "t": 336,
-     "check": "doc"
+     "t": 322,
+     "check": "seen"
     },
     {
      "id": "fm_217",
      "min": 217,
      "max": 223,
      "kind": "FARM",
-     "title": "꼬뽀 (영상 표기 약칭)",
+     "title": "꼬뽀",
      "src": "C",
-     "t": 336,
-     "check": "doc"
+     "t": 322,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
     },
     {
      "id": "fm_217b",
@@ -873,8 +1103,62 @@
      "kind": "FARM",
      "title": "브리미르 1층",
      "src": "C",
-     "t": 336,
-     "check": "doc"
+     "t": 322,
+     "check": "seen"
+    },
+    {
+     "id": "fm_225q",
+     "min": 225,
+     "max": 227,
+     "kind": "QUEST",
+     "title": "챕터 2 진행",
+     "src": "C",
+     "t": 428,
+     "check": "seen"
+    },
+    {
+     "id": "fm_228",
+     "min": 228,
+     "max": 236,
+     "kind": "FARM",
+     "title": "파이어코튼",
+     "src": "C",
+     "t": 428,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
+    },
+    {
+     "id": "fm_228b",
+     "min": 228,
+     "max": 234,
+     "kind": "FARM",
+     "title": "불소",
+     "src": "C",
+     "t": 447,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
+    },
+    {
+     "id": "fm_229",
+     "min": 229,
+     "max": 235,
+     "kind": "FARM",
+     "title": "얼음가시",
+     "src": "C",
+     "t": 447,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
+    },
+    {
+     "id": "fm_231",
+     "min": 231,
+     "max": 237,
+     "kind": "FARM",
+     "title": "나른이",
+     "src": "C",
+     "t": 545,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
     },
     {
      "id": "fm_233",
@@ -883,8 +1167,8 @@
      "kind": "FARM",
      "title": "솟아오른 대지 북부",
      "src": "C",
-     "t": 661,
-     "check": "doc"
+     "t": 622,
+     "check": "seen"
     },
     {
      "id": "fm_235",
@@ -893,8 +1177,8 @@
      "kind": "FARM",
      "title": "솟아오른 대지 남부",
      "src": "C",
-     "t": 661,
-     "check": "doc"
+     "t": 622,
+     "check": "seen"
     },
     {
      "id": "fm_236",
@@ -903,8 +1187,8 @@
      "kind": "FARM",
      "title": "파이어클로",
      "src": "C",
-     "t": 661,
-     "check": "doc"
+     "t": 782,
+     "check": "seen"
     },
     {
      "id": "fm_237",
@@ -913,28 +1197,29 @@
      "kind": "FARM",
      "title": "라그스루트",
      "src": "C",
-     "t": 661,
-     "check": "doc"
+     "t": 782,
+     "check": "seen"
     },
     {
-     "id": "fm_239",
-     "min": 239,
-     "max": 245,
-     "kind": "FARM",
-     "title": "기믈레 1층",
+     "id": "fm_237t",
+     "min": 237,
+     "max": 239,
+     "kind": "TICKET",
+     "title": "레벨업 티켓 237 → 240",
      "src": "C",
-     "t": 926,
-     "check": "doc"
+     "t": 862,
+     "check": "seen"
     },
     {
-     "id": "fm_242",
-     "min": 242,
-     "max": 248,
+     "id": "fm_240",
+     "min": 240,
+     "max": 246,
      "kind": "FARM",
-     "title": "기믈레 2층",
+     "title": "든든한 꼬뽀",
      "src": "C",
-     "t": 926,
-     "check": "doc"
+     "t": 862,
+     "check": "seen",
+     "level_note": "영상 표기 그대로(약칭일 수 있음)"
     },
     {
      "id": "fm_243",
@@ -943,8 +1228,39 @@
      "kind": "FARM",
      "title": "브리미르 2층",
      "src": "C",
-     "t": 926,
-     "check": "doc"
+     "t": 862,
+     "check": "seen"
+    },
+    {
+     "id": "fm_239",
+     "min": 239,
+     "max": 245,
+     "kind": "FARM",
+     "title": "기믈레 1층",
+     "src": "C",
+     "t": 942,
+     "check": "seen"
+    },
+    {
+     "id": "fm_242",
+     "min": 242,
+     "max": 248,
+     "kind": "FARM",
+     "title": "기믈레 2층",
+     "src": "C",
+     "t": 942,
+     "check": "seen"
+    },
+    {
+     "id": "fm_tomb",
+     "min": 245,
+     "max": 250,
+     "kind": "HUNT",
+     "title": "전사자의 무덤 폐관수련",
+     "src": "C",
+     "t": 942,
+     "check": "seen",
+     "level_note": "영상 표에 레벨 표기 없음 — 표의 마지막 줄"
     }
    ]
   }

@@ -74,6 +74,7 @@ DEFAULTS = {
     'queue_banner': True,                      # 대기 중인 게임 창 위에 순위를 크게 표시
     # 레벨업 코치(오버레이 메뉴): 코스 · 직접 정한 레벨(0 = 리플레이에서 읽기) · 직접 저장한 네비 {단계: dict(map, x, y)}
     'leveling_route': 'fast_skip', 'leveling_manual_level': 0, 'leveling_navi': {},
+    'leveling_routes': {},                     # {캐릭터 이름: 코스} 화면에서 읽은 캐릭터마다 고른 코스
     'drop_alert': True,                        # 고가 아이템이 바닥에 떨어졌을 때(줍기 전) 알림 — 기준은 jackpot_min_price
     'hud_preset': 'hunt',                      # compact | hunt | status | detailed
     'hud_scale': 1.0,

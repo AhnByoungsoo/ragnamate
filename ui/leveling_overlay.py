@@ -28,6 +28,7 @@ class LevelingOverlay(OverlayWindow):
         self.alert = alert or (lambda text, speak: notify(text))
         self.rp, self.primary_id, self.level = {}, None, None
         self.screen, self.screen_status = None, ''
+        self.character = ''                         # 화면에서 읽은 캐릭터 이름(기본정보 창 맨 위)
         self.screen_update.connect(self.on_screen)
         self.setStyleSheet(
             'QWidget#lvRoot { background: #14171D; border: 1px solid #35598C; border-radius: 10px; }'
@@ -131,6 +132,8 @@ class LevelingOverlay(OverlayWindow):
 
     def _route_changed(self, _i):
         self.s['leveling_route'] = self._key()
+        if self.character:                          # 캐릭터마다 고른 코스를 기억한다(배럭)
+            self.s['leveling_routes'] = dict(self.s.get('leveling_routes') or {}, **{self.character: self._key()})
         self.route.setToolTip(self.courses.routes[self._key()]['summary'])
         self.save_settings()
         self.primary_id = None                      # 코스를 바꾼 것은 알릴 일이 아니다
@@ -142,6 +145,15 @@ class LevelingOverlay(OverlayWindow):
 
     def on_screen(self, d):
         self.screen, self.screen_status = d.get('level'), d.get('status', '')
+        name = d.get('character') or ''
+        if name and name != self.character:         # 다른 캐릭터(창)로 바뀜 → 그 캐릭터가 고른 코스로, 알림 없이
+            self.character = name
+            route = (self.s.get('leveling_routes') or {}).get(name)
+            if route and route != self._key() and self.route.findData(route) >= 0:
+                self.route.blockSignals(True)
+                self.route.setCurrentIndex(self.route.findData(route))
+                self.route.blockSignals(False)
+            self.primary_id, self.level = None, None
         self.refresh()
 
     def ask_level(self):
@@ -167,7 +179,8 @@ class LevelingOverlay(OverlayWindow):
             left = p.max + 1 - level
             stage = '%s 중 %d/%d%s' % (_range(p), level - p.min + 1, p.max - p.min + 1,
                                        ' · 다음 단계까지 %d레벨' % left if a.next and left > 0 else '')
-        self.lv.setText('Lv.%d · %s' % (level, why) if level else '레벨 모름')
+        who = ' · %s' % self.character if self.character and why == '화면 인식' else ''
+        self.lv.setText('Lv.%d · %s%s' % (level, why, who) if level else '레벨 모름')
         notes = [x for x in (stage, hint[3:]) if x] if level else ['게임 기본정보 창을 펼쳐 두세요', hint[3:]]
         self.stage.setText(' · '.join(x for x in notes if x))
         self.stage.setVisible(bool(self.stage.text()))
