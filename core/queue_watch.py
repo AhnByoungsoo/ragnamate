@@ -55,3 +55,45 @@ class QueueWatch:
         if sample[1] <= threshold:
             return '%s (%s%d번째)' % (message(threshold), name, sample[1])
         return '%s (%s마지막 확인 %d번째, 지금쯤 %d번째로 계산)' % (message(threshold), name, sample[1], round(estimate))
+
+
+SOON_MARGIN = 5                                      # 기준 몇 칸 앞에서 '곧' 미리 알림
+REPEAT_SEC = 3.0                                     # 기준 이하가 된 뒤 다시 알리는 간격
+REPEAT_MAX = 20                                      # 최대 다시 알림 횟수(약 1분) — 끝없이 울리지 않게
+
+
+class QueueAlarm:
+    """대기 창 하나의 알림 흐름: '곧'(기준+5) 한 번 → 기준 이하 한 번 → 대기가 끝날 때까지 3초마다 다시.
+    update() 는 상태가 바뀔 때도, 바뀌지 않아도(타이머) 부른다. 돌려주는 것: [(종류, 글)] — 'soon'|'fire'|'repeat'."""
+
+    def __init__(self, clock=time.monotonic):
+        self.clock = clock
+        self.soon, self.main = QueueWatch(clock), QueueWatch(clock)
+        self.fired_at = self.last = None
+        self.repeats = 0
+        self.position = None
+
+    def reset(self):
+        self.__init__(self.clock)
+
+    def update(self, state, threshold, now=None):
+        now = self.clock() if now is None else now
+        if not state or state.get('ready'):          # 창이 닫힘(입장·취소) 또는 입장 가능 → 다시 알림 멈춤
+            self.reset()
+            return []
+        if self.position is not None and state['position'] > self.position:
+            self.reset()                             # 순위가 늘었다 = 새로 신청한 대기
+        self.position = state['position']
+        q = dict(name=state.get('name', ''), position=state['position'], at=int(now * 1000))
+        out = []
+        soon = self.soon.check(q, threshold + SOON_MARGIN, now)
+        text = self.main.check(q, threshold, now)
+        if text:
+            self.fired_at = self.last = now
+            out.append(('fire', text))
+        elif soon and self.fired_at is None and state['position'] > threshold:
+            out.append(('soon', '곧 대기열 %d 이하 — 지금 %d번째' % (threshold, state['position'])))
+        elif self.fired_at is not None and self.repeats < REPEAT_MAX and now - self.last >= REPEAT_SEC:
+            self.last, self.repeats = now, self.repeats + 1
+            out.append(('repeat', '대기열 %d번째 — 아직 대기 중' % state['position']))
+        return out

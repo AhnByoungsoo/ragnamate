@@ -8,6 +8,7 @@ import logging
 import os
 import re
 import hashlib
+import threading
 
 import iteminfo
 from core.identifiers import numeric_id
@@ -60,10 +61,20 @@ class ItemDB:
         os.makedirs(os.path.dirname(self.cache_path), exist_ok=True)
         if lub_mtime is None:
             lub_mtime = os.path.getmtime(self.lub_path) if os.path.exists(self.lub_path) else 0
-        with open(self.cache_path + '.tmp', 'w', encoding='utf-8') as f:
-            json.dump(dict(lub_mtime=lub_mtime, fingerprint=self.fingerprint, items=self.items, categories=self.categories),
-                      f, ensure_ascii=False)
-        os.replace(self.cache_path + '.tmp', self.cache_path)
+        # 화면 스레드와 Live 스레드가 게임 패치 직후 동시에 다시 만들 수 있다 — 임시 파일을 따로 쓰고,
+        # 다른 쪽이 먼저 바꿔 넣는 중이면 캐시 저장만 건너뛴다(읽은 아이템은 그대로 쓴다)
+        tmp = '%s.%d.%d.tmp' % (self.cache_path, os.getpid(), threading.get_ident())
+        try:
+            with open(tmp, 'w', encoding='utf-8') as f:
+                json.dump(dict(lub_mtime=lub_mtime, fingerprint=self.fingerprint, items=self.items,
+                               categories=self.categories), f, ensure_ascii=False)
+            os.replace(tmp, self.cache_path)
+        except PermissionError as e:
+            log.warning('item_db.json 저장을 건너뜀(다른 쪽이 쓰는 중): %s', e)
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
 
     def name(self, item_id):
         item_id = numeric_id(item_id)

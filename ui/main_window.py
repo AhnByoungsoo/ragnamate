@@ -42,6 +42,11 @@ from ui.completer import attach_completer, set_words
 from ui.table_model import C_AVG, C_LOW, C_NAME, C_QTY, C_VALUE, Formatter, ItemFilterProxy, ItemTableModel, comma
 
 log = logging.getLogger(__name__)
+
+
+def _spoken(key):
+    """'Alt+0' → '알트 영' (음성으로 읽을 글)."""
+    return key.replace('Alt', '알트').replace('Ctrl', '컨트롤').replace('+', ' ').replace('0', '영')
 VALUE_FILTERS = [('금액 전체', 0), ('1만 Z 이상', 10_000), ('10만 Z 이상', 100_000), ('100만 Z 이상', 1_000_000),
                  ('1,000만 Z 이상', 10_000_000), ('사용자 지정', -1)]
 
@@ -495,8 +500,10 @@ class MainWindow(QMainWindow):
     def startup(self):
         QTimer.singleShot(4000, self.updates.check)             # 새 버전이 있으면 받을지 묻는다
         from live.queue_screen import QueueScreenWatcher
-        self.queue_screen_states, self.queue_screen_watch = {}, {}
+        self.queue_screen_states, self.queue_screen_watch = {}, {}    # 게임 창 → 읽은 상태 / dict(alarm, banner)
         self.queue_screen_update.connect(self._on_queue_screen)
+        self.queue_timer = QTimer(self, interval=500, timeout=self._queue_tick)
+        self.queue_timer.start()
         self.queue_screen = QueueScreenWatcher(self.queue_screen_update.emit,
                                                self.s.get('live_process_names') or ('Ragexe.exe', 'Ragnarok.exe'),
                                                active=lambda: bool(self.s.get('queue_alert'))).start()
@@ -1432,33 +1439,52 @@ class MainWindow(QMainWindow):
 
     def _on_queue_screen(self, hwnd, state):
         """메모리얼 던전 창에서 읽은 대기 순위 → 기준 이하 알림, '입장 가능' 알림."""
-        from core.queue_watch import QueueWatch
         before = self.queue_screen_states.get(hwnd)
         if state is None:
             self.queue_screen_states.pop(hwnd, None)
-            self.queue_screen_watch.pop(hwnd, None)
         else:
             self.queue_screen_states[hwnd] = state
         self.live_page._label_queue()
-        if state is None or not self.s['queue_alert']:
+        if state is not None and state['ready'] and not (before or {}).get('ready') and self.s['queue_alert']:
+            self._leveling_alert('메모리얼 던전 입장 가능%s' % (': ' + state['name'] if state['name'] else ''),
+                                 '메모리얼 던전 입장 가능합니다')
+        self._queue_tick()
+
+    def _queue_tick(self):
+        """0.5초마다(그리고 순위가 바뀔 때): 대기 창마다 '곧'·기준 이하·다시 알림, 게임 창 위 큰 표시."""
+        from core.queue_watch import QueueAlarm
+        from live.window import client_rect
+        from ui.queue_banner import QueueBanner, banner_text
+        threshold, key = int(self.s['queue_alert_below']), self._leave_key()
+        on = bool(self.s['queue_alert'])
+        for hwnd in list(self.queue_screen_watch):            # 대기가 끝난 창 정리
+            if hwnd not in self.queue_screen_states or not on:
+                self.queue_screen_watch.pop(hwnd)['banner'].hide()
+        if not on:
             return
-        if state['ready']:
-            if not (before or {}).get('ready'):
-                self._leveling_alert('메모리얼 던전 입장 가능%s' % (': ' + state['name'] if state['name'] else ''),
-                                     '메모리얼 던전 입장 가능합니다')
-            return
-        watch = self.queue_screen_watch.setdefault(hwnd, QueueWatch())
-        threshold = int(self.s['queue_alert_below'])
-        import time
-        text = watch.check(dict(name='', position=state['position'], at=int(time.monotonic() * 1000)), threshold)
-        if text:
-            self._queue_fire(text, threshold)
+        for hwnd, state in list(self.queue_screen_states.items()):
+            w = self.queue_screen_watch.setdefault(hwnd, dict(alarm=QueueAlarm(), banner=QueueBanner()))
+            for kind, text in w['alarm'].update(state, threshold):
+                if kind == 'fire':
+                    self._queue_fire(text, threshold)
+                elif kind == 'soon':
+                    self._leveling_alert(text, '곧 차례입니다' + (', %s 준비' % _spoken(key) if key else ''))
+                else:
+                    self._leveling_alert(text + (' — %s' % key if key else ''), _spoken(key) if key else '지금입니다')
+            if self.s.get('queue_banner', True):
+                text, kind = banner_text(state, threshold, key, w['alarm'].fired_at is not None)
+                try:
+                    w['banner'].show_on(client_rect(hwnd), text, kind)
+                except Exception:
+                    log.exception('대기열 표시 실패')
+            else:
+                w['banner'].hide()
 
     def _queue_sound(self, threshold):
         """"대기열이 N 이하입니다" 음성 파일. 없으면 한 번 만들고, 못 만들면 기본 알림음('')."""
         from core.queue_watch import message
         key = self._leave_key()
-        speak = message(threshold) + (', %s 누르세요' % key.replace('Alt', '알트').replace('+', ' ') if key else '')
+        speak = message(threshold) + (', %s 누르세요' % _spoken(key) if key else '')
         path = os.path.join(BASE_DIR, 'data', 'sounds', 'queue_fast_%d%s.wav'
                             % (threshold, '_' + key.replace('+', '').lower() if key else ''))
         if not os.path.isfile(path):

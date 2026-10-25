@@ -84,5 +84,39 @@ class WatchTest(unittest.TestCase):
         self.assertIsNone(w.check(None, 10))                 # 꺼 두면 queue 를 넘기지 않는다
 
 
+class AlarmTest(unittest.TestCase):
+    def run_queue(self, steps, threshold=15):
+        from core.queue_watch import QueueAlarm
+        now = [0.0]
+        a = QueueAlarm(clock=lambda: now[0])
+        out = []
+        for t, state in steps:
+            now[0] = t
+            out += [(t, kind) for kind, _text in a.update(state, threshold)]
+        return out
+
+    def test_soon_then_fire_then_repeat_until_ready(self):
+        q = lambda n: dict(position=n, ready=False, name='')
+        steps = [(0, q(30)), (1, q(22)), (2, q(19)), (3, q(16)), (4, q(14))]
+        steps += [(4 + k * 0.5, q(14 - k // 2)) for k in range(1, 15)]           # 0.5초마다 화면을 읽는 흐름
+        steps += [(12, dict(position=0, ready=True, name='바곳의 연구실')), (15, None)]
+        events = self.run_queue(steps)
+        self.assertEqual(events[:2], [(2, 'soon'), (4, 'fire')])                  # 20 이하에서 '곧', 15 이하에서 알림
+        repeats = [t for t, k in events if k == 'repeat']
+        self.assertEqual(repeats, [7.0, 10.0])                                    # 3초마다, 입장 가능에서 멈춤
+        self.assertEqual(len(events), 4)
+
+    def test_repeats_stop_after_the_limit(self):
+        from core.queue_watch import REPEAT_MAX
+        q = dict(position=3, ready=False, name='')
+        events = self.run_queue([(0, dict(q, position=20)), (1, dict(q, position=14))] + [(1 + k, q) for k in range(1, 200)])
+        self.assertEqual(sum(1 for _t, k in events if k == 'repeat'), REPEAT_MAX)
+
+    def test_new_queue_starts_over(self):
+        q = lambda n: dict(position=n, ready=False, name='')
+        events = self.run_queue([(0, q(14)), (1, q(40)), (2, q(14))])
+        self.assertEqual([k for _t, k in events], ['fire', 'fire'])
+
+
 if __name__ == '__main__':
     unittest.main()

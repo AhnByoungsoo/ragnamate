@@ -71,6 +71,7 @@ DEFAULTS = {
     'queue_alert': False, 'queue_alert_below': 15,
     # 대기열 알림 때 '탈퇴 키를 누르라'고 함께 안내한다(게임 Alt+M 매크로에 탈퇴 명령을 넣어 둔 키). 누르는 것은 사용자
     'queue_leave_hint': False, 'queue_leave_key': 'Alt+0',
+    'queue_banner': True,                      # 대기 중인 게임 창 위에 순위를 크게 표시
     # 레벨업 코치(오버레이 메뉴): 코스 · 직접 정한 레벨(0 = 리플레이에서 읽기) · 직접 저장한 네비 {단계: dict(map, x, y)}
     'leveling_route': 'fast_skip', 'leveling_manual_level': 0, 'leveling_navi': {},
     'drop_alert': True,                        # 고가 아이템이 바닥에 떨어졌을 때(줍기 전) 알림 — 기준은 jackpot_min_price
