@@ -225,6 +225,10 @@ class MacroPage(QWidget):
         b_ghub = QPushButton('G HUB에서 가져오기')
         b_ghub.clicked.connect(self._open_ghub_import)
         bl.addWidget(b_ghub)
+        b_ghub_check = QPushButton('G HUB 매크로 분석')
+        b_ghub_check.setToolTip('G HUB 매크로의 키 간격을 지금 불러온 리플레이의 스킬 재사용 대기·실패와 비교합니다(읽기만).')
+        b_ghub_check.clicked.connect(self._open_macro_analysis)
+        bl.addWidget(b_ghub_check)
         bl.addStretch(1)
         self.run_label = QLabel()
         bl.addWidget(self.run_label)
@@ -587,6 +591,10 @@ class MacroPage(QWidget):
     def _open_ghub_import(self):
         from ui.ghub_import_dialog import GhubImportDialog
         GhubImportDialog(self).exec()
+
+    def _open_macro_analysis(self):
+        from ui.macro_analysis_dialog import MacroAnalysisDialog
+        MacroAnalysisDialog(self.app, self).exec()
 
     def _open_combo(self):
         from ui.combo_dialog import ComboDialog
